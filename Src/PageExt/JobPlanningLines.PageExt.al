@@ -7,14 +7,17 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
             field("SEQNO S365"; Rec."SEQNO S365")
             {
                 ApplicationArea = All;
+                ToolTip = 'Specifies the S365 sequence number of this task.';
             }
             field("Predecessor Seq S365"; Rec."Predecessor Seq S365")
             {
                 ApplicationArea = All;
+                ToolTip = 'Specifies the S365 sequence number of the predecessor.';
             }
             field("Completed S365"; Rec."Completed S365")
             {
                 ApplicationArea = All;
+                ToolTip = 'Specifies whether the S365 step is completed.';
             }
         }
         addafter(Quantity)
@@ -23,10 +26,45 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the currency that is used on the entry.';
+            }
+            field("Qty. to Post %"; Rec."Qty. to Post %")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Qty. to Post % field.';
+                trigger OnValidate()
+                var
+                    Text001Err: Label '%1 cannot exceed %2.', Comment = '%1=Qty Posted %,%2=Qty. Remaining %';
+                begin
+                    if Rec."Qty. to Post %" > Rec."Qty. Remaining %" then
+                        Rec.FieldError("Qty. to Post %", StrSubstNo(Text001Err, Rec.FieldCaption("Qty Posted %"), Rec.FieldCaption("Qty. Remaining %")));
+                    Rec.Validate("Qty. to Transfer to Journal", (Rec."Qty. to Post %" / 100) * Rec.Quantity);
+                    Rec."Qty Posted %" += Rec."Qty. to Post %";
+                    Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %";
 
+                    if Rec."Qty. Remaining %" = 0 then
+                        Rec."Qty. to Post %" := 0;
+                end;
+            }
+            field("Qty. Remaining %"; Rec."Qty. Remaining %")
+            {
+                ApplicationArea = All;
+                Editable = false;
+                ToolTip = 'Specifies the value of the Qty. Remaining % field.';
             }
         }
+        modify("Qty. to Transfer to Journal")
+        {
+            Editable = false;
+        }
+        modify(Quantity)
+        {
+            trigger OnAfterValidate()
+            begin
+                Rec.Validate("Qty. to Post %");
+            end;
+        }
     }
+
     actions
     {
         addlast(processing)
