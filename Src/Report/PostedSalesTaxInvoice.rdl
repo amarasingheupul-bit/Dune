@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-09-09T16:48:15.5918560Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-09-04T13:01:29.5298955Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -24,199 +24,6 @@
       <rd:DataSourceID>55f630da-85af-49c3-b07e-841bb85957f3</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="No_PurchaseHeader">
-          <DataField>No_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="OrderDate_PurchaseHeader">
-          <DataField>OrderDate_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromVendorNo_PurchaseHeader">
-          <DataField>BuyfromVendorNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromVendorName_PurchaseHeader">
-          <DataField>BuyfromVendorName_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromAddress2_PurchaseHeader">
-          <DataField>BuyfromAddress2_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromAddress_PurchaseHeader">
-          <DataField>BuyfromAddress_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromCounty_PurchaseHeader">
-          <DataField>BuyfromCounty_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromCity_PurchaseHeader">
-          <DataField>BuyfromCity_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="YourReference_PurchaseHeader">
-          <DataField>YourReference_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="PaymentTermsCode_PurchaseHeader">
-          <DataField>PaymentTermsCode_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="ReportTitleLbl">
-          <DataField>ReportTitleLbl</DataField>
-        </Field>
-        <Field Name="HeaderLbl">
-          <DataField>HeaderLbl</DataField>
-        </Field>
-        <Field Name="BodyLbl">
-          <DataField>BodyLbl</DataField>
-        </Field>
-        <Field Name="CompanyPicture">
-          <DataField>CompanyPicture</DataField>
-        </Field>
-        <Field Name="CompanyInfReportFooter">
-          <DataField>CompanyInfReportFooter</DataField>
-        </Field>
-        <Field Name="CompanyName">
-          <DataField>CompanyName</DataField>
-        </Field>
-        <Field Name="CompanyPhoneNo">
-          <DataField>CompanyPhoneNo</DataField>
-        </Field>
-        <Field Name="CompanyFaxNo">
-          <DataField>CompanyFaxNo</DataField>
-        </Field>
-        <Field Name="CompanyEmail">
-          <DataField>CompanyEmail</DataField>
-        </Field>
-        <Field Name="CompanyVatRegistration">
-          <DataField>CompanyVatRegistration</DataField>
-        </Field>
-        <Field Name="CurrencyCode_PurchaseHeader">
-          <DataField>CurrencyCode_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CommissionAmount_PurchaseHeader">
-          <DataField>CommissionAmount_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CommissionAmount_PurchaseHeaderFormat">
-          <DataField>CommissionAmount_PurchaseHeaderFormat</DataField>
-        </Field>
-        <Field Name="OPCOComProjectNo_PurchaseHeader">
-          <DataField>OPCOComProjectNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="YardNo_PurchaseHeader">
-          <DataField>YardNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="VesselType_PurchaseHeader">
-          <DataField>VesselType_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CostReference_PurchaseHeader">
-          <DataField>CostReference_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="Address">
-          <DataField>Address</DataField>
-        </Field>
-        <Field Name="ContactName">
-          <DataField>ContactName</DataField>
-        </Field>
-        <Field Name="TRNLeft">
-          <DataField>TRNLeft</DataField>
-        </Field>
-        <Field Name="Budget_PurchaseHeader">
-          <DataField>Budget_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="Budget_PurchaseHeaderFormat">
-          <DataField>Budget_PurchaseHeaderFormat</DataField>
-        </Field>
-        <Field Name="BankDetailsS365_PurchaseHeader">
-          <DataField>BankDetailsS365_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SalesManager_PurchaseHeader">
-          <DataField>SalesManager_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SalesProviderNo_PurchaseHeader">
-          <DataField>SalesProviderNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SalesAreaDirectorName_PurchaseHeader">
-          <DataField>SalesAreaDirectorName_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="QuoteType_PurchaseHeader">
-          <DataField>QuoteType_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="G_L_Account">
-          <DataField>G_L_Account</DataField>
-        </Field>
-        <Field Name="OPCOCustomer_PurchaseHeader">
-          <DataField>OPCOCustomer_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SwiftCode">
-          <DataField>SwiftCode</DataField>
-        </Field>
-        <Field Name="Currency">
-          <DataField>Currency</DataField>
-        </Field>
-        <Field Name="BankName">
-          <DataField>BankName</DataField>
-        </Field>
-        <Field Name="IBAN">
-          <DataField>IBAN</DataField>
-        </Field>
-        <Field Name="Sales_Area">
-          <DataField>Sales_Area</DataField>
-        </Field>
-        <Field Name="Sales_Order_No__4HC">
-          <DataField>Sales_Order_No__4HC</DataField>
-        </Field>
-        <Field Name="No_PurchaseLine">
-          <DataField>No_PurchaseLine</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="Quantity_PurchaseLine">
-          <DataField>Quantity_PurchaseLine</DataField>
-        </Field>
-        <Field Name="Quantity_PurchaseLineFormat">
-          <DataField>Quantity_PurchaseLineFormat</DataField>
-        </Field>
-        <Field Name="UnitofMeasureCode_PurchaseLine">
-          <DataField>UnitofMeasureCode_PurchaseLine</DataField>
-        </Field>
-        <Field Name="UnitPriceLCY_PurchaseLine">
-          <DataField>UnitPriceLCY_PurchaseLine</DataField>
-        </Field>
-        <Field Name="UnitPriceLCY_PurchaseLineFormat">
-          <DataField>UnitPriceLCY_PurchaseLineFormat</DataField>
-        </Field>
-        <Field Name="Amount">
-          <DataField>Amount</DataField>
-        </Field>
-        <Field Name="AmountFormat">
-          <DataField>AmountFormat</DataField>
-        </Field>
-        <Field Name="AmountIncludingVAT">
-          <DataField>AmountIncludingVAT</DataField>
-        </Field>
-        <Field Name="AmountIncludingVATFormat">
-          <DataField>AmountIncludingVATFormat</DataField>
-        </Field>
-        <Field Name="VATAmount">
-          <DataField>VATAmount</DataField>
-        </Field>
-        <Field Name="VATAmountFormat">
-          <DataField>VATAmountFormat</DataField>
-        </Field>
-        <Field Name="VAT__">
-          <DataField>VAT__</DataField>
-        </Field>
-        <Field Name="VAT__Format">
-          <DataField>VAT__Format</DataField>
-        </Field>
-        <Field Name="Currency_Code">
-          <DataField>Currency_Code</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -248,7 +55,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Purchase Order No.</Value>
+                                  <Value>INVOICE No.</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -259,7 +66,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -282,10 +91,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -306,15 +112,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="No_PurchaseHeader">
-                          <rd:DefaultName>No_PurchaseHeader</rd:DefaultName>
+                        <Textbox Name="No_SalesHeader">
+                          <rd:DefaultName>No_SalesHeader</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!No_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!No_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -323,7 +129,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -366,7 +172,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -389,10 +197,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -413,24 +218,129 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="OrderDate_PurchaseHeader">
-                          <rd:DefaultName>OrderDate_PurchaseHeader</rd:DefaultName>
+                        <Textbox Name="OrderDate_SalesHeader">
+                          <rd:DefaultName>OrderDate_SalesHeader</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!OrderDate_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!OrderDate_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
-                                    <Format>dd-MM-yyyy</Format>
+                                    <Format>d</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.23622in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox13">
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>PO NUMBER</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox14">
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="IncomingPO_SalesHeader">
+                          <rd:DefaultName>IncomingPO_SalesHeader</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!IncomingPO_SalesHeader.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -473,7 +383,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -496,10 +408,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -520,15 +429,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="PaymentTermsCode_PurchaseHeader">
-                          <rd:DefaultName>PaymentTermsCode_PurchaseHeader</rd:DefaultName>
+                        <Textbox Name="PaymentTermsCode_SalesHeader">
+                          <rd:DefaultName>PaymentTermsCode_SalesHeader</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!PaymentTermsCode_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!PaymentTermsCode_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -536,7 +445,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -579,7 +488,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -602,10 +513,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -642,7 +550,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -662,7 +570,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.1927in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -674,7 +582,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Sales Provider Number</Value>
+                                  <Value>Service Provider No.</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -685,7 +593,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -708,10 +618,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -732,15 +639,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="SalesProviderNo_PurchaseHeader">
-                          <rd:DefaultName>SalesProviderNo_PurchaseHeader</rd:DefaultName>
+                        <Textbox Name="ServiceProviderNo_SalesHeader">
+                          <rd:DefaultName>ServiceProviderNo_SalesHeader</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!SalesProviderNo_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!ServiceProviderNo_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -748,7 +655,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -768,7 +675,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.15596in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -791,7 +698,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -814,10 +723,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -838,15 +744,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="SalesManager_PurchaseHeader">
-                          <rd:DefaultName>SalesManager_PurchaseHeader</rd:DefaultName>
+                        <Textbox Name="Sales_Manager">
+                          <rd:DefaultName>Sales_Manager</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!SalesManager_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!Sales_Manager.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -854,7 +760,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -874,7 +780,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.17432in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -886,7 +792,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Area Director</Value>
+                                  <Value>Sales Director</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -897,7 +803,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -920,10 +828,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -944,15 +849,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="SalesAreaDirectorName_PurchaseHeader">
-                          <rd:DefaultName>SalesAreaDirectorName_PurchaseHeader</rd:DefaultName>
+                        <Textbox Name="SalesAreaDirectorName_SalesHeader">
+                          <rd:DefaultName>SalesAreaDirectorName_SalesHeader</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!SalesAreaDirectorName_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!SalesAreaDirectorName_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -960,113 +865,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.23622in</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox7">
-                          <rd:DefaultName>Textbox7</rd:DefaultName>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Sales Area</Value>
-                                  <Style>
-                                    <FontStyle>Normal</FontStyle>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <TextDecoration>None</TextDecoration>
-                                    <Color>#000000</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox8">
-                          <rd:DefaultName>Textbox8</rd:DefaultName>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Sales_Area">
-                          <rd:DefaultName>Sales_Area</rd:DefaultName>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Sales_Area.Value</Value>
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1101,15 +900,27 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
-                <TablixMember />
-                <TablixMember />
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                  </Visibility>
+                </TablixMember>
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                  </Visibility>
+                </TablixMember>
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                  </Visibility>
+                </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>0.11564in</Top>
             <Left>4.51611in</Left>
-            <Height>1.97244in</Height>
+            <Height>1.74542in</Height>
             <Width>3.11708in</Width>
             <Style>
               <Border>
@@ -1121,10 +932,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.65094in</Width>
+                  <Width>1.54774in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5775in</Width>
+                  <Width>2.7226in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1141,7 +952,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Vendor Name</Value>
+                                  <Value>Customer Name</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1175,7 +986,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!BuyfromVendorName_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!Sell_to_Customer_Name.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1201,7 +1012,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.30208in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1319,7 +1130,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!TRNLeft.Value</Value>
+                                  <Value>=Fields!CustomerVATRegNo.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1391,7 +1202,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ContactName.Value</Value>
+                                  <Value>=Fields!Sell_to_Contact.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1433,10 +1244,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>0.11564in</Top>
+            <Top>0.16542in</Top>
             <Left>0.03916in</Left>
-            <Height>1in</Height>
-            <Width>4.22844in</Width>
+            <Height>1.05208in</Height>
+            <Width>4.27034in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1448,34 +1259,34 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.36237cm</Width>
+                  <Width>1.17162cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4.06331cm</Width>
+                  <Width>4.05833cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.20769cm</Width>
+                  <Width>1.38848cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.77112cm</Width>
+                  <Width>1.76614cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.1989cm</Width>
+                  <Width>1.19392cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.59545cm</Width>
+                  <Width>1.59047cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.08996cm</Width>
+                  <Width>2.08498cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.63863cm</Width>
+                  <Width>1.63365cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.93941cm</Width>
+                  <Width>1.93443cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.47176cm</Width>
+                  <Width>2.46678cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1584,7 +1395,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Qty</Value>
+                                  <Value>QTY</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1975,12 +1786,12 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.15021cm</Height>
+                  <Height>0.17667cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox157">
-                          <rd:DefaultName>Textbox157</rd:DefaultName>
+                        <Textbox Name="Textbox6">
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1994,15 +1805,14 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2013,8 +1823,8 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox158">
-                          <rd:DefaultName>Textbox158</rd:DefaultName>
+                        <Textbox Name="Textbox7">
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2028,15 +1838,14 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2047,8 +1856,8 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox159">
-                          <rd:DefaultName>Textbox159</rd:DefaultName>
+                        <Textbox Name="Textbox8">
+                          <rd:DefaultName>Textbox8</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2062,15 +1871,14 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2081,8 +1889,8 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox160">
-                          <rd:DefaultName>Textbox160</rd:DefaultName>
+                        <Textbox Name="Textbox9">
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2096,15 +1904,14 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2115,42 +1922,8 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox65">
-                          <rd:DefaultName>Textbox65</rd:DefaultName>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox70">
-                          <rd:DefaultName>Textbox70</rd:DefaultName>
+                        <Textbox Name="Textbox11">
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2184,8 +1957,8 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox161">
-                          <rd:DefaultName>Textbox161</rd:DefaultName>
+                        <Textbox Name="Textbox12">
+                          <rd:DefaultName>Textbox12</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2200,7 +1973,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -2208,6 +1981,7 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2218,8 +1992,8 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox162">
-                          <rd:DefaultName>Textbox162</rd:DefaultName>
+                        <Textbox Name="Textbox16">
+                          <rd:DefaultName>Textbox16</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2233,15 +2007,14 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2252,8 +2025,8 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox163">
-                          <rd:DefaultName>Textbox163</rd:DefaultName>
+                        <Textbox Name="Textbox17">
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2276,6 +2049,7 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2286,8 +2060,8 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox164">
-                          <rd:DefaultName>Textbox164</rd:DefaultName>
+                        <Textbox Name="Textbox18">
+                          <rd:DefaultName>Textbox18</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2310,6 +2084,42 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox22">
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2325,8 +2135,8 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="No_PurchaseLine">
-                          <rd:DefaultName>No_PurchaseLine</rd:DefaultName>
+                        <Textbox Name="No_SalesLine">
+                          <rd:DefaultName>No_SalesLine</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -2341,7 +2151,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -2375,9 +2185,7 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -2395,15 +2203,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Quantity_PurchaseLine">
-                          <rd:DefaultName>Quantity_PurchaseLine</rd:DefaultName>
+                        <Textbox Name="Quantity_SalesLine">
+                          <rd:DefaultName>Quantity_SalesLine</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Quantity_PurchaseLine.Value</Value>
+                                  <Value>=Fields!Quantity_SalesLine.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -2431,15 +2239,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="UnitPriceLCY_PurchaseLine">
-                          <rd:DefaultName>UnitPriceLCY_PurchaseLine</rd:DefaultName>
+                        <Textbox Name="UnitPriceLCY_SalesLine">
+                          <rd:DefaultName>UnitPriceLCY_SalesLine</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!UnitPriceLCY_PurchaseLine.Value</Value>
+                                  <Value>=Fields!UnitPriceLCY_SalesLine.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -2467,15 +2275,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="UnitofMeasureCode_PurchaseLine">
-                          <rd:DefaultName>UnitofMeasureCode_PurchaseLine</rd:DefaultName>
+                        <Textbox Name="UnitofMeasureCode_SalesLine">
+                          <rd:DefaultName>UnitofMeasureCode_SalesLine</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!UnitofMeasureCode_PurchaseLine.Value</Value>
+                                  <Value>=Fields!UnitofMeasureCode_SalesLine.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -2609,18 +2417,19 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox108">
-                          <rd:DefaultName>Textbox108</rd:DefaultName>
+                        <Textbox Name="VATAmount2">
+                          <rd:DefaultName>VATAmount</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>0.00</Value>
+                                  <Value>=Fields!VATAmount.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2681,7 +2490,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.22958cm</Height>
+                  <Height>0.6cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -2694,15 +2503,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -2728,15 +2532,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -2762,15 +2561,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -2796,15 +2590,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -2830,15 +2619,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -2864,22 +2648,16 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2899,15 +2677,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -2933,10 +2706,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -2969,7 +2739,6 @@
                                   <Value />
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3001,15 +2770,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -3040,15 +2804,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -3088,7 +2847,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -3121,15 +2880,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -3161,15 +2915,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -3201,15 +2950,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -3241,15 +2985,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -3313,8 +3052,8 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox6">
-                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                        <Textbox Name="Textbox10">
+                          <rd:DefaultName>Textbox10</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -3324,7 +3063,6 @@
                                   <Value />
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -3354,8 +3092,8 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Currency_Code2">
-                          <rd:DefaultName>Currency_Code</rd:DefaultName>
+                        <Textbox Name="Textbox15">
+                          <rd:DefaultName>Textbox15</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -3371,7 +3109,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -3380,9 +3118,7 @@
                               <Style>None</Style>
                             </Border>
                             <TopBorder>
-                              <Color>Black</Color>
                               <Style>Solid</Style>
-                              <Width>1pt</Width>
                             </TopBorder>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -3412,9 +3148,7 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -3473,10 +3207,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>9.06144cm</Top>
-            <Left>0.04973cm</Left>
-            <Height>2.41791cm</Height>
-            <Width>19.33857cm</Width>
+            <Top>5.16262cm</Top>
+            <Left>0.09949cm</Left>
+            <Height>2.81479cm</Height>
+            <Width>19.2888cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -3488,15 +3222,15 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.65093in</Width>
+                  <Width>1.54773in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5775in</Width>
+                  <Width>2.22333in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.06423in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3508,7 +3242,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Yard No.</Value>
+                                  <Value>Object</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3542,7 +3276,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!YardNo_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!YardNo_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3568,7 +3302,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.06423in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3580,7 +3314,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Vessel Type</Value>
+                                  <Value>Type</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3614,7 +3348,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!VesselType_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!Type_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3640,7 +3374,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.06423in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3686,7 +3420,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!OPCOCustomer_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!OPCOCustomer_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3712,7 +3446,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.06423in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3724,7 +3458,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Quote Type</Value>
+                                  <Value>Cost Type</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3758,7 +3492,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!QuoteType_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!Quote_Type_S365.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3784,7 +3518,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.23622in</Height>
+                  <Height>0.05045in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3822,15 +3556,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="CostReference_PurchaseHeader">
-                          <rd:DefaultName>CostReference_PurchaseHeader</rd:DefaultName>
+                        <Textbox Name="COSTReference_SalesHeader">
+                          <rd:DefaultName>COSTReference_SalesHeader</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CostReference_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!COSTReference_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3856,7 +3590,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.23622in</Height>
+                  <Height>0.05045in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3868,7 +3602,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Sales Order No.</Value>
+                                  <Value>Commission Project Invoice</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3894,25 +3628,22 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Sales_Order_No__4HC">
-                          <rd:DefaultName>Sales_Order_No__4HC</rd:DefaultName>
+                        <Textbox Name="Job_No__S365">
+                          <rd:DefaultName>Job_No__S365</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Sales_Order_No__4HC.Value</Value>
+                                  <Value>=Fields!Job_No__S365.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
-                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -3931,7 +3662,79 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.23622in</Height>
+                  <Height>0.05045in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox29">
+                          <rd:DefaultName>Textbox29</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Cost Center</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Cost_Center">
+                          <rd:DefaultName>Cost_Center</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Cost_Center.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.05045in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3969,15 +3772,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="G_L_Account">
-                          <rd:DefaultName>G_L_Account</rd:DefaultName>
+                        <Textbox Name="GLAccount_SalesHeader">
+                          <rd:DefaultName>GLAccount_SalesHeader</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!G_L_Account.Value</Value>
+                                  <Value>=Fields!GLAccount_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4003,7 +3806,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.23622in</Height>
+                  <Height>0.05045in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -4041,19 +3844,18 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Budget_PurchaseHeader">
-                          <rd:DefaultName>Budget_PurchaseHeader</rd:DefaultName>
+                        <Textbox Name="Budget_SalesHeader">
+                          <rd:DefaultName>Budget_SalesHeader</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Budget_PurchaseHeader.Value</Value>
+                                  <Value>=Fields!Budget_SalesHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
-                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -4094,19 +3896,19 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember>
-                  <Visibility>
-                    <Hidden>true</Hidden>
-                  </Visibility>
-                </TablixMember>
+                <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>1.35186in</Top>
             <Left>0.03917in</Left>
-            <Height>1.94488in</Height>
-            <Width>4.22843in</Width>
+            <Height>0.50917in</Height>
+            <Width>3.77106in</Width>
             <ZIndex>3</ZIndex>
+            <Visibility>
+              <Hidden>true</Hidden>
+            </Visibility>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -4145,7 +3947,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -4171,14 +3975,16 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!BankName.Value</Value>
+                                  <Value>=Fields!BankAccontName.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -4217,7 +4023,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -4235,7 +4043,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox77">
+                        <Textbox Name="Textbox82">
                           <rd:DefaultName>Textbox37</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -4250,7 +4058,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -4289,7 +4099,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -4315,14 +4127,16 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!SwiftCode.Value</Value>
+                                  <Value>=Fields!SWIFTCode.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -4361,7 +4175,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -4387,14 +4203,16 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Currency.Value</Value>
+                                  <Value>=Fields!BankAccountCurrency.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -4425,57 +4243,34 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=Fields!BankAccountCurrency.Value=""</Hidden>
+                  </Visibility>
+                </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>4.80082in</Top>
-            <Left>0.025in</Left>
+            <Top>4.43832in</Top>
+            <Left>0.03917in</Left>
             <Height>1in</Height>
             <Width>3.69792in</Width>
             <ZIndex>4</ZIndex>
-            <Visibility>
-              <Hidden>true</Hidden>
-            </Visibility>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
-          <Rectangle Name="Rectangle1">
-            <KeepTogether>true</KeepTogether>
-            <Top>0.29373cm</Top>
-            <Left>11.2022cm</Left>
-            <Height>5.04499cm</Height>
-            <Width>0.02646cm</Width>
-            <ZIndex>5</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
-          </Rectangle>
-          <Textbox Name="Textbox9">
-            <rd:DefaultName>Textbox9</rd:DefaultName>
+          <Textbox Name="Textbox25">
+            <rd:DefaultName>Textbox25</rd:DefaultName>
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Terms &amp; Conditions:</Value>
-                    <Style>
-                      <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>8pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>
-1 Please mention the above Purchase Order number on all invoices and correspondence.
-2 All other terms and conditions shall be as per the Service Provider Agreement (SPA).
-3 All the invoices must be sent to invoices.uae@damen.com</Value>
+                    <Value>  Please let us know if you have any queries about this invoice within 4 days in writing.</Value>
                     <Style>
                       <FontFamily>Segoe UI</FontFamily>
                       <FontSize>8pt</FontSize>
@@ -4485,11 +4280,11 @@
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>16.13817cm</Top>
-            <Left>0.03175cm</Left>
-            <Height>1.5525cm</Height>
-            <Width>16.86183cm</Width>
-            <ZIndex>6</ZIndex>
+            <Top>9.56062cm</Top>
+            <Left>0.09949cm</Left>
+            <Height>0.52944cm</Height>
+            <Width>11.99854cm</Width>
+            <ZIndex>5</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -4500,8 +4295,220 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Textbox Name="Textbox28">
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Also please make payment of the full amount at the agreed payment term of</Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>10.09006cm</Top>
+            <Left>0.09949cm</Left>
+            <Height>0.6cm</Height>
+            <Width>9.72665cm</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Rectangle Name="Rectangle1">
+            <KeepTogether>true</KeepTogether>
+            <Top>0.41133cm</Top>
+            <Left>11.24199cm</Left>
+            <Height>4.5749cm</Height>
+            <Width>0.02646cm</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Textbox Name="Textbox26">
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Finance Department</Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>16.13111cm</Top>
+            <Left>0.09949cm</Left>
+            <Height>0.52944cm</Height>
+            <Width>2.87233cm</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Top</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox30">
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Approved</Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>16.13111cm</Top>
+            <Left>14.91051cm</Left>
+            <Height>0.52944cm</Height>
+            <Width>2.87233cm</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox34">
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>_________________________</Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>15.60167cm</Top>
+            <Left>0.0995cm</Left>
+            <Height>0.52944cm</Height>
+            <Width>4.24111cm</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox37">
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>_________________________</Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>15.60167cm</Top>
+            <Left>14.83114cm</Left>
+            <Height>0.52944cm</Height>
+            <Width>4.24111cm</Width>
+            <ZIndex>11</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox40">
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Fields!PaymentTermsCode_SalesHeader.Value</Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>10.12534cm</Top>
+            <Left>9.90728cm</Left>
+            <Height>0.52944cm</Height>
+            <Width>2.87233cm</Width>
+            <ZIndex>12</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Top</VerticalAlign>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>18.08931cm</Height>
+        <Height>16.66055cm</Height>
         <Style />
       </Body>
       <Width>19.43802cm</Width>
@@ -4516,10 +4523,10 @@
               <Value>=First(Fields!CompanyPicture.Value, "DataSet_Result")</Value>
               <MIMEType>image/jpeg</MIMEType>
               <Sizing>FitProportional</Sizing>
-              <Top>0.01611in</Top>
-              <Left>0.01958in</Left>
-              <Height>0.70487in</Height>
-              <Width>2.70202in</Width>
+              <Top>0.01194in</Top>
+              <Left>0.03917in</Left>
+              <Height>0.76737in</Height>
+              <Width>3.13435in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -4547,10 +4554,10 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.72098in</Top>
-              <Left>0.01958in</Left>
-              <Height>0.3125in</Height>
-              <Width>5.00031in</Width>
+              <Top>0.77931in</Top>
+              <Left>0.03917in</Left>
+              <Height>0.28125in</Height>
+              <Width>5.24231in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -4603,10 +4610,10 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.01611in</Top>
-              <Left>5.89708in</Left>
+              <Top>1.62027in</Top>
+              <Left>5.28148in</Left>
               <Height>0.15404in</Height>
-              <Width>1.73611in</Width>
+              <Width>2.29167in</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -4635,9 +4642,9 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>1.21598in</Top>
+              <Top>1.42014in</Top>
               <Left>1.81148in</Left>
-              <Height>0.39583in</Height>
+              <Height>0.35417in</Height>
               <Width>3.47in</Width>
               <ZIndex>3</ZIndex>
               <Style>
@@ -4691,12 +4698,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -4734,4 +4735,185 @@ End Function
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_SalesHeader">
+          <DataField>No_SalesHeader</DataField>
+        </Field>
+        <Field Name="OrderDate_SalesHeader">
+          <DataField>OrderDate_SalesHeader</DataField>
+        </Field>
+        <Field Name="YourReference_SalesHeader">
+          <DataField>YourReference_SalesHeader</DataField>
+        </Field>
+        <Field Name="PaymentTermsCode_SalesHeader">
+          <DataField>PaymentTermsCode_SalesHeader</DataField>
+        </Field>
+        <Field Name="ReportTitleLbl">
+          <DataField>ReportTitleLbl</DataField>
+        </Field>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="CompanyInfReportFooter">
+          <DataField>CompanyInfReportFooter</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyAddress">
+          <DataField>CompanyAddress</DataField>
+        </Field>
+        <Field Name="CompanyAddress2">
+          <DataField>CompanyAddress2</DataField>
+        </Field>
+        <Field Name="CompanyCity">
+          <DataField>CompanyCity</DataField>
+        </Field>
+        <Field Name="CompanyCounty">
+          <DataField>CompanyCounty</DataField>
+        </Field>
+        <Field Name="CompanyPhoneNo">
+          <DataField>CompanyPhoneNo</DataField>
+        </Field>
+        <Field Name="CompanyFaxNo">
+          <DataField>CompanyFaxNo</DataField>
+        </Field>
+        <Field Name="CompanyEmail">
+          <DataField>CompanyEmail</DataField>
+        </Field>
+        <Field Name="CompanyVatRegistration">
+          <DataField>CompanyVatRegistration</DataField>
+        </Field>
+        <Field Name="CurrencyCode_SalesHeader">
+          <DataField>CurrencyCode_SalesHeader</DataField>
+        </Field>
+        <Field Name="YardNo_SalesHeader">
+          <DataField>YardNo_SalesHeader</DataField>
+        </Field>
+        <Field Name="Cost_Center">
+          <DataField>Cost_Center</DataField>
+        </Field>
+        <Field Name="Sales_Manager">
+          <DataField>Sales_Manager</DataField>
+        </Field>
+        <Field Name="CustomerVATRegNo">
+          <DataField>CustomerVATRegNo</DataField>
+        </Field>
+        <Field Name="Sell_to_Contact">
+          <DataField>Sell_to_Contact</DataField>
+        </Field>
+        <Field Name="Job_No__S365">
+          <DataField>Job_No__S365</DataField>
+        </Field>
+        <Field Name="Quote_Type_S365">
+          <DataField>Quote_Type_S365</DataField>
+        </Field>
+        <Field Name="Type_SalesHeader">
+          <DataField>Type_SalesHeader</DataField>
+        </Field>
+        <Field Name="OPCOCustomer_SalesHeader">
+          <DataField>OPCOCustomer_SalesHeader</DataField>
+        </Field>
+        <Field Name="COSTReference_SalesHeader">
+          <DataField>COSTReference_SalesHeader</DataField>
+        </Field>
+        <Field Name="GLAccount_SalesHeader">
+          <DataField>GLAccount_SalesHeader</DataField>
+        </Field>
+        <Field Name="Budget_SalesHeader">
+          <DataField>Budget_SalesHeader</DataField>
+        </Field>
+        <Field Name="Budget_SalesHeaderFormat">
+          <DataField>Budget_SalesHeaderFormat</DataField>
+        </Field>
+        <Field Name="IncomingPO_SalesHeader">
+          <DataField>IncomingPO_SalesHeader</DataField>
+        </Field>
+        <Field Name="ServiceProviderNo_SalesHeader">
+          <DataField>ServiceProviderNo_SalesHeader</DataField>
+        </Field>
+        <Field Name="SalesAreaDirectorName_SalesHeader">
+          <DataField>SalesAreaDirectorName_SalesHeader</DataField>
+        </Field>
+        <Field Name="SalesDirectorAreaDirector_SalesHeader">
+          <DataField>SalesDirectorAreaDirector_SalesHeader</DataField>
+        </Field>
+        <Field Name="BankDetails_SalesHeader">
+          <DataField>BankDetails_SalesHeader</DataField>
+        </Field>
+        <Field Name="BankAccontName">
+          <DataField>BankAccontName</DataField>
+        </Field>
+        <Field Name="IBAN">
+          <DataField>IBAN</DataField>
+        </Field>
+        <Field Name="SWIFTCode">
+          <DataField>SWIFTCode</DataField>
+        </Field>
+        <Field Name="BankAccountCurrency">
+          <DataField>BankAccountCurrency</DataField>
+        </Field>
+        <Field Name="Sell_to_Customer_Name">
+          <DataField>Sell_to_Customer_Name</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="No_SalesLine">
+          <DataField>No_SalesLine</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Quantity_SalesLine">
+          <DataField>Quantity_SalesLine</DataField>
+        </Field>
+        <Field Name="Quantity_SalesLineFormat">
+          <DataField>Quantity_SalesLineFormat</DataField>
+        </Field>
+        <Field Name="UnitofMeasureCode_SalesLine">
+          <DataField>UnitofMeasureCode_SalesLine</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_SalesLine">
+          <DataField>UnitPriceLCY_SalesLine</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_SalesLineFormat">
+          <DataField>UnitPriceLCY_SalesLineFormat</DataField>
+        </Field>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
+        </Field>
+        <Field Name="AmountFormat">
+          <DataField>AmountFormat</DataField>
+        </Field>
+        <Field Name="AmountIncludingVAT">
+          <DataField>AmountIncludingVAT</DataField>
+        </Field>
+        <Field Name="AmountIncludingVATFormat">
+          <DataField>AmountIncludingVATFormat</DataField>
+        </Field>
+        <Field Name="VATAmount">
+          <DataField>VATAmount</DataField>
+        </Field>
+        <Field Name="VATAmountFormat">
+          <DataField>VATAmountFormat</DataField>
+        </Field>
+        <Field Name="VAT__">
+          <DataField>VAT__</DataField>
+        </Field>
+        <Field Name="VAT__Format">
+          <DataField>VAT__Format</DataField>
+        </Field>
+        <Field Name="Currency_Code">
+          <DataField>Currency_Code</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

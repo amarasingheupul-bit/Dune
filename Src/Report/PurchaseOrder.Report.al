@@ -102,9 +102,6 @@ report 50103 "4HC Purchase Order"
             column(BankDetailsS365_PurchaseHeader; "Bank Details")
             {
             }
-            column(CostCenter_PurchaseHeader; "Cost Center")
-            {
-            }
             column(SalesManager_PurchaseHeader; "Sales Manager")
             {
             }
@@ -117,6 +114,12 @@ report 50103 "4HC Purchase Order"
             column(QuoteType_PurchaseHeader; "Quote Type")
             {
             }
+            column(G_L_Account; "G/L Account")
+            {
+            }
+            column(OPCOCustomer_PurchaseHeader; "OPCO Customer")
+            {
+            }
             column(SwiftCode; BankAccount."SWIFT Code")
             {
             }
@@ -127,6 +130,12 @@ report 50103 "4HC Purchase Order"
             {
             }
             column(IBAN; BankAccount.IBAN)
+            {
+            }
+            column(Sales_Area; "Sales Area")
+            {
+            }
+            column(Sales_Order_No__4HC; "Sales Order No. 4HC")
             {
             }
             dataitem(PurchaseLine; "Purchase Line")
@@ -167,9 +176,13 @@ report 50103 "4HC Purchase Order"
                 end;
             }
             trigger OnAfterGetRecord()
+            var
+                Vendor: Record Vendor;
             begin
                 if this.Contact.Get("Buy-from Contact No.") then;
-                this.Address := this.CompanyInformation.Address + ' ' + this.CompanyInformation."Address 2" + ' ' + this.CompanyInformation.City + ' ' + this.CompanyInformation.County;
+
+                Vendor.Get("Buy-from Vendor No.");
+                this.Address := Vendor.Address + ' ' + Vendor."Address 2" + ' ' + Vendor.City + ' ' + Vendor.County;
 
                 if "Gen. Bus. Posting Group" = 'UAE' then
                     this.TRNLeft := "VAT Registration No."

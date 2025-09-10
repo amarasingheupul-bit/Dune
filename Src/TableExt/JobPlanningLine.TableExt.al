@@ -28,21 +28,5 @@ tableextension 50107 "Job Planning Line" extends "Job Planning Line"
                 if JobPlanningLine.IsEmpty then Error('You must complete Seq. No. %1 first.', Rec."Predecessor Seq S365");
             end;
         }
-        field(50103; "Qty. to Post %"; Integer)
-        {
-            Caption = 'Qty. to Post %';
-            MaxValue = 100;
-            MinValue = 0;
-        }
-        field(50104; "Qty. Remaining %"; Integer)
-        {
-            Caption = 'Qty. Remaining %';
-        }
-        field(50105; "Qty Posted %"; Integer)
-        {
-            Caption = 'Qty Posted %';
-            MaxValue = 100;
-            MinValue = 0;
-        }
     }
 }

@@ -1,30 +1,20 @@
-pageextension 50106 JobCardS365 extends "Job Card"
+pageextension 50126 "4HC Posted Sales Invoice" extends "Posted Sales Invoice"
 {
     layout
     {
-        addlast(General)
-        {
-            field("Use as TemplateS365"; Rec."Use as TemplateS365")
-            {
-                ApplicationArea = All;
-                ToolTip = 'Specify if the job is use as a template';
-            }
-            field("Quote Type S365"; Rec."Quote Type S365")
-            {
-                ApplicationArea = All;
-                ToolTip = 'Specifies the value of the Quote Type field.';
-                TableRelation = "Quote Type S365"."Code S365";
-            }
-        }
-
         addafter(General)
         {
             group("New Fields S365")
             {
                 ShowCaption = true;
                 Caption = 'Additional Order Details';
-                Editable = false;
 
+                field("Quote Type S365"; Rec."Quote Type S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Quote Type field.';
+                    TableRelation = "Quote Type S365"."Code S365";
+                }
                 field("Change Reason S365"; Rec."Change Reason S365")
                 {
                     ApplicationArea = All;
@@ -44,6 +34,13 @@ pageextension 50106 JobCardS365 extends "Job Card"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Quote Status field.';
+                }
+                field("Shipment Method Code S365"; Rec."Shipment Method Code")
+                {
+                    Caption = 'Incoterms';
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Incoterms field.';
+                    Visible = false;
                 }
                 field("End User/ Main Customer"; Rec."End User/ Main Customer")
                 {
@@ -132,8 +129,40 @@ pageextension 50106 JobCardS365 extends "Job Card"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Sales Manager field.', Comment = '%';
                 }
+                field("Bank Details"; Rec."Bank Details")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Bank Details field.';
+                }
             }
         }
     }
-}
 
+    /* actions
+    {
+        addafter(Print)
+        {
+            action(TaxInvoice)
+            {
+                Caption = 'Tax Invoice';
+                Image = TaxPayment;
+                ToolTip = 'Generates the Tax Invoice for the selected sales order.';
+                ApplicationArea = Suite;
+                trigger OnAction()
+                var
+                    SalesInvHeader: Record "Sales Invoice Header";
+                begin
+                    SalesInvHeader.Reset();
+                    SalesInvHeader.SetRange("No.", Rec."No.");
+                    Report.Run(Report::"4HC Posted Sales Tax Invoice", true, true, SalesInvHeader);
+                end;
+            }
+        }
+        addlast(Category_Process)
+        {
+            actionref(TaxInvoice_Promoted; TaxInvoice)
+            {
+            }
+        }
+    } */
+}
