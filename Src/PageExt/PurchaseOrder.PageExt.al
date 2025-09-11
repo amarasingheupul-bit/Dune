@@ -8,6 +8,7 @@ pageextension 50115 "4HC Purchase Order" extends "Purchase Order"
             {
                 ShowCaption = true;
                 Caption = 'Additional Order Details';
+                Visible = false;
 
                 field("Commission Amount"; Rec."Commission Amount")
                 {

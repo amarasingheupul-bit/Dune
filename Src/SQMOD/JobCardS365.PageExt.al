@@ -24,6 +24,7 @@ pageextension 50106 JobCardS365 extends "Job Card"
                 ShowCaption = true;
                 Caption = 'Additional Order Details';
                 Editable = false;
+                Visible = false;
 
                 field("Change Reason S365"; Rec."Change Reason S365")
                 {

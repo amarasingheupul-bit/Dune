@@ -8,6 +8,7 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
             {
                 ShowCaption = true;
                 Caption = 'Additional Order Details';
+                Visible = false;
 
                 field("Commission Amount"; Rec."Commission Amount")
                 {

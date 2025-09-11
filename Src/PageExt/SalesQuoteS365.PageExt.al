@@ -2,19 +2,29 @@ pageextension 50102 "Sales Quote S365" extends "Sales Quote"
 {
     layout
     {
+        addlast(General)
+        {
+            field("Quote Type S365"; Rec."Quote Type S365")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Quote Type field.';
+                TableRelation = "Quote Type S365"."Code S365";
+            }
+            field("Job No. S365"; Rec."Job No. S365")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Job No.';
+            }
+        }
         addafter(General)
         {
             group("New Fields S365")
             {
                 ShowCaption = true;
                 Caption = 'Additional Quote Details';
+                Visible = false;
 
-                field("Quote Type S365"; Rec."Quote Type S365")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Quote Type field.';
-                    TableRelation = "Quote Type S365"."Code S365";
-                }
+
                 field("Change Reason S365"; Rec."Change Reason S365")
                 {
                     ApplicationArea = All;
@@ -118,11 +128,6 @@ pageextension 50102 "Sales Quote S365" extends "Sales Quote"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Incoming PO field.', Comment = '%';
-                }
-                field("Job No. S365"; Rec."Job No. S365")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the Job No.';
                 }
                 field("OPCO Customer"; Rec."OPCO Customer")
                 {

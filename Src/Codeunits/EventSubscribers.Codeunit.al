@@ -20,14 +20,14 @@ codeunit 50103 "4HC Event Subscribers"
         end;
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post (Yes/No)", OnBeforeConfirmPost, '', false, false)]
-    local procedure "Purch.-Post (Yes/No)_OnBeforeConfirmPost"(var PurchaseHeader: Record "Purchase Header"; var HideDialog: Boolean; var IsHandled: Boolean; var DefaultOption: Integer)
-    begin
-        if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then begin
-            DefaultOption := 1;
-            PurchaseHeader.Receive := true;
-        end;
-    end;
+    // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post (Yes/No)", OnBeforeConfirmPost, '', false, false)]
+    // local procedure "Purch.-Post (Yes/No)_OnBeforeConfirmPost"(var PurchaseHeader: Record "Purchase Header"; var HideDialog: Boolean; var IsHandled: Boolean; var DefaultOption: Integer)
+    // begin
+    //     if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then begin
+    //         DefaultOption := 1;
+    //         PurchaseHeader.Receive := true;
+    //     end;
+    // end;
 
     // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Posting Selection Management", OnBeforeGetPurchaseOrderPostingSelection, '', false, false)]
     // local procedure "Posting Selection Management_OnBeforeGetPurchaseOrderPostingSelection"(var PurchaseHeader: Record "Purchase Header"; DefaultOption: Integer; var IsHandled: Boolean; var Selection: Integer)
@@ -36,21 +36,21 @@ codeunit 50103 "4HC Event Subscribers"
     //     Selection := DefaultOption;
     // end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post + Print", OnAfterConfirmPost, '', false, false)]
-    local procedure "Purch.-Post + Print_OnAfterConfirmPost"(PurchaseHeader: Record "Purchase Header"; var IsHandled: Boolean)
-    begin
-        if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then
-            if PurchaseHeader.Invoice then
-                Error(this.PostingOnlyReceiveErr);
-    end;
+    // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post + Print", OnAfterConfirmPost, '', false, false)]
+    // local procedure "Purch.-Post + Print_OnAfterConfirmPost"(PurchaseHeader: Record "Purchase Header"; var IsHandled: Boolean)
+    // begin
+    //     if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then
+    //         if PurchaseHeader.Invoice then
+    //             Error(this.PostingOnlyReceiveErr);
+    // end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post (Yes/No)", OnAfterConfirmPost, '', false, false)]
-    local procedure "Purch.-Post (Yes/No)_OnAfterConfirmPost"(var PurchaseHeader: Record "Purchase Header"; var IsHandled: Boolean)
-    begin
-        if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then
-            if PurchaseHeader.Invoice then
-                Error(this.PostingOnlyReceiveErr);
-    end;
+    // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post (Yes/No)", OnAfterConfirmPost, '', false, false)]
+    // local procedure "Purch.-Post (Yes/No)_OnAfterConfirmPost"(var PurchaseHeader: Record "Purchase Header"; var IsHandled: Boolean)
+    // begin
+    //     if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then
+    //         if PurchaseHeader.Invoice then
+    //             Error(this.PostingOnlyReceiveErr);
+    // end;
 
     [EventSubscriber(ObjectType::Table, Database::"Job Planning Line", OnBeforeUpdateUnitCost, '', false, false)]
     local procedure "Job Planning Line_OnBeforeUpdateUnitCost"(var JobPlanningLine: Record "Job Planning Line"; var IsHandled: Boolean; xJobPlanningLine: Record "Job Planning Line")
@@ -162,6 +162,19 @@ codeunit 50103 "4HC Event Subscribers"
         SalesHeader.Validate("G/L Account", Job."G/L Account");
         SalesHeader.Validate("Incoming PO", Job."Incoming PO");
         SalesHeader.Modify();
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Copy Document Mgt.", OnAfterCopyPurchRcptLine, '', false, false)]
+    local procedure "Copy Document Mgt._OnAfterCopyPurchRcptLine"(FromPurchRcptLine: Record "Purch. Rcpt. Line"; var ToPurchaseLine: Record "Purchase Line")
+    begin
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", OnPostPurchLineOnAfterSetEverythingInvoiced, '', false, false)]
+    local procedure "Purch.-Post_OnPostPurchLineOnAfterSetEverythingInvoiced"(PurchaseLine: Record "Purchase Line"; var EverythingInvoiced: Boolean; PurchaseHeader: Record "Purchase Header")
+    begin
+        PurchaseLine."Qty Posted %" += PurchaseLine."Qty. to Post %";
+        PurchaseLine."Qty. Remaining %" := 100 - PurchaseLine."Qty Posted %";
+        PurchaseLine."Qty. to Post %" := 0;
     end;
 
 

@@ -33,16 +33,17 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 ToolTip = 'Specifies the value of the Qty. to Post % field.';
                 trigger OnValidate()
                 var
-                    Text001Err: Label '%1 cannot exceed %2.', Comment = '%1=Qty Posted %,%2=Qty. Remaining %';
+                    Text001Err: Label 'cannot exceed qty remaining precentage.';
                 begin
-                    if Rec."Qty. to Post %" > Rec."Qty. Remaining %" then
-                        Rec.FieldError("Qty. to Post %", StrSubstNo(Text001Err, Rec.FieldCaption("Qty Posted %"), Rec.FieldCaption("Qty. Remaining %")));
-                    Rec.Validate("Qty. to Transfer to Journal", (Rec."Qty. to Post %" / 100) * Rec.Quantity);
-                    Rec."Qty Posted %" += Rec."Qty. to Post %";
                     Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %";
+                    if Rec."Qty. to Post %" > Rec."Qty. Remaining %" then
+                        Rec.FieldError("Qty. to Post %", Text001Err);
+                    Rec.Validate("Qty. to Transfer to Journal", (Rec."Qty. to Post %" / 100) * Rec.Quantity);
 
-                    if Rec."Qty. Remaining %" = 0 then
-                        Rec."Qty. to Post %" := 0;
+                    Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %" - Rec."Qty. to Post %";
+
+                    // if Rec."Qty. Remaining %" = 0 then
+                    //     Rec."Qty. to Post %" := 0;
                 end;
             }
             field("Qty. Remaining %"; Rec."Qty. Remaining %")
@@ -233,8 +234,10 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 end;
                 PurchaeLine.Validate("No.", JobPlanningLine."No.");
                 PurchaeLine.Validate(Description, JobPlanningLine.Description);
-                PurchaeLine.Validate(Quantity, JobPlanningLine.Quantity);
+                PurchaeLine.Validate(Quantity, JobPlanningLine."Qty. to Transfer to Journal");
                 PurchaeLine.Validate("Unit Cost", JobPlanningLine."Unit Cost");
+
+                //  PurchaeLine.Validate("Unit Cost", JobPlanningLine."Unit Cost" * JobPlanningLine."Qty. to Transfer to Journal");
                 PurchaeLine.Validate("Unit Price (LCY)", JobPlanningLine."Unit Price (LCY)");
                 PurchaeLine.Validate("Job No.", JobPlanningLine."Job No.");
                 PurchaeLine.Validate("Job Task No.", JobPlanningLine."Job Task No.");
@@ -244,8 +247,13 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 PurchaeLine.Validate("Job Line Amount", JobPlanningLine."Line Amount");
                 PurchaeLine.Validate("Job Unit Price", JobPlanningLine."Unit Price");
                 PurchaeLine.Validate("Job Unit Price (LCY)", JobPlanningLine."Unit Price (LCY)");
+                // PurchaeLine.Validate("Direct Unit Cost", JobPlanningLine."Unit Cost" * JobPlanningLine."Qty. to Transfer to Journal");
                 PurchaeLine.Validate("Direct Unit Cost", JobPlanningLine."Unit Cost");
                 PurchaeLine.Insert();
+                JobPlanningLine."Qty Posted %" += JobPlanningLine."Qty. to Post %";
+                JobPlanningLine."Qty. Remaining %" := 100 - JobPlanningLine."Qty Posted %";
+                JobPlanningLine."Qty. to Post %" := 0;
+                JobPlanningLine.Modify();
             until JobPlanningLine.Next() = 0;
     end;
 

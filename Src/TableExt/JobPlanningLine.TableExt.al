@@ -31,8 +31,8 @@ tableextension 50107 "Job Planning Line" extends "Job Planning Line"
         field(50103; "Qty. to Post %"; Integer)
         {
             Caption = 'Qty. to Post %';
-            MaxValue = 100;
             MinValue = 0;
+            MaxValue = 100;
         }
         field(50104; "Qty. Remaining %"; Integer)
         {

@@ -18,7 +18,14 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
                     if RecJob.Get(Rec."Job No. S365") then PAGE.RUN(JobCardPageID, RecJob);
                 end;
             }
+            field("Quote Type S365"; Rec."Quote Type S365")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Quote Type field.';
+                TableRelation = "Quote Type S365"."Code S365";
+            }
         }
+
 
         addafter(General)
         {
@@ -26,13 +33,8 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
             {
                 ShowCaption = true;
                 Caption = 'Additional Order Details';
+                Visible = false;
 
-                field("Quote Type S365"; Rec."Quote Type S365")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Quote Type field.';
-                    TableRelation = "Quote Type S365"."Code S365";
-                }
                 field("Change Reason S365"; Rec."Change Reason S365")
                 {
                     ApplicationArea = All;
