@@ -149,6 +149,8 @@ codeunit 50101 "SQmodFunction S365"
                 Job.Validate("Project Manager", CopyfromJob."Project Manager");
                 // ...Copy SO code...
                 Job.Validate("Change Reason S365", Rec."Change Reason S365");
+                Job.Validate("Quote Type S365", Rec."Quote Type S365");
+                Job.Validate("External Document No.", Rec."External Document No.");
                 Job.Validate("Original Quote No. S365", Rec."Quote No.");
                 Job.Validate("ConfirmedS365", Rec."ConfirmedS365");
                 Job.Validate("Quote Status S365", Rec."Quote Status S365");

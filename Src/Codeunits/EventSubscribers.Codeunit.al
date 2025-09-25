@@ -169,6 +169,27 @@ codeunit 50103 "4HC Event Subscribers"
     begin
     end;
 
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Copy Job", OnCopyJobTasksOnBeforeTargetJobTaskInsert, '', false, false)]
+    local procedure "Copy Job_OnCopyJobTasksOnBeforeTargetJobTaskInsert"(var TargetJobTask: Record "Job Task"; SourceJobTask: Record "Job Task"; var IsHandled: Boolean)
+    begin
+        TargetJobTask.Validate("WIP-Total", TargetJobTask."WIP-Total"::" ");
+        TargetJobTask.Validate("WIP Method", '');
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnBeforeInsertSalesLine, '', false, false)]
+    local procedure "Job Create-Invoice_OnBeforeInsertSalesLine"(var SalesLine: Record "Sales Line"; var SalesHeader: Record "Sales Header"; Job: Record Job; JobPlanningLine: Record "Job Planning Line"; JobInvCurrency: Boolean)
+    begin
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnBeforeInsertSalesHeader, '', false, false)]
+    local procedure "Job Create-Invoice_OnBeforeInsertSalesHeader"(var SalesHeader: Record "Sales Header"; Job: Record Job; JobPlanningLine: Record "Job Planning Line")
+    begin
+        SalesHeader.Validate("Quote Type S365", Job."Quote Type S365");
+        SalesHeader.Validate("External Document No.", Job."External Document No.");
+        SalesHeader.Validate("Job No. S365", Job."No.");
+    end;
+
+
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", OnPostPurchLineOnAfterSetEverythingInvoiced, '', false, false)]
     local procedure "Purch.-Post_OnPostPurchLineOnAfterSetEverythingInvoiced"(PurchaseLine: Record "Purchase Line"; var EverythingInvoiced: Boolean; PurchaseHeader: Record "Purchase Header")
     begin
@@ -178,6 +199,7 @@ codeunit 50103 "4HC Event Subscribers"
     end;
 
 
-    var
-        PostingOnlyReceiveErr: Label 'Posting an invoice for a purchase order is not allowed. Please review the document and try again.';
+
+    // var
+    //     PostingOnlyReceiveErr: Label 'Posting an invoice for a purchase order is not allowed. Please review the document and try again.';
 }

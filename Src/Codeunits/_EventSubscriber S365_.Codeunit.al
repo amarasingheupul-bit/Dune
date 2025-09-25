@@ -53,6 +53,8 @@ codeunit 50100 "EventSubscriber S365"
             Job.Validate("Project Manager", CopyfromJob."Project Manager");
             // ...Copy SO code...
             Job.Validate("Change Reason S365", SalesHeader."Change Reason S365");
+            Job.Validate("Quote Type S365", SalesHeader."Quote Type S365");
+            Job.Validate("External Document No.", SalesHeader."External Document No.");
             Job.Validate("Original Quote No. S365", SalesHeader."Quote No.");
             Job.Validate("ConfirmedS365", SalesHeader."ConfirmedS365");
             Job.Validate("Quote Status S365", SalesHeader."Quote Status S365");

@@ -93,11 +93,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ServiceItemMatrixS365 - Field Service Item 2 S365 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Codeunit 3637815718 - NamedType 2696397302" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting an invoice for a purchase order is not allowed. Please review the document and try again.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit 4HC Event Subscribers - NamedType PostingOnlyReceiveErr</note>
-        </trans-unit>
         <trans-unit id="Codeunit 933017583 - Method 361191515 - NamedType 2613519981" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item %1 is incompatible with item %2.</source>
           <note from="Developer" annotates="general" priority="2">%1=Service Item 1,%2=Service Item 2</note>
@@ -1598,6 +1593,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension ItemChargeS365 - Control Minimum Charge S365 - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 999199578 - NamedType 2316870939" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 999199578">
+          <source>cannot exceed qty remaining precentage.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - NamedType Text001Err</note>
+        </trans-unit>
         <trans-unit id="PageExtension 999199578 - Action 1327387173 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
           <source>Create a new purchase order based on the job planning line details.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1628,6 +1628,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action SendNotifyS365 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 999199578 - Action 807258818 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Create a new purchase order based on the job planning line details.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action UpdateSequence - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 999199578 - Action 807258818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Update Sequecence</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action UpdateSequence - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 999199578 - Control 3548215378 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
           <source>Specifies whether the S365 step is completed.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1657,11 +1667,6 @@
           <source>Specifies the value of the Qty. to Post % field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Control Qty. to Post % - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Control 1938370512 - Method 2126772001 - NamedType 2316870939" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 999199578">
-          <source>cannot exceed qty remaining precentage.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Control Qty. to Post % - Method OnValidate - NamedType Text001Err</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 1936800243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Quote Type field.</source>

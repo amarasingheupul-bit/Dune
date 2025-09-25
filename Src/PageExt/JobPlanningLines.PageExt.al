@@ -33,14 +33,15 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 ToolTip = 'Specifies the value of the Qty. to Post % field.';
                 trigger OnValidate()
                 var
-                    Text001Err: Label 'cannot exceed qty remaining precentage.';
+                // Text001Err: Label 'cannot exceed qty remaining precentage.';
                 begin
-                    Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %";
-                    if Rec."Qty. to Post %" > Rec."Qty. Remaining %" then
-                        Rec.FieldError("Qty. to Post %", Text001Err);
-                    Rec.Validate("Qty. to Transfer to Journal", (Rec."Qty. to Post %" / 100) * Rec.Quantity);
+                    ValidateQtyPost();
+                    // Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %";
+                    // if Rec."Qty. to Post %" > Rec."Qty. Remaining %" then
+                    //     Rec.FieldError("Qty. to Post %", Text001Err);
+                    // Rec.Validate("Qty. to Transfer to Journal", (Rec."Qty. to Post %" / 100) * Rec.Quantity);
 
-                    Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %" - Rec."Qty. to Post %";
+                    // Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %" - Rec."Qty. to Post %";
 
                     // if Rec."Qty. Remaining %" = 0 then
                     //     Rec."Qty. to Post %" := 0;
@@ -105,6 +106,28 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 trigger OnAction()
                 begin
                     this.CreatePurchaseOrder();
+                end;
+            }
+            action(UpdateSequence)
+            {
+                ApplicationArea = All;
+                Caption = 'Update Sequecence';
+                Image = ImportCodes;
+                ToolTip = 'Create a new purchase order based on the job planning line details.';
+                trigger OnAction()
+                var
+                    JobPlanningLine: Record "Job Planning Line";
+                begin
+                    JobPlanningLine.SetRange("Job No.", Rec."Job No.");
+                    JobPlanningLine.SetRange("SEQNO S365", Rec."Predecessor Seq S365");
+                    if JobPlanningLine.Findfirst() then begin
+                        JobPlanningLine.Validate("Qty. to Post %", JobPlanningLine."Qty. to Post %" + Rec."Qty. to Post %");
+                        if JobPlanningLine."Qty. to Post %" > JobPlanningLine."Qty. Remaining %" then
+                            JobPlanningLine.FieldError("Qty. to Post %", Text001Err);
+                        JobPlanningLine.Validate("Qty. to Transfer to Journal", (JobPlanningLine."Qty. to Post %" / 100) * JobPlanningLine.Quantity);
+                        JobPlanningLine."Qty. Remaining %" := 100 - JobPlanningLine."Qty Posted %" - JobPlanningLine."Qty. to Post %";
+                        JobPlanningLine.Modify();
+                    end;
                 end;
             }
         }
@@ -259,4 +282,15 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
 
     var
         PurchaseOrderNo: Code[20];
+        Text001Err: Label 'cannot exceed qty remaining precentage.';
+
+    procedure ValidateQtyPost()
+    begin
+        Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %";
+        if Rec."Qty. to Post %" > Rec."Qty. Remaining %" then
+            Rec.FieldError("Qty. to Post %", Text001Err);
+        Rec.Validate("Qty. to Transfer to Journal", (Rec."Qty. to Post %" / 100) * Rec.Quantity);
+
+        Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %" - Rec."Qty. to Post %";
+    end;
 }
