@@ -1403,15 +1403,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order - Control Yard No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 612616028 - Control 4202475636 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 526152577">
+          <source>Specifies the value of the Qty Posted % field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order Subform - Control Qty Posted % - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 612616028 - Control 1703813413 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 526152577">
           <source>Specifies the value of the Qty. Remaining % field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order Subform - Control Qty. Remaining % - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 612616028 - Control 1938370512 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 526152577">
-          <source>Specifies the value of the Qty. to Post % field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order Subform - Control Qty. to Post % - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 612616028 - Control 1938370512 - Method 2126772001 - NamedType 2316870939" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 612616028">
           <source>cannot exceed qty remaining precentage.</source>
@@ -1593,81 +1593,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension ItemChargeS365 - Control Minimum Charge S365 - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 999199578 - NamedType 2316870939" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 999199578">
-          <source>cannot exceed qty remaining precentage.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - NamedType Text001Err</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Action 1327387173 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Create a new purchase order based on the job planning line details.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action CreatePurchaseOder - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Action 1327387173 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Create Purchase Order</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action CreatePurchaseOder - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Action 2683406929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Notification email &amp; Whse Receipt will be create</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action CreateWhseRcpS365 - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Action 2683406929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Send Whse Notification</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action CreateWhseRcpS365 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Action 2703094584 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Notification email will be send after configure email accounts</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action SendNotifyS365 - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Action 2703094584 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Send Notification</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action SendNotifyS365 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Action 807258818 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Create a new purchase order based on the job planning line details.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action UpdateSequence - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Action 807258818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Update Sequecence</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Action UpdateSequence - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Control 3548215378 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Specifies whether the S365 step is completed.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Control Completed S365 - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Control 99721227 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Specifies the S365 sequence number of the predecessor.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Control Predecessor Seq S365 - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Control 2558535 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Specifies the S365 sequence number of this task.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Control SEQNO S365 - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Control 4198939294 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Specifies the currency that is used on the entry.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Control Currency Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Control 1703813413 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Specifies the value of the Qty. Remaining % field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Control Qty. Remaining % - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 999199578 - Control 1938370512 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
-          <source>Specifies the value of the Qty. to Post % field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Control Qty. to Post % - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 1936800243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Quote Type field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1677,6 +1602,31 @@
           <source>Specify if the job is use as a template</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Use as TemplateS365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1629286867 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the 4HC Recog. Costs Amount field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control 4HC Recog. Costs Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1629286867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Recong. Costs Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control 4HC Recog. Costs Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1376862209 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the recognized profit amount for the project.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control 4HC Recog. Profit Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1376862209 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Recog. Profit Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control 4HC Recog. Profit Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 3874809222 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Provision for Costs field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Provision for Costs - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 3644359682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Additional Order Details</source>
@@ -1787,6 +1737,101 @@
           <source>Specifies the value of the Yard No. field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Yard No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Change 3565249444 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Unrecognized Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Change Total WIP Sales Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - NamedType 2316870939" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 674850633">
+          <source>cannot exceed qty remaining precentage.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - NamedType Text001Err</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Action 1327387173 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Create a new purchase order based on the job planning line details.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Action CreatePurchaseOder - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Action 1327387173 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Create Purchase Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Action CreatePurchaseOder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Action 2683406929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Notification email &amp; Whse Receipt will be create</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Action CreateWhseRcpS365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Action 2683406929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Send Whse Notification</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Action CreateWhseRcpS365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Action 2703094584 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Notification email will be send after configure email accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Action SendNotifyS365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Action 2703094584 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Send Notification</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Action SendNotifyS365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Action 807258818 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Create a new purchase order based on the job planning line details.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Action UpdateSequence - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Action 807258818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Update Sequecence</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Action UpdateSequence - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Control 3548215378 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Specifies whether the S365 step is completed.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Control Completed S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Control 99721227 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Specifies the S365 sequence number of the predecessor.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Control Predecessor Seq S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Control 2558535 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Specifies the S365 sequence number of this task.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Control SEQNO S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Control 2169225185 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Specifies the value of the Amount to Post field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Control Amount to Post - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Control 4198939294 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Specifies the currency that is used on the entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Control Currency Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Control 2193737767 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Specifies the value of the Posted Amount field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Control Posted Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Control 1703813413 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Specifies the value of the Qty. Remaining % field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Control Qty. Remaining % - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Control 1938370512 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Specifies the value of the Qty. to Post % field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Control Qty. to Post % - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 674850633 - Control 3429880349 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2097003905">
+          <source>Specifies the value of the Remaining Amount to Post field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobPlanningLines - Control Remaining Amount to Post - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 277553983 - Control 1456408165 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2288457370">
           <source>Specifies the post code Type.</source>
@@ -2583,10 +2628,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Line - Field Qty Posted % - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3491917174 - Field 1703813413 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+          <source>Specifies the value of the Qty. Remaining % field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Line - Field Qty. Remaining % - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3491917174 - Field 1703813413 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
           <source>Qty. Remaining %</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Line - Field Qty. Remaining % - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3491917174 - Field 1938370512 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+          <source>Specifies the value of the Qty. to Post % field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Line - Field Qty. to Post % - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 3491917174 - Field 1938370512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
           <source>Qty. to Post %</source>
@@ -2833,10 +2888,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension ItemChargeS365 - Field QuoteType S365 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1537641792 - Field 2169225185 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1537641792">
+          <source>Amount to Post</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Planning Line - Field Amount to Post - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1537641792 - Field 3548215378 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1537641792">
           <source>Completed</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Planning Line - Field Completed S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1537641792 - Field 2193737767 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1537641792">
+          <source>Posted Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Planning Line - Field Posted Amount - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1537641792 - Field 99721227 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1537641792">
           <source>Predecessor Seq.</source>
@@ -2858,10 +2923,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Planning Line - Field Qty. to Post % - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1537641792 - Field 3429880349 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1537641792">
+          <source>Remaining Amount to Post</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Planning Line - Field Remaining Amount to Post - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1537641792 - Field 2558535 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1537641792">
           <source>Seq. No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Job Planning Line - Field SEQNO S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 1629286867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Recong. Costs Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field 4HC Recog. Costs Amount - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1069779217 - Field 161482641 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Type</source>
@@ -2947,6 +3022,11 @@
           <source>Original Quote No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Original Quote No. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 3874809222 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Provision for Costs</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Provision for Costs - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1069779217 - Field 2521638095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Quote Status</source>

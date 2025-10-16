@@ -7,7 +7,7 @@
             "type": "al",
             "environmentType": "Sandbox",
             "environmentName": "DUNE-TEST",
-            "startupObjectId": 22,
+            "startupObjectId": 89,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "tenant": "732ba761-d72c-4827-aa83-0879d0f1fdbf",

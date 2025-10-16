@@ -44,5 +44,17 @@ tableextension 50107 "Job Planning Line" extends "Job Planning Line"
             MaxValue = 100;
             MinValue = 0;
         }
+        field(50107; "Amount to Post"; Decimal)
+        {
+            Caption = 'Amount to Post';
+        }
+        field(50108; "Remaining Amount to Post"; Decimal)
+        {
+            Caption = 'Remaining Amount to Post';
+        }
+        field(50106; "Posted Amount"; Decimal)
+        {
+            Caption = 'Posted Amount';
+        }
     }
 }

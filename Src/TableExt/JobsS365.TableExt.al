@@ -13,6 +13,10 @@ tableextension 50105 JobsS365 extends Job
             Caption = 'Quote Type';
             TableRelation = "Quote Type S365"."Code S365";
         }
+        field(50114; "Provision for Costs"; Decimal)
+        {
+            Caption = 'Provision for Costs';
+        }
         modify(Status)
         {
             trigger OnBeforeValidate()
@@ -220,9 +224,16 @@ tableextension 50105 JobsS365 extends Job
         }
         field(50113; "Sales Order No. 4HC"; Code[20])
         {
-            DataClassification = ToBeClassified;
-
             Caption = 'Sales Order No.';
         }
+        field(50115; "4HC Recog. Costs Amount"; Decimal)
+        {
+            Caption = 'Recong. Costs Amount';
+        }
     }
+    procedure CalcRecognizedProfitAmount4HC() Result: Decimal
+    begin
+        CalcFields("Calc. Recog. Sales Amount");
+        Result := "Calc. Recog. Sales Amount" - "4HC Recog. Costs Amount";
+    end;
 }

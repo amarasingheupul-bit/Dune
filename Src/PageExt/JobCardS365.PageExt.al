@@ -16,7 +16,43 @@ pageextension 50106 JobCardS365 extends "Job Card"
                 TableRelation = "Quote Type S365"."Code S365";
             }
         }
-
+        modify("Total WIP Sales Amount")
+        {
+            Caption = 'Unrecognized Sales';
+        }
+        modify("Total WIP Cost Amount")
+        {
+            Visible = false;
+        }
+        addafter("Total WIP Sales Amount")
+        {
+            field("Provision for Costs"; Rec."Provision for Costs")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Provision for Costs field.';
+                Editable = false;
+            }
+            field("4HC Recog. Costs Amount"; Rec."4HC Recog. Costs Amount")
+            {
+                ApplicationArea = All;
+                Caption = 'Recong. Costs Amount';
+                ToolTip = 'Specifies the value of the 4HC Recog. Costs Amount field.';
+            }
+            field("4HC Recog. Profit Amount"; Rec.CalcRecognizedProfitAmount4HC())
+            {
+                ApplicationArea = Jobs;
+                Caption = 'Recog. Profit Amount';
+                ToolTip = 'Specifies the recognized profit amount for the project.';
+            }
+        }
+        modify("Recog. Costs Amount")
+        {
+            Visible = false;
+        }
+        modify("Recog. Profit Amount")
+        {
+            Visible = false;
+        }
         addafter(General)
         {
             group("New Fields S365")

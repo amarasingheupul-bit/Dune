@@ -52,7 +52,6 @@ pageextension 50126 "4HC Posted Sales Invoice" extends "Posted Sales Invoice"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Supplier to Services field.', Comment = '%';
                 }
-
                 field("Sales Derector/ Area Director"; Rec."Sales Director/ Area Director")
                 {
                     ApplicationArea = All;

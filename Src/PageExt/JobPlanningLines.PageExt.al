@@ -1,4 +1,4 @@
-pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
+pageextension 50109 "JobPlanningLines" extends "Job Planning Lines"
 {
     layout
     {
@@ -53,10 +53,52 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 Editable = false;
                 ToolTip = 'Specifies the value of the Qty. Remaining % field.';
             }
+            field("Amount to Post"; Rec."Amount to Post")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Amount to Post field.';
+                trigger OnValidate()
+                begin
+                    ValidateAmountToPost();
+                end;
+            }
+            field("Posted Amount"; Rec."Posted Amount")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Posted Amount field.';
+                Editable = false;
+            }
+            field("Remaining Amount to Post"; Rec."Remaining Amount to Post")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Remaining Amount to Post field.';
+                Editable = false;
+            }
+        }
+        modify("Qty. to Invoice")
+        {
+            Visible = true;
+        }
+        modify("Qty. Invoiced")
+        {
+            Visible = true;
+        }
+        modify("Qty. Transferred to Invoice")
+        {
+            Visible = true;
+        }
+        modify("Qty. to Transfer to Invoice")
+        {
+            Editable = false;
+            Visible = true;
         }
         modify("Qty. to Transfer to Journal")
         {
             Editable = false;
+        }
+        modify("Qty. Posted")
+        {
+            Visible = true;
         }
         modify(Quantity)
         {
@@ -102,6 +144,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 ApplicationArea = All;
                 Caption = 'Create Purchase Order';
                 Image = Purchase;
+                Enabled = ActionEnabled;
                 ToolTip = 'Create a new purchase order based on the job planning line details.';
                 trigger OnAction()
                 begin
@@ -121,15 +164,24 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                     JobPlanningLine.SetRange("Job No.", Rec."Job No.");
                     JobPlanningLine.SetRange("SEQNO S365", Rec."Predecessor Seq S365");
                     if JobPlanningLine.Findfirst() then begin
-                        JobPlanningLine.Validate("Qty. to Post %", JobPlanningLine."Qty. to Post %" + Rec."Qty. to Post %");
-                        if JobPlanningLine."Qty. to Post %" > JobPlanningLine."Qty. Remaining %" then
-                            JobPlanningLine.FieldError("Qty. to Post %", Text001Err);
-                        JobPlanningLine.Validate("Qty. to Transfer to Journal", (JobPlanningLine."Qty. to Post %" / 100) * JobPlanningLine.Quantity);
+                        JobPlanningLine.Validate("Qty. to Post %", Rec."Qty. to Post %");
+                        // if JobPlanningLine."Qty. to Post %" > JobPlanningLine."Qty. Remaining %" then
+                        //     JobPlanningLine.FieldError("Qty. to Post %", Text001Err);
+                        JobPlanningLine.Validate("Qty. to Transfer to Journal", (Rec."Qty. to Post %" / 100) * JobPlanningLine.Quantity);
+                        JobPlanningLine.Validate("Qty. to Transfer to Invoice", (Rec."Qty. to Post %" / 100) * JobPlanningLine.Quantity);
                         JobPlanningLine."Qty. Remaining %" := 100 - JobPlanningLine."Qty Posted %" - JobPlanningLine."Qty. to Post %";
                         JobPlanningLine.Modify();
+                        Rec."Qty Posted %" += Rec."Qty. to Post %";
+                        Rec."Qty. to Post %" := 0;
+                        Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %" - Rec."Qty. to Post %";
+                        Rec.Modify();
                     end;
                 end;
             }
+        }
+        modify("Create &Sales Invoice")
+        {
+            Enabled = ActionEnabled;
         }
         addlast(Category_Process)
         {
@@ -141,6 +193,16 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
             }
         }
     }
+    var
+        ActionEnabled: Boolean;
+
+    trigger OnAfterGetCurrRecord()
+    begin
+        if Rec."Line Type" = Rec."Line Type"::"Both Budget and Billable" then
+            ActionEnabled := true
+        else
+            ActionEnabled := false;
+    end;
 
     local procedure CreatePurchaseOrder()
     var
@@ -261,7 +323,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 PurchaeLine.Validate("Unit Cost", JobPlanningLine."Unit Cost");
 
                 //  PurchaeLine.Validate("Unit Cost", JobPlanningLine."Unit Cost" * JobPlanningLine."Qty. to Transfer to Journal");
-                PurchaeLine.Validate("Unit Price (LCY)", JobPlanningLine."Unit Price (LCY)");
+                PurchaeLine.Validate("Unit Price (LCY)", JobPlanningLine."Unit Price (LCY)" * JobPlanningLine."Qty. to Transfer to Journal");
                 PurchaeLine.Validate("Job No.", JobPlanningLine."Job No.");
                 PurchaeLine.Validate("Job Task No.", JobPlanningLine."Job Task No.");
                 PurchaeLine.Validate("Job Planning Line No.", JobPlanningLine."Line No.");
@@ -286,11 +348,20 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
 
     procedure ValidateQtyPost()
     begin
-        Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %";
-        if Rec."Qty. to Post %" > Rec."Qty. Remaining %" then
-            Rec.FieldError("Qty. to Post %", Text001Err);
-        Rec.Validate("Qty. to Transfer to Journal", (Rec."Qty. to Post %" / 100) * Rec.Quantity);
-
         Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %" - Rec."Qty. to Post %";
+        if Rec."Line Type" = Rec."Line Type"::"Both Budget and Billable" then begin
+            Rec.Validate("Qty. to Transfer to Journal", (Rec."Qty. to Post %" / 100) * Rec.Quantity);
+            Rec.Validate("Qty. to Transfer to Invoice", (Rec."Qty. to Post %" / 100) * Rec.Quantity);
+        end;
+    end;
+
+    procedure ValidateAmountToPost()
+    begin
+        Rec.TestField("Line Amount");
+        Rec."Remaining Amount to Post" := Rec."Line Amount" - Rec."Posted Amount" - Rec."Amount to Post";
+        if Rec."Line Type" = Rec."Line Type"::"Both Budget and Billable" then begin
+            Rec.Validate("Qty. to Transfer to Journal", (Rec."Amount to Post" / Rec."Line Amount") * Rec.Quantity);
+            Rec.Validate("Qty. to Transfer to Invoice", (Rec."Amount to Post" / Rec."Line Amount") * Rec.Quantity);
+        end;
     end;
 }

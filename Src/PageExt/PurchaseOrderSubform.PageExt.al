@@ -18,25 +18,32 @@ pageextension 50127 "4HC Purchase Order Subform" extends "Purchase Order Subform
         {
             field("Qty. to Post %"; Rec."Qty. to Post %")
             {
+                Visible = false;
                 ApplicationArea = All;
-                ToolTip = 'Specifies the value of the Qty. to Post % field.';
                 trigger OnValidate()
                 var
                     Text001Err: Label 'cannot exceed qty remaining precentage.';
                 begin
-                    Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %";
                     if Rec."Qty. to Post %" > Rec."Qty. Remaining %" then
                         Rec.FieldError("Qty. to Post %", Text001Err);
                     Rec.Validate("Qty. to Receive", (Rec."Qty. to Post %" / 100) * Rec.Quantity);
 
-                    Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %" - Rec."Qty. to Post %";
+                    Rec."Qty. Remaining %" := 100 - Rec."Qty Posted %";
                 end;
             }
             field("Qty. Remaining %"; Rec."Qty. Remaining %")
             {
+                ToolTip = 'Specifies the value of the Qty. Remaining % field.';
                 ApplicationArea = All;
                 Editable = false;
-                ToolTip = 'Specifies the value of the Qty. Remaining % field.';
+                Visible = false;
+            }
+            field("Qty Posted %"; Rec."Qty Posted %")
+            {
+                ToolTip = 'Specifies the value of the Qty Posted % field.';
+                ApplicationArea = All;
+                Editable = false;
+                Visible = false;
             }
         }
     }

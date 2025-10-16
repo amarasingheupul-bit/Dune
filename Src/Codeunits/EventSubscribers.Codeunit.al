@@ -132,8 +132,8 @@ codeunit 50103 "4HC Event Subscribers"
             Error('You can not post without sales director approval.');
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnAfterCreateSalesLine, '', false, false)]
-    local procedure "Job Create-Invoice_OnAfterCreateSalesLine"(var SalesLine: Record "Sales Line"; SalesHeader: Record "Sales Header"; Job: Record Job; var JobPlanningLine: Record "Job Planning Line")
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnBeforeModifySalesHeader, '', false, false)]
+    local procedure "Job Create-Invoice_OnBeforeModifySalesHeader"(var SalesHeader: Record "Sales Header"; Job: Record Job; JobPlanningLine: Record "Job Planning Line")
     begin
         SalesHeader.Validate("Change Reason S365", Job."Change Reason S365");
         SalesHeader.Validate("Original Quote No. S365", Job."Original Quote No. S365");
@@ -161,7 +161,7 @@ codeunit 50103 "4HC Event Subscribers"
         SalesHeader.Validate("COST Reference", Job."COST Reference");
         SalesHeader.Validate("G/L Account", Job."G/L Account");
         SalesHeader.Validate("Incoming PO", Job."Incoming PO");
-        SalesHeader.Modify();
+        //SalesHeader.Modify();
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Copy Document Mgt.", OnAfterCopyPurchRcptLine, '', false, false)]
@@ -179,6 +179,16 @@ codeunit 50103 "4HC Event Subscribers"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnBeforeInsertSalesLine, '', false, false)]
     local procedure "Job Create-Invoice_OnBeforeInsertSalesLine"(var SalesLine: Record "Sales Line"; var SalesHeader: Record "Sales Header"; Job: Record Job; JobPlanningLine: Record "Job Planning Line"; JobInvCurrency: Boolean)
     begin
+        SalesLine.Validate("Shortcut Dimension 1 Code", JobPlanningLine."Job No.");
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnAfterCreateSalesLine, '', false, false)]
+    local procedure "Job Create-Invoice_OnAfterCreateSalesLine"(var SalesLine: Record "Sales Line"; SalesHeader: Record "Sales Header"; Job: Record Job; var JobPlanningLine: Record "Job Planning Line")
+    begin
+        JobPlanningLine."Qty Posted %" += JobPlanningLine."Qty. to Post %";
+        JobPlanningLine."Qty. to Post %" := 0;
+        JobPlanningLine."Qty. Remaining %" := 100 - JobPlanningLine."Qty Posted %";
+        JobPlanningLine.Modify();
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnBeforeInsertSalesHeader, '', false, false)]
@@ -188,18 +198,56 @@ codeunit 50103 "4HC Event Subscribers"
         SalesHeader.Validate("External Document No.", Job."External Document No.");
         SalesHeader.Validate("Job No. S365", Job."No.");
     end;
+    // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", OnPostPurchLineOnAfterSetEverythingInvoiced, '', false, false)]
+    // local procedure "Purch.-Post_OnPostPurchLineOnAfterSetEverythingInvoiced"(PurchaseLine: Record "Purchase Line"; var EverythingInvoiced: Boolean; PurchaseHeader: Record "Purchase Header")
+    // begin
+    // end;
 
-
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", OnPostPurchLineOnAfterSetEverythingInvoiced, '', false, false)]
-    local procedure "Purch.-Post_OnPostPurchLineOnAfterSetEverythingInvoiced"(PurchaseLine: Record "Purchase Line"; var EverythingInvoiced: Boolean; PurchaseHeader: Record "Purchase Header")
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", OnAfterPurchInvLineInsert, '', false, false)]
+    local procedure "Purch.-Post_OnAfterPurchInvLineInsert"(var PurchInvLine: Record "Purch. Inv. Line"; PurchInvHeader: Record "Purch. Inv. Header"; PurchLine: Record "Purchase Line"; ItemLedgShptEntryNo: Integer; WhseShip: Boolean; WhseReceive: Boolean; CommitIsSupressed: Boolean; PurchHeader: Record "Purchase Header"; PurchRcptHeader: Record "Purch. Rcpt. Header"; TempWhseRcptHeader: Record "Warehouse Receipt Header"; var ItemJnlPostLine: Codeunit "Item Jnl.-Post Line")
     begin
+
+    end;
+    // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", OnAfterPurchRcptLineInsert, '', false, false)]
+    // local procedure "Purch.-Post_OnAfterPurchRcptLineInsert"(PurchaseLine: Record "Purchase Line"; var PurchRcptLine: Record "Purch. Rcpt. Line"; ItemLedgShptEntryNo: Integer; WhseShip: Boolean; WhseReceive: Boolean; CommitIsSupressed: Boolean; PurchInvHeader: Record "Purch. Inv. Header"; var TempTrackingSpecification: Record "Tracking Specification" temporary; PurchRcptHeader: Record "Purch. Rcpt. Header"; TempWhseRcptHeader: Record "Warehouse Receipt Header"; xPurchLine: Record "Purchase Line"; var TempPurchLineGlobal: Record "Purchase Line" temporary)
+    // begin
+    //     Message('OnAfterPurchRcptLineInsert- %1', PurchRcptLine."Line No.");
+    // end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", OnAfterPostPurchLine, '', false, false)]
+    local procedure "Purch.-Post_OnAfterPostPurchLine"(var PurchaseHeader: Record "Purchase Header"; var PurchaseLine: Record "Purchase Line"; CommitIsSupressed: Boolean; var PurchInvLine: Record "Purch. Inv. Line"; var PurchCrMemoLine: Record "Purch. Cr. Memo Line"; var PurchInvHeader: Record "Purch. Inv. Header"; var PurchCrMemoHdr: Record "Purch. Cr. Memo Hdr."; var PurchLineACY: Record "Purchase Line"; GenJnlLineDocType: Enum "Gen. Journal Document Type"; GenJnlLineDocNo: Code[20]; GenJnlLineExtDocNo: Code[35]; SrcCode: Code[10]; xPurchaseLine: Record "Purchase Line")
+    var
+        JobPlanningLine: Record "Job Planning Line";
+    begin
+        // if JobPlanningLine.Get(PurchaseLine."Job No.", PurchaseLine."Job Task No.", PurchaseLine."Job Planning Line No.") then begin
+        //     JobPlanningLine.Validate("Qty. to Transfer to Journal", (PurchaseLine."Qty. to Post %" / 100) * JobPlanningLine.Quantity);
+        //     JobPlanningLine.Modify();
+        // end;
+
         PurchaseLine."Qty Posted %" += PurchaseLine."Qty. to Post %";
         PurchaseLine."Qty. Remaining %" := 100 - PurchaseLine."Qty Posted %";
-        PurchaseLine."Qty. to Post %" := 0;
+        PurchaseLine."Qty. to Post %" := 100 - PurchaseLine."Qty Posted %";
+        //PurchaseLine."Qty. to Post %" := 0;
+        //PurchaseLine.Validate("Qty. to Invoice", PurchaseLine."Quantity Received");
+        PurchaseLine.Modify();
     end;
 
-
-
-    // var
-    //     PostingOnlyReceiveErr: Label 'Posting an invoice for a purchase order is not allowed. Please review the document and try again.';
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Calculate WIP", OnJobCalcWIPOnBeforeJobModify, '', false, false)]
+    local procedure "Job Calculate WIP_OnJobCalcWIPOnBeforeJobModify"(var Job: Record Job; var JobComplete: Boolean)
+    var
+        PurchaseLine: Record "Purchase Line";
+    begin
+        PurchaseLine.Reset();
+        Job."Provision for Costs" := 0;
+        Job."4HC Recog. Costs Amount" := 0;
+        PurchaseLine.SetRange("Document Type", PurchaseLine."Document Type"::Order);
+        PurchaseLine.SetRange("Job No.", Job."No.");
+        if PurchaseLine.FindSet() then
+            repeat
+                Job."Provision for Costs" += Abs((PurchaseLine."Direct Unit Cost" * PurchaseLine."Quantity Invoiced") - (PurchaseLine."Direct Unit Cost" * PurchaseLine."Quantity Received"));
+                Job."4HC Recog. Costs Amount" += Abs((PurchaseLine."Direct Unit Cost" * PurchaseLine."Quantity Invoiced"));
+            until PurchaseLine.Next() = 0
+        else
+            Job."Provision for Costs" := 0;
+    end;
 }
