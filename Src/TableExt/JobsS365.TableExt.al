@@ -230,6 +230,59 @@ tableextension 50105 JobsS365 extends Job
         {
             Caption = 'Recong. Costs Amount';
         }
+        field(50116; "Revenue Cumulative"; Decimal)
+        {
+            Caption = 'Revenue Cumulative';
+        }
+        field(50139; "Revenue As of Date"; Decimal)
+        {
+            Caption = 'Revenue (As of Date)';
+        }
+        field(50117; "Cost of Sales Cumulative"; Decimal)
+        {
+            Caption = 'Cost of Sales Cumulative';
+        }
+        field(50141; "Cost of Sales As of Date"; Decimal)
+        {
+            Caption = 'Cost of Sales (As of Date)';
+        }
+        field(50118; "WIP Cumulative"; Decimal)
+        {
+            Caption = 'WIP Cumulative';
+        }
+        field(50142; "WIP As of Date"; Decimal)
+        {
+            Caption = 'WIP Provision (As of Date)';
+        }
+        field(50119; "Advance"; Decimal)
+        {
+            Caption = 'Advance';
+        }
+        field(50011; "GP As of Date"; Decimal)
+        {
+            Caption = 'GP (As of Date)';
+        }
+        field(50120; "GP Cumulative"; Decimal)
+        {
+            Caption = 'GP Cumulative';
+        }
+        field(50121; "GP % Cumulative"; Decimal)
+        {
+            Caption = 'GP % Cumulative';
+        }
+        field(50012; "GP % As of Date"; Decimal)
+        {
+            Caption = 'GP % (As of Date)';
+        }
+        field(50143; "Interim Cumulative"; Decimal)
+        {
+            Caption = 'Interim Cumulative';
+        }
+        field(50144; "Interim As of Date"; Decimal)
+        {
+            Caption = 'Interim (As of Date)';
+        }
+
     }
     procedure CalcRecognizedProfitAmount4HC() Result: Decimal
     begin

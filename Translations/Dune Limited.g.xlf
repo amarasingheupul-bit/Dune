@@ -963,6 +963,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Customer Card - Control REF SAP ID - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3302123008 - Control 3302123008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
+          <source>Projec Summary Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Jobs Setup - Control 4HC Jobs Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3302123008 - Control 3692012582 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
+          <source>Specifies the value of the Advance Account No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Jobs Setup - Control Advance Acc. No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3302123008 - Control 88739030 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
+          <source>Specifies the value of the Cost of Sales Account No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Jobs Setup - Control Cost of Sales Acc. No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3302123008 - Control 538317180 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
+          <source>Specifies the value of the Interim Account No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Jobs Setup - Control Interim Acc. No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3302123008 - Control 1499075310 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
+          <source>Specifies the value of the Revenue Account No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Jobs Setup - Control Revenue Acc. No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3302123008 - Control 1109511946 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
+          <source>Specifies the value of the WIP Account No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Jobs Setup - Control WIP Acc. No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1845159254 - Change 4176871437 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2077750279">
           <source>Invoiced (Total Price)(LCY)</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1593,6 +1623,31 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension ItemChargeS365 - Control Minimum Charge S365 - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Method 500345144 - NamedType 1504263587" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 3263937204">
+          <source>&lt;-CY-1D&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Method CalculateProjectSummaryFields - NamedType LastYearLastDayLbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Method 500345144 - NamedType 1093667910" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 3263937204">
+          <source>&lt;-CY&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Method CalculateProjectSummaryFields - NamedType CurrentYearFirstDayLbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Action 4224439383 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Calculate Project Summary fields.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Action CalculateProjectSummary - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Action 4224439383 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Calculate Project Summary</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Action CalculateProjectSummary - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1127663736 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the date formula to calculate As of Date fields.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control DateFormulav - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 1936800243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Quote Type field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1623,10 +1678,80 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control 4HC Recog. Profit Amount - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 2912375603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Project Summary</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Project Summary - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 2473906886 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Advance field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Advance - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 3860019295 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Cost of Sales (As of Date) field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Cost of Sales As of Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 2797312855 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the GP % (As of Date) field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control GP % As of Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1404459884 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the GP (As of Date) field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control GP As of Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 2749706777 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Interim (As of Date) field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Interim As of Date - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 3874809222 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Provision for Costs field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Provision for Costs - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1429004039 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Revenue (As of Date) field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Revenue As of Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 3611504171 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the WIP Provision (As of Date) field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control WIP As of Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1305010921 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Cost of Sales Cumulative field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Cost of Sales Cumulative - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1915666625 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the GP % Cumulative field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control GP % Cumulative - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 253763654 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the GP Cumulative field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control GP Cumulative - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 908359711 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Interim Cumulative field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Interim Cumulative - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1896632689 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Revenue Cumulative field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Revenue Cumulative - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 2992209557 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the WIP Cumulative field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control WIP Cumulative - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 3644359682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Additional Order Details</source>
@@ -1635,12 +1760,12 @@
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 161482641 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Type field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control 4HC Type - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 4030203231 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Budget field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Budget - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 2579989435 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
@@ -1655,37 +1780,37 @@
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 864848052 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Cost Center field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Cost Center - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 3317903716 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the COST Reference field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control COST Reference - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 3885663858 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the End User field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control End User/ Main Customer - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 4274826855 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the G/L Account field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control G/L Account - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 2963593091 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Incoming PO field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Incoming PO - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 2178783130 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Milestones with Dates and Amounts field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Milestones Dates and Amounts - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 2061908761 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the OPCO Customer field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control OPCO Customer - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 3268711329 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
@@ -1700,48 +1825,43 @@
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 517255489 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Sales Area field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Sales Area - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 1705126952 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Sales Derector/ Area Director field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Sales Derector/ Area Director - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 1160409541 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Sales Manager field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Sales Manager - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 4138736989 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Sales Secretary Name field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Sales Secretary Name - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 2554859677 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Sales Secretary No. field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Sales Secretary No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 1481805809 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Sales/ Area Director Name field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Sales/ Area Director Name - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 4026166715 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Supplier to Services field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Supplier to Services - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 2984497355 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Yard No. field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Yard No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3263937204 - Change 3565249444 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
-          <source>Unrecognized Sales</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Change Total WIP Sales Amount - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Yard No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 674850633 - NamedType 2316870939" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 674850633">
           <source>cannot exceed qty remaining precentage.</source>
@@ -2212,6 +2332,31 @@
           <source>Actual (Total Cost)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Job Task - Field 4HC Usage (Total Cost) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3302123008 - Field 3692012582 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2556642749">
+          <source>Advance Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Jobs Setup - Field Advance Acc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3302123008 - Field 88739030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2556642749">
+          <source>Cost of Sales Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Jobs Setup - Field Cost of Sales Acc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3302123008 - Field 538317180 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2556642749">
+          <source>Interim Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Jobs Setup - Field Interim Acc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3302123008 - Field 1499075310 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2556642749">
+          <source>Revenue Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Jobs Setup - Field Revenue Acc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3302123008 - Field 1109511946 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2556642749">
+          <source>WIP Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Jobs Setup - Field WIP Acc. No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 948923815 - Field 161482641 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
           <source>Type</source>
@@ -2943,6 +3088,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field 4HC Type - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 2473906886 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Advance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Advance - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1069779217 - Field 468188380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Amend &amp; Archived</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2973,6 +3123,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Cost Center - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 3860019295 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Cost of Sales (As of Date)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Cost of Sales As of Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 1305010921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Cost of Sales Cumulative</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Cost of Sales Cumulative - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1069779217 - Field 3317903716 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>COST Reference</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2988,6 +3148,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field G/L Account - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 2797312855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>GP % (As of Date)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field GP % As of Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 1915666625 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>GP % Cumulative</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field GP % Cumulative - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 1404459884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>GP (As of Date)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field GP As of Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 253763654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>GP Cumulative</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field GP Cumulative - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1069779217 - Field 1444093971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Group Customer with One Stream Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3002,6 +3182,16 @@
           <source>Incoming PO</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Incoming PO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 2749706777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Interim (As of Date)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Interim As of Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 908359711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Interim Cumulative</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Interim Cumulative - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1069779217 - Field 2110713744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Job No. Template</source>
@@ -3037,6 +3227,16 @@
           <source>Quote Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Quote Type S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 1429004039 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Revenue (As of Date)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Revenue As of Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 1896632689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Revenue Cumulative</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Revenue Cumulative - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1069779217 - Field 517255489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Sales Area</source>
@@ -3097,6 +3297,16 @@
           <source>Use as Template</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Use as TemplateS365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 3611504171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>WIP Provision (As of Date)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field WIP As of Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 2992209557 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>WIP Cumulative</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field WIP Cumulative - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1069779217 - Field 2984497355 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Yard No.</source>
