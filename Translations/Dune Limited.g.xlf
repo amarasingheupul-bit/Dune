@@ -838,6 +838,51 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2638489375 - Control 3819752341 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assigned To</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control AssignedTo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2638489375 - Control 3425251533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assigned By</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control CreatedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2638489375 - Control 3192175264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2638489375 - Control 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2638489375 - Control 949215307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2638489375 - Control 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2638489375 - Control 658995751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control TaskCategory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2638489375 - Action 632022603 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the selected task.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Action OpenTask - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2638489375 - Action 632022603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Task</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Action OpenTask - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 4145339148 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Chart of accounts watchlist</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2232,6 +2277,11 @@
           <source>Resource Allocation</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension BusinessManagerRoleCenter - Action ResourceAllocation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 242096404 - Control 1814464443 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3218241539">
+          <source>Specifies the user name associated with this to-do.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Create TaskExt - Control User - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 2691779624 - Control 3527421867 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 200707616">
           <source>Specify the Quote Type</source>
@@ -4147,6 +4197,11 @@
           <source>Gennext Warranty Start Date (Parts)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension ServiceItem - Field GennextWarrantySDParts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2244451808 - Field 1814464443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1837078383">
+          <source>User</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension To-doExt - Field User - Property Caption</note>
         </trans-unit>
         <trans-unit id="Profile 2565654145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AdaptView Financials</source>

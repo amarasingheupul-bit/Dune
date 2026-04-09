@@ -36,6 +36,11 @@ pageextension 50113 BusinessManagerRoleCenter extends "Business Manager Role Cen
             {
                 ApplicationArea = All;
             }
+
+        }
+        modify("User Tasks Activities")
+        {
+            Visible = false;
         }
         modify(Control16)
         {
@@ -65,6 +70,11 @@ pageextension 50113 BusinessManagerRoleCenter extends "Business Manager Role Cen
         {
             Visible = false;
         }
+        modify(Control139)
+        {
+            Visible = false;
+        }
+
     }
     actions
     {

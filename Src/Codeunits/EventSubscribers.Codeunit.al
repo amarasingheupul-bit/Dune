@@ -250,4 +250,15 @@ codeunit 50103 "4HC Event Subscribers"
         else
             Job."Provision for Costs" := 0;
     end;
+
+    // [EventSubscriber(ObjectType::Table, Database::"To-do", 'OnBeforeValidateSalespersonCode', '', false, false)]
+    // local procedure OnBeforeValidateSalespersonCode(var IsHandled: Boolean; var Task: Record "To-do")
+    // begin
+    //     Message('hiii');
+    //     if IsHandled then
+    //         exit;
+
+    //     // Completely skip the Salesperson Code mandatory validation
+    //     IsHandled := true;
+    // end;
 }
