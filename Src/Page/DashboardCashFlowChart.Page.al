@@ -8,43 +8,27 @@ page 50115 "Dashboard Cash Flow Chart"
     {
         area(Content)
         {
-            group(SummaryHeaders)
+            field(TotalCashIn; TotalCashInText)
             {
-                ShowCaption = false;
-
-                grid(TopGrid)
-                {
-                    group(CashInGroup)
-                    {
-                        ShowCaption = false;
-                        field(TotalCashIn; TotalCashInText)
-                        {
-                            ApplicationArea = All;
-                            Caption = 'Cash in';
-                            Style = Strong;
-                            ToolTip = 'Specifies the total cash received over the last 6 months.';
-                        }
-                    }
-                    group(CashOutGroup)
-                    {
-                        ShowCaption = false;
-                        field(TotalCashOut; TotalCashOutText)
-                        {
-                            ApplicationArea = All;
-                            Caption = 'Cash out';
-                            Style = Strong;
-                            ToolTip = 'Specifies the total cash paid out over the last 6 months.';
-                        }
-                    }
-                }
-                field(Difference; DifferenceText)
-                {
-                    ApplicationArea = All;
-                    Caption = 'Difference';
-                    Style = Favorable;
-                    StyleExpr = NetDifference > 0;
-                    ToolTip = 'Specifies the net difference between cash in and cash out.';
-                }
+                ApplicationArea = All;
+                Caption = 'Cash in';
+                Style = Strong;
+                ToolTip = 'Specifies the total cash received over the last 6 months.';
+            }
+            field(TotalCashOut; TotalCashOutText)
+            {
+                ApplicationArea = All;
+                Caption = 'Cash out';
+                Style = Strong;
+                ToolTip = 'Specifies the total cash paid out over the last 6 months.';
+            }
+            field(Difference; DifferenceText)
+            {
+                ApplicationArea = All;
+                Caption = 'Difference';
+                Style = Favorable;
+                StyleExpr = NetDifference > 0;
+                ToolTip = 'Specifies the net difference between cash in and cash out.';
             }
 
             usercontrol(CustomChart; "Custom Cash Flow Chart")

@@ -32,7 +32,15 @@ pageextension 50113 BusinessManagerRoleCenter extends "Business Manager Role Cen
             {
                 ApplicationArea = All;
             }
-            part(Tasks; "Dashboard Tasks Part")
+            // part(Tasks; "Dashboard Tasks Part")
+            // {
+            //     ApplicationArea = All;
+            // }
+            part(TaskAssignByMe; "Dashboard Tasks Assigned By Me")
+            {
+                ApplicationArea = All;
+            }
+            part(TaskAssignToMe; "Dashboard Tasks Assigned To Me")
             {
                 ApplicationArea = All;
             }

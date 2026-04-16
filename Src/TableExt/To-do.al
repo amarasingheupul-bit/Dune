@@ -6,6 +6,10 @@ tableextension 50119 "To-doExt" extends "To-do"
         {
             //TableRelation = User."User Name";
         }
+        field(50101; DashSortOrder; Integer)
+        {
+            DataClassification = SystemMetadata;
+        }
     }
 
 
