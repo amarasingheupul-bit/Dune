@@ -125,12 +125,12 @@ codeunit 50103 "4HC Event Subscribers"
         IsHandled := true;
     end;
 
-    [EventSubscriber(ObjectType::Page, Page::"Purchase Invoice", OnBeforePostDocument, '', false, false)]
-    local procedure "Purchase Invoice_OnBeforePostDocument"(var Sender: Page "Purchase Invoice"; var PurchaseHeader: Record "Purchase Header"; xPurchaseHeader: Record "Purchase Header"; PostingCodeunitID: Integer; var IsHandled: Boolean)
-    begin
-        if PurchaseHeader."Email Approval Status" <> PurchaseHeader."Email Approval Status"::Approved then
-            Error('You can not post without sales director approval.');
-    end;
+    // [EventSubscriber(ObjectType::Page, Page::"Purchase Invoice", OnBeforePostDocument, '', false, false)]
+    // local procedure "Purchase Invoice_OnBeforePostDocument"(var Sender: Page "Purchase Invoice"; var PurchaseHeader: Record "Purchase Header"; xPurchaseHeader: Record "Purchase Header"; PostingCodeunitID: Integer; var IsHandled: Boolean)
+    // begin
+    //     if PurchaseHeader."Email Approval Status" <> PurchaseHeader."Email Approval Status"::Approved then
+    //         Error('You can not post without sales director approval.');
+    // end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnBeforeModifySalesHeader, '', false, false)]
     local procedure "Job Create-Invoice_OnBeforeModifySalesHeader"(var SalesHeader: Record "Sales Header"; Job: Record Job; JobPlanningLine: Record "Job Planning Line")
@@ -250,4 +250,15 @@ codeunit 50103 "4HC Event Subscribers"
         else
             Job."Provision for Costs" := 0;
     end;
+
+    // [EventSubscriber(ObjectType::Table, Database::"To-do", 'OnBeforeValidateSalespersonCode', '', false, false)]
+    // local procedure OnBeforeValidateSalespersonCode(var IsHandled: Boolean; var Task: Record "To-do")
+    // begin
+    //     Message('hiii');
+    //     if IsHandled then
+    //         exit;
+
+    //     // Completely skip the Salesperson Code mandatory validation
+    //     IsHandled := true;
+    // end;
 }

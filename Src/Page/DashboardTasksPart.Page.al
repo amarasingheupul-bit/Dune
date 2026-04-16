@@ -1,50 +1,26 @@
 page 50121 "Dashboard Tasks Part"
 {
-    PageType = ListPart;
+    PageType = List; // 🔥 MUST
     Caption = 'Tasks';
-    SourceTable = "Approval Entry";
-    Editable = false;
+    UsageCategory = None;
 
     layout
     {
-        area(Content)
+        area(content)
         {
-            repeater(Group)
+            group(Tasks)
             {
-                ShowCaption = false;
-
-                field(TaskCount; TaskCountInt)
+                part(AssignedToMe; "Dashboard Tasks Assigned To Me")
                 {
                     ApplicationArea = All;
-                    ShowCaption = false;
-                    Style = Strong;
+                    Caption = '📋 Assigned to Me';
                 }
-
-                field(TaskDesc; 'Bills awaiting approval')
+                part(AssignedByMe; "Dashboard Tasks Assigned By Me")
                 {
                     ApplicationArea = All;
-                    ShowCaption = false;
-                }
-
-                field(Arrow; '→')
-                {
-                    ApplicationArea = All;
-                    ShowCaption = false;
-                    Style = StrongAccent;
+                    Caption = '✏️ Assigned by Me';
                 }
             }
         }
     }
-
-    var
-        TaskCountInt: Integer;
-
-    trigger OnOpenPage()
-    var
-        ApprovalEntry: Record "Approval Entry";
-    begin
-        ApprovalEntry.SetRange(Status, ApprovalEntry.Status::Open);
-        ApprovalEntry.SetRange("Table ID", Database::"Purchase Header");
-        TaskCountInt := ApprovalEntry.Count();
-    end;
 }
