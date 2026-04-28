@@ -11,6 +11,7 @@ page 50119 "Dashboard Recent Payments"
         {
             repeater(Group)
             {
+                Visible = IsVisible;
                 field("Document No."; Rec."Document No.")
                 {
                     ApplicationArea = All;
@@ -41,8 +42,15 @@ page 50119 "Dashboard Recent Payments"
     }
 
     var
+        CalcMgt: Codeunit "Dashboard Calc. Mgt.";
         CustName: Text;
         DisplayDate: Text;
+        IsVisible: Boolean;
+
+    trigger OnOpenPage()
+    begin
+        IsVisible := CalcMgt.CheckIsWidgetVisible(Enum::"Dashboard Widget Identity"::"Recent Payments");
+    end;
 
     trigger OnAfterGetRecord()
     var

@@ -13,6 +13,7 @@ page 50122 "Dashboard Watchlist Part"
             repeater(Watchlist)
             {
                 ShowCaption = false;
+                Visible = IsVisible;
 
                 field("No."; Rec."No.")
                 {
@@ -41,14 +42,18 @@ page 50122 "Dashboard Watchlist Part"
     }
 
     var
+        CalcMgt: Codeunit "Dashboard Calc. Mgt.";
         ThisMonthAmount: Decimal;
         YTDAmount: Decimal;
+        IsVisible: Boolean;
 
     trigger OnOpenPage()
     var
         DashboardSetup: Record "Dashboard KPI Setup";
     begin
-        if DashboardSetup.Get('WATCH_LIST') then
+        IsVisible := CalcMgt.CheckIsWidgetVisible(Enum::"Dashboard Widget Identity"::Watchlist);
+
+        if DashboardSetup.Get(DashboardSetup."KPI Code"::WATCH_LIST) then
             Rec.SetFilter("No.", DashboardSetup."G/L Account Filter");
     end;
 

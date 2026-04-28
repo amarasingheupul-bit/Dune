@@ -4,15 +4,23 @@ pageextension 50113 BusinessManagerRoleCenter extends "Business Manager Role Cen
     {
         addafter(Control55)
         {
-            part(BankAccounts; "Dashboard Bank Acc. Part")
+            // part(BankAccounts; "Dashboard Bank Acc. Part")
+            // {
+            //     ApplicationArea = All;
+            // }
+            part(BankAccounts; "Dashboard Bank Acc. Tile")
             {
                 ApplicationArea = All;
             }
-            part(InvoicesOwed; "Dashboard Invoices Owed")
+            part("DashboardInvoicesOwedList"; "Dashboard Invoices Owed List")
             {
                 ApplicationArea = All;
             }
-            part(BillsToPay; "Dashboard Bills To Pay")
+            // part(BillsToPay; "Dashboard Bills To Pay")
+            // {
+            //     ApplicationArea = All;
+            // }
+            part(DashboardBillsToPayList; "Dashboard Bills To Pay List")
             {
                 ApplicationArea = All;
             }
@@ -46,6 +54,14 @@ pageextension 50113 BusinessManagerRoleCenter extends "Business Manager Role Cen
             }
 
         }
+        // addfirst(rolecenter)  // replace with actual part name
+        // {
+        //     part("Company Logo Part"; "Company Logo Part")
+        //     {
+        //         ApplicationArea = All;
+        //     }
+        // }
+
         modify("User Tasks Activities")
         {
             Visible = false;

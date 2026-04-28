@@ -11,6 +11,7 @@ page 50118 "Dashboard Net Profit Chart"
             group(HeaderNumbers)
             {
                 ShowCaption = false;
+                Visible = IsVisible;
 
                 field(TotalNetProfit; TotalNetProfitText)
                 {
@@ -36,6 +37,7 @@ page 50118 "Dashboard Net Profit Chart"
             usercontrol(NetProfitChart; "Custom Cash Flow Chart")
             {
                 ApplicationArea = All;
+                Visible = IsVisible;
 
                 trigger ControlReady()
                 begin
@@ -46,12 +48,18 @@ page 50118 "Dashboard Net Profit Chart"
     }
 
     var
-        // TempChartBuffer: Record "Business Chart Buffer" temporary;
         CalcMgt: Codeunit "Dashboard Calc. Mgt.";
+        KpiCode: Enum "Dashboard Kpi Code";
         TotalNetProfitText: Text;
         DateRangeText: Text;
         ComparisonText: Text;
         ComparisonStyle: Text;
+        IsVisible: Boolean;
+
+    trigger OnOpenPage()
+    begin
+        IsVisible := CalcMgt.CheckIsWidgetVisible(Enum::"Dashboard Widget Identity"::"Net Profit Chart");
+    end;
 
     local procedure GenerateChart()
     var
@@ -74,13 +82,13 @@ page 50118 "Dashboard Net Profit Chart"
         DateRangeText := Format(StartOfYear, 0, '<Month Text,3> <Day>') + ' – ' + Format(EndOfMonth, 0, '<Month Text,3> <Day>, <Year4>');
 
         // Pull Current Data
-        IncomeTotal := -CalcMgt.GetKPITotal('CASH_IN', StartOfYear, EndOfMonth);
-        ExpenseTotal := CalcMgt.GetKPITotal('CASH_OUT', StartOfYear, EndOfMonth);
+        IncomeTotal := -CalcMgt.GetKPITotal(KpiCode::CASH_IN, StartOfYear, EndOfMonth);
+        ExpenseTotal := CalcMgt.GetKPITotal(KpiCode::CASH_OUT, StartOfYear, EndOfMonth);
         NetProfit := IncomeTotal - ExpenseTotal;
 
         // Pull Previous Year Data for Comparison
-        PrevIncomeTotal := -CalcMgt.GetKPITotal('CASH_IN', PrevStartOfYear, PrevEndOfMonth);
-        PrevExpenseTotal := CalcMgt.GetKPITotal('CASH_OUT', PrevStartOfYear, PrevEndOfMonth);
+        PrevIncomeTotal := -CalcMgt.GetKPITotal(KpiCode::CASH_IN, PrevStartOfYear, PrevEndOfMonth);
+        PrevExpenseTotal := CalcMgt.GetKPITotal(KpiCode::CASH_OUT, PrevStartOfYear, PrevEndOfMonth);
         PrevNetProfit := PrevIncomeTotal - PrevExpenseTotal;
 
         // Calculate Percentage Difference Logic
@@ -109,14 +117,13 @@ page 50118 "Dashboard Net Profit Chart"
 
         TotalNetProfitText := Format(NetProfit, 0, '<Precision,2:2><Standard Format,0>');
 
-        // ── REPLACED: TempChartBuffer → Custom ControlAddIn ──────────────────────
         LabelsArray.Add('Income');
         LabelsArray.Add('Expenses');
 
         IncomeArray.Add(Abs(IncomeTotal));
-        IncomeArray.Add(0);                   // Income bar only on first column
+        IncomeArray.Add(0);
 
-        ExpenseArray.Add(0);                  // Expense bar only on second column
+        ExpenseArray.Add(0);
         ExpenseArray.Add(Abs(ExpenseTotal));
 
         CurrPage.NetProfitChart.RenderChart('Income', 'Expenses', LabelsArray, IncomeArray, ExpenseArray);

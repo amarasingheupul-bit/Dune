@@ -5,7 +5,6 @@ page 50117 "Dashboard KPI Setup List"
     UsageCategory = Administration;
     SourceTable = "Dashboard KPI Setup";
     Caption = 'Dashboard KPI Setup';
-    // CardPageId = "Dashboard KPI Setup Card"; // Optional: If you want a detailed card page later
 
     layout
     {
@@ -23,6 +22,11 @@ page 50117 "Dashboard KPI Setup List"
                     ApplicationArea = All;
                     ToolTip = 'Specifies a clear description of what this KPI measures.';
                 }
+                field("Bank Account No."; Rec."Bank Account No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the bank account to be displayed in the single-view dashboard widget.';
+                }
                 field("Widget Type"; Rec."Widget Type")
                 {
                     ApplicationArea = All;
@@ -39,14 +43,11 @@ page 50117 "Dashboard KPI Setup List"
                     ToolTip = 'Specifies the default date range for the calculation (e.g., -6M).';
                 }
             }
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            // You can add actions here later, such as a "Test Calculation" button
+            part(VisibilitySetup; "Widget Visibility Subpage")
+            {
+                ApplicationArea = All;
+                Caption = 'Manage Chart Visibility';
+            }
         }
     }
 }

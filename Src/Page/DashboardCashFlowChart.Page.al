@@ -14,6 +14,7 @@ page 50115 "Dashboard Cash Flow Chart"
                 Caption = 'Cash in';
                 Style = Strong;
                 ToolTip = 'Specifies the total cash received over the last 6 months.';
+                Visible = IsVisible;
             }
             field(TotalCashOut; TotalCashOutText)
             {
@@ -21,6 +22,7 @@ page 50115 "Dashboard Cash Flow Chart"
                 Caption = 'Cash out';
                 Style = Strong;
                 ToolTip = 'Specifies the total cash paid out over the last 6 months.';
+                Visible = IsVisible;
             }
             field(Difference; DifferenceText)
             {
@@ -29,11 +31,13 @@ page 50115 "Dashboard Cash Flow Chart"
                 Style = Favorable;
                 StyleExpr = NetDifference > 0;
                 ToolTip = 'Specifies the net difference between cash in and cash out.';
+                Visible = IsVisible;
             }
 
             usercontrol(CustomChart; "Custom Cash Flow Chart")
             {
                 ApplicationArea = All;
+                Visible = IsVisible;
 
                 trigger ControlReady()
                 begin
@@ -45,10 +49,17 @@ page 50115 "Dashboard Cash Flow Chart"
 
     var
         CalcMgt: Codeunit "Dashboard Calc. Mgt.";
+        KpiCode: Enum "Dashboard Kpi Code";
         TotalCashInText: Text;
         TotalCashOutText: Text;
         DifferenceText: Text;
         NetDifference: Decimal;
+        IsVisible: Boolean;
+
+    trigger OnOpenPage()
+    begin
+        IsVisible := CalcMgt.CheckIsWidgetVisible(Enum::"Dashboard Widget Identity"::"Cash Flow Chart");
+    end;
 
     local procedure GenerateChart()
     var
@@ -76,8 +87,8 @@ page 50115 "Dashboard Cash Flow Chart"
             MonthName := Format(MonthStart, 0, '<Month Text,3>');
             LabelsArray.Add(MonthName);
 
-            CashInAmt := -CalcMgt.GetKPITotal('CASH_IN', MonthStart, MonthEnd);
-            CashOutAmt := CalcMgt.GetKPITotal('CASH_OUT', MonthStart, MonthEnd);
+            CashInAmt := -CalcMgt.GetKPITotal(KpiCode::CASH_IN, MonthStart, MonthEnd);
+            CashOutAmt := CalcMgt.GetKPITotal(KpiCode::CASH_OUT, MonthStart, MonthEnd);
 
             CashInArray.Add(Abs(CashInAmt));
             CashOutArray.Add(Abs(CashOutAmt));

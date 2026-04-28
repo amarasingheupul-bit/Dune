@@ -7,7 +7,7 @@ table 50106 "Dashboard KPI Setup"
 
     fields
     {
-        field(1; "KPI Code"; Code[20])
+        field(1; "KPI Code"; Enum "Dashboard Kpi Code")
         {
             DataClassification = CustomerContent;
             Caption = 'KPI Code';
@@ -22,6 +22,13 @@ table 50106 "Dashboard KPI Setup"
         {
             DataClassification = CustomerContent;
             Caption = 'Widget Type';
+        }
+        field(10; "Bank Account No."; Code[20])
+        {
+            DataClassification = CustomerContent;
+            Caption = 'Bank Account No.';
+            TableRelation = "Bank Account";
+            ToolTip = 'Specifies the bank account to be displayed in the single-view dashboard widget.';
         }
         field(4; "G/L Account Filter"; Text[250])
         {

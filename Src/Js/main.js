@@ -108,3 +108,45 @@ function RenderSingleChart(datasetName, labels, data, barColor) {
         }
     });
 }
+function RenderChart3(Dataset1Name, Dataset2Name, Dataset3Name, Labels, Data1, Data2, Data3) {
+    var ctx = document.getElementById('myChart').getContext('2d');
+    
+    // Destroy previous chart instance if it exists to prevent overlap
+    if (window.myChartInstance) {
+        window.myChartInstance.destroy();
+    }
+
+    window.myChartInstance = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: Labels,
+            datasets: [
+                {
+                    label: Dataset1Name,
+                    data: Data1,
+                    backgroundColor: '#14b8a6', // TEAL (Actuals)
+                    borderWidth: 1
+                },
+                {
+                    label: Dataset2Name,
+                    data: Data2,
+                    backgroundColor: '#f97316', // VIBRANT ORANGE (Budget/Schedule)
+                    borderWidth: 1
+                },
+                {
+                    label: Dataset3Name,
+                    data: Data3,
+                    backgroundColor: '#6366f1', // INDIGO (Variance/Profit)
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: { beginAtZero: true }
+            }
+        }
+    });
+}

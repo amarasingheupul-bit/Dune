@@ -16,6 +16,7 @@ page 50114 "Dashboard Bills To Pay"
                 group(LeftHeader)
                 {
                     ShowCaption = false;
+                    Visible = IsVisible;
                     field(TotalAmount; TotalAmtText)
                     {
                         ApplicationArea = All;
@@ -33,6 +34,7 @@ page 50114 "Dashboard Bills To Pay"
                 group(RightHeader)
                 {
                     ShowCaption = false;
+                    Visible = IsVisible;
                     field(OverdueAmount; OverdueAmtText)
                     {
                         ApplicationArea = All;
@@ -51,6 +53,7 @@ page 50114 "Dashboard Bills To Pay"
             usercontrol(BillsChart; "Custom Cash Flow Chart")
             {
                 ApplicationArea = All;
+                Visible = IsVisible;
 
                 trigger ControlReady()
                 begin
@@ -66,6 +69,7 @@ page 50114 "Dashboard Bills To Pay"
                 group(FooterLabels)
                 {
                     ShowCaption = false;
+                    Visible = IsVisible;
                     field(DraftsCount; DraftsCountText)
                     {
                         ApplicationArea = All;
@@ -85,6 +89,7 @@ page 50114 "Dashboard Bills To Pay"
                 group(FooterAmounts)
                 {
                     ShowCaption = false;
+                    Visible = IsVisible;
                     field(DraftsAmt; DraftsAmtText)
                     {
                         ApplicationArea = All;
@@ -105,6 +110,7 @@ page 50114 "Dashboard Bills To Pay"
                 group(Btn1)
                 {
                     ShowCaption = false;
+                    Visible = IsVisible;
                     field(AddBill; 'Add bill')
                     {
                         ApplicationArea = All;
@@ -119,6 +125,7 @@ page 50114 "Dashboard Bills To Pay"
                 group(Btn2)
                 {
                     ShowCaption = false;
+                    Visible = IsVisible;
                     field(ViewAll; 'View all bills')
                     {
                         ApplicationArea = All;
@@ -135,13 +142,19 @@ page 50114 "Dashboard Bills To Pay"
     }
 
     var
-        // TempChartBuffer: Record "Business Chart Buffer" temporary;
+        CalcMgt: Codeunit "Dashboard Calc. Mgt.";
         TotalAmtText: Text;
         AwaitingPaymentText: Text;
         OverdueAmtText: Text;
         OverdueCountText: Text;
         DraftsCountText, AwaitingApprCountText : Text;
         DraftsAmtText, AwaitingApprAmtText : Text;
+        IsVisible: Boolean;
+
+    trigger OnOpenPage()
+    begin
+        IsVisible := CalcMgt.CheckIsWidgetVisible(Enum::"Dashboard Widget Identity"::"Bills to Pay");
+    end;
 
     local procedure GenerateChart()
     var
@@ -198,8 +211,8 @@ page 50114 "Dashboard Bills To Pay"
 
         DataArray.Add(GetBillAmount(-1000, -31));
         DataArray.Add(GetBillAmount(-7, 0));
-        DataArray.Add(GetBillAmount(-21, -15));  // Mar 15-21 (real data, not placeholder)
-        DataArray.Add(GetBillAmount(-28, -22));  // Mar 22-28 (real data, not hardcoded 45000)
+        DataArray.Add(GetBillAmount(-21, -15));
+        DataArray.Add(GetBillAmount(-28, -22));
         DataArray.Add(GetBillAmount(1, 1000));
 
         CurrPage.BillsChart.RenderSingleChart('Bills', LabelsArray, DataArray, '#e85d4a');
@@ -215,7 +228,6 @@ page 50114 "Dashboard Bills To Pay"
         Amt := 0;
         VendLedger.SetRange(Open, true);
 
-        // Build the date filter using the Label
         VendLedger.SetFilter("Due Date", '%1..%2',
             CalcDate(StrSubstNo(DateFilterLbl, StartDays), WorkDate()),
             CalcDate(StrSubstNo(DateFilterLbl, EndDays), WorkDate()));

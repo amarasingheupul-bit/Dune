@@ -7,11 +7,7 @@ page 50112 "AdaptView Role Center"
     {
         area(RoleCenter)
         {
-            part(Control139; "Headline RC Business Manager")
-            {
-                ApplicationArea = Basic, Suite;
-            }
-            part(BankAccounts; "Dashboard Bank Acc. Part")
+            part(BankAccounts; "Dashboard Bank Acc. Tile")
             {
                 ApplicationArea = All;
             }
@@ -19,7 +15,11 @@ page 50112 "AdaptView Role Center"
             {
                 ApplicationArea = All;
             }
-            part(BillsToPay; "Dashboard Bills To Pay")
+            // part(BillsToPay; "Dashboard Bills To Pay")
+            // {
+            //     ApplicationArea = All;
+            // }
+            part(DashboardBillsToPayList; "Dashboard Bills To Pay List")
             {
                 ApplicationArea = All;
             }
@@ -40,6 +40,28 @@ page 50112 "AdaptView Role Center"
                 ApplicationArea = All;
             }
             part(Tasks; "Dashboard Tasks Part")
+            {
+                ApplicationArea = All;
+            }
+            part(Equity; "Dashboard Equity Part")
+            {
+                ApplicationArea = All;
+            }
+            // custom charts
+            part(MyProjects; "My Jobs")
+            {
+                ApplicationArea = All;
+                Caption = 'My Projects';
+            }
+            part(CustomPrice; "Custom Project Price Chart")
+            {
+                ApplicationArea = All;
+            }
+            part(CustomProfit; "Custom Project Profit Chart")
+            {
+                ApplicationArea = All;
+            }
+            part(CustomCost; "Custom Project Cost Chart")
             {
                 ApplicationArea = All;
             }

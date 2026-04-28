@@ -16,6 +16,7 @@ page 50116 "Dashboard Invoices Owed"
                 group(LeftHeader)
                 {
                     ShowCaption = false;
+                    Visible = IsVisible;
                     field(TotalAmount; TotalAmtText)
                     {
                         ApplicationArea = All;
@@ -33,6 +34,7 @@ page 50116 "Dashboard Invoices Owed"
                 group(RightHeader)
                 {
                     ShowCaption = false;
+                    Visible = IsVisible;
                     field(OverdueAmount; OverdueAmtText)
                     {
                         ApplicationArea = All;
@@ -52,6 +54,7 @@ page 50116 "Dashboard Invoices Owed"
             usercontrol(InvoiceChart; "Custom Cash Flow Chart")
             {
                 ApplicationArea = All;
+                Visible = IsVisible;
                 trigger ControlReady()
                 begin
                     GenerateChart();
@@ -66,6 +69,7 @@ page 50116 "Dashboard Invoices Owed"
                 group(FooterLabels)
                 {
                     ShowCaption = false;
+                    Visible = IsVisible;
                     field(DraftsCount; DraftsCountText)
                     {
                         ApplicationArea = All;
@@ -85,6 +89,7 @@ page 50116 "Dashboard Invoices Owed"
                 group(FooterAmounts)
                 {
                     ShowCaption = false;
+                    Visible = IsVisible;
                     field(DraftsAmt; DraftsAmtText)
                     {
                         ApplicationArea = All;
@@ -101,6 +106,7 @@ page 50116 "Dashboard Invoices Owed"
             group(BottomButtons)
             {
                 ShowCaption = false;
+                Visible = IsVisible;
                 grid(ButtonGrid)
                 {
                     ShowCaption = false;
@@ -140,12 +146,18 @@ page 50116 "Dashboard Invoices Owed"
     }
 
     var
-        // TempChartBuffer: Record "Business Chart Buffer" temporary;
+        CalcMgt: Codeunit "Dashboard Calc. Mgt.";
         TotalAmtText: Text;
         AwaitingPaymentText: Text;
         OverdueAmtText, OverdueCountText : Text;
         DraftsCountText, AwaitingApprCountText : Text;
         DraftsAmtText, AwaitingApprAmtText : Text;
+        IsVisible: Boolean;
+
+    trigger OnOpenPage()
+    begin
+        IsVisible := CalcMgt.CheckIsWidgetVisible(Enum::"Dashboard Widget Identity"::"Invoices Owed");
+    end;
 
     local procedure GenerateChart()
     var

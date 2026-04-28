@@ -18,5 +18,6 @@ controladdin "Custom Cash Flow Chart"
 
     procedure RenderChart(Dataset1Name: Text; Dataset2Name: Text; Labels: JsonArray; Data1: JsonArray; Data2: JsonArray);
     procedure RenderSingleChart(DatasetName: Text; Labels: JsonArray; Data: JsonArray; BarColor: Text);
+    procedure RenderChart3(Dataset1Name: Text; Dataset2Name: Text; Dataset3Name: Text; Labels: JsonArray; Data1: JsonArray; Data2: JsonArray; Data3: JsonArray);
 
 }
