@@ -72,7 +72,6 @@ page 50115 "Dashboard Cash Flow Chart"
         AggCashOut: Decimal;
         MonthName: Text;
         DateFormulaLbl: Label '<-%1M>-<CM>', Locked = true;
-
         LabelsArray: JsonArray;
         CashInArray: JsonArray;
         CashOutArray: JsonArray;
@@ -87,14 +86,16 @@ page 50115 "Dashboard Cash Flow Chart"
             MonthName := Format(MonthStart, 0, '<Month Text,3>');
             LabelsArray.Add(MonthName);
 
-            CashInAmt := -CalcMgt.GetKPITotal(KpiCode::CASH_IN, MonthStart, MonthEnd);
+            // Direction (debit/credit) is fully handled inside GetKPITotal via KPI Setup flags
+            // Abs() ensures chart bars are always positive regardless of account normal balance
+            CashInAmt := CalcMgt.GetKPITotal(KpiCode::CASH_IN, MonthStart, MonthEnd);
             CashOutAmt := CalcMgt.GetKPITotal(KpiCode::CASH_OUT, MonthStart, MonthEnd);
 
             CashInArray.Add(Abs(CashInAmt));
             CashOutArray.Add(Abs(CashOutAmt));
 
-            AggCashIn += CashInAmt;
-            AggCashOut += CashOutAmt;
+            AggCashIn += Abs(CashInAmt);
+            AggCashOut += Abs(CashOutAmt);
         end;
 
         NetDifference := AggCashIn - AggCashOut;

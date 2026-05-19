@@ -42,6 +42,22 @@ page 50117 "Dashboard KPI Setup List"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the default date range for the calculation (e.g., -6M).';
                 }
+                field("Load from G/L Entries"; Rec."Load from G/L Entries")
+                {
+                    ApplicationArea = All;
+                }
+                field("Show Credit"; Rec."Show Credit")
+                {
+                    ApplicationArea = All;
+                }
+                field("Show Debit"; Rec."Show Debit")
+                {
+                    ApplicationArea = All;
+                }
+                field("Show Total"; Rec."Show Total")
+                {
+                    ApplicationArea = All;
+                }
             }
             part(VisibilitySetup; "Widget Visibility Subpage")
             {

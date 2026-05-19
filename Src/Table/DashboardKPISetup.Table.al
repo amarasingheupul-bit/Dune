@@ -4,6 +4,9 @@ table 50106 "Dashboard KPI Setup"
     Caption = 'Dashboard KPI Setup';
     DrillDownPageId = "Dashboard KPI Setup List";
     LookupPageId = "Dashboard KPI Setup List";
+    Access = Public;
+    InherentPermissions = RIMD;
+    InherentEntitlements = RIMD;
 
     fields
     {
@@ -41,6 +44,30 @@ table 50106 "Dashboard KPI Setup"
             DataClassification = CustomerContent;
             Caption = 'Date Formula';
             ToolTip = 'Optional: Set a default period like -6M for Last 6 Months or CM for Current Month.';
+        }
+        field(6; "Load from G/L Entries"; Boolean)
+        {
+            DataClassification = CustomerContent;
+            Caption = 'Load from G/L Entries';
+            ToolTip = 'Specifies whether the KPI value should be loaded directly from G/L Entries instead of G/L Account balances.';
+        }
+        field(7; "Show Debit"; Boolean)
+        {
+            DataClassification = CustomerContent;
+            Caption = 'Show Debit';
+            ToolTip = 'Specifies whether to include debit amounts when loading data from G/L Entries.';
+        }
+        field(8; "Show Credit"; Boolean)
+        {
+            DataClassification = CustomerContent;
+            Caption = 'Show Credit';
+            ToolTip = 'Specifies whether to include credit amounts when loading data from G/L Entries.';
+        }
+        field(9; "Show Total"; Boolean)
+        {
+            DataClassification = CustomerContent;
+            Caption = 'Show Total';
+            ToolTip = 'Specifies whether to display the net total (Debit - Credit) when loading data from G/L Entries.';
         }
     }
 

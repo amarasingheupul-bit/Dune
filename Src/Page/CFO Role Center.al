@@ -8,15 +8,27 @@ page 50135 "CFO Role Center"
     {
         area(RoleCenter)
         {
+            part(ApprovalsActivities; "Approvals Activities")
+            {
+                ApplicationArea = Suite;
+            }
             part(BankAccountsD; "Dashboard Bank Acc. Tile")
             {
                 ApplicationArea = All;
             }
-            part(InvoicesOwed; "Dashboard Invoices Owed")
+            // part(InvoicesOwed; "Dashboard Invoices Owed")
+            // {
+            //     ApplicationArea = All;
+            // }
+            part("DashboardInvoicesOwedList"; "Dashboard Invoices Owed List")
             {
                 ApplicationArea = All;
             }
-            part(BillsToPay; "Dashboard Bills To Pay")
+            // part(BillsToPay; "Dashboard Bills To Pay")
+            // {
+            //     ApplicationArea = All;
+            // }
+            part(DashboardBillsToPayList; "Dashboard Bills To Pay List")
             {
                 ApplicationArea = All;
             }

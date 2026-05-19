@@ -1,7 +1,7 @@
 page 50122 "Dashboard Watchlist Part"
 {
     PageType = ListPart;
-    Caption = 'Chart of accounts watchlist';
+    Caption = 'Chart of Accounts Watchlist';
     SourceTable = "G/L Account";
     SourceTableView = sorting("No.") where("Account Type" = const(Posting));
     Editable = false;
@@ -28,7 +28,7 @@ page 50122 "Dashboard Watchlist Part"
                 field(ThisMonthAmount; ThisMonthAmount)
                 {
                     ApplicationArea = All;
-                    Caption = 'This month';
+                    Caption = 'This Month';
                     AutoFormatType = 1;
                 }
                 field(YTDAmount; YTDAmount)
@@ -41,6 +41,28 @@ page 50122 "Dashboard Watchlist Part"
         }
     }
 
+    actions
+    {
+        area(Processing)
+        {
+            action(ManageWatchlist)
+            {
+                ApplicationArea = All;
+                Caption = 'Manage My Watchlist';
+                Image = Setup;
+                ToolTip = 'Add or remove accounts from your personal watchlist.';
+
+                trigger OnAction()
+                begin
+                    // Open setup page and refresh after user closes it
+                    Page.RunModal(Page::"Dashboard Watchlist Setup");
+                    ApplyUserFilter();
+                    CurrPage.Update(false);
+                end;
+            }
+        }
+    }
+
     var
         CalcMgt: Codeunit "Dashboard Calc. Mgt.";
         ThisMonthAmount: Decimal;
@@ -48,29 +70,64 @@ page 50122 "Dashboard Watchlist Part"
         IsVisible: Boolean;
 
     trigger OnOpenPage()
-    var
-        DashboardSetup: Record "Dashboard KPI Setup";
     begin
         IsVisible := CalcMgt.CheckIsWidgetVisible(Enum::"Dashboard Widget Identity"::Watchlist);
-
-        if DashboardSetup.Get(DashboardSetup."KPI Code"::WATCH_LIST) then
-            Rec.SetFilter("No.", DashboardSetup."G/L Account Filter");
+        ApplyUserFilter();
     end;
 
     trigger OnAfterGetRecord()
     var
-        StartOfMonth, EndOfMonth, StartOfYear : Date;
+        GLAccount: Record "G/L Account";
+        StartOfMonth: Date;
+        EndOfMonth: Date;
+        StartOfYear: Date;
     begin
         StartOfMonth := CalcDate('<-CM>', WorkDate());
         EndOfMonth := CalcDate('<CM>', WorkDate());
         StartOfYear := CalcDate('<-CY>', WorkDate());
 
-        Rec.SetRange("Date Filter", StartOfMonth, EndOfMonth);
-        Rec.CalcFields("Net Change");
-        ThisMonthAmount := Rec."Net Change";
+        GLAccount.Get(Rec."No.");
 
-        Rec.SetRange("Date Filter", StartOfYear, EndOfMonth);
-        Rec.CalcFields("Net Change");
-        YTDAmount := Rec."Net Change";
+        GLAccount.SetRange("Date Filter", StartOfMonth, EndOfMonth);
+        GLAccount.CalcFields("Net Change");
+        ThisMonthAmount := GLAccount."Net Change";
+
+        GLAccount.SetRange("Date Filter", StartOfYear, EndOfMonth);
+        GLAccount.CalcFields("Net Change");
+        YTDAmount := GLAccount."Net Change";
+    end;
+
+    // ── Centralised filter logic ─────────────────────────────────────────────
+    local procedure ApplyUserFilter()
+    var
+        AccountFilter: Text;
+    begin
+        AccountFilter := GetUserAccountFilter();
+
+        Rec.FilterGroup(2);  // use filter group 2 so it can't be overridden by the user
+        if AccountFilter <> '' then
+            Rec.SetFilter("No.", AccountFilter)
+        else
+            Rec.SetRange("No.", '');  // no setup → show nothing
+        Rec.FilterGroup(0);
+    end;
+
+    local procedure GetUserAccountFilter(): Text
+    var
+        WatchlistSetup: Record "Dashboard Watchlist Setup";
+        FilterText: Text;
+    begin
+        WatchlistSetup.SetRange("User ID", CopyStr(UserId(), 1, MaxStrLen(WatchlistSetup."User ID")));
+        if not WatchlistSetup.FindSet() then
+            exit('');
+
+        repeat
+            if FilterText <> '' then
+                FilterText += '|';
+            // Escape any pipe chars in account numbers for safety
+            FilterText += WatchlistSetup."G/L Account No.";
+        until WatchlistSetup.Next() = 0;
+
+        exit(FilterText);
     end;
 }
