@@ -2,12 +2,27 @@ pageextension 50113 BusinessManagerRoleCenter extends "Business Manager Role Cen
 {
     layout
     {
-        addafter(Control55)
+        addfirst(rolecenter)
         {
-            // part(BankAccounts; "Dashboard Bank Acc. Part")
-            // {
-            //     ApplicationArea = All;
-            // }
+            group(DuneBannerGroup)
+            {
+                Caption = '';
+                ShowCaption = false;
+
+                part(DuneBannerControl; "Dune RC Banner Part")
+                {
+                    ApplicationArea = All;
+                    UpdatePropagation = Both;
+                }
+            }
+        }
+
+        addlast(rolecenter)
+        {
+            part(ApprovalsActivitiess; "Approvals Activities")
+            {
+                ApplicationArea = Suite;
+            }
             part(BankAccounts; "Dashboard Bank Acc. Tile")
             {
                 ApplicationArea = All;
@@ -16,10 +31,6 @@ pageextension 50113 BusinessManagerRoleCenter extends "Business Manager Role Cen
             {
                 ApplicationArea = All;
             }
-            // part(BillsToPay; "Dashboard Bills To Pay")
-            // {
-            //     ApplicationArea = All;
-            // }
             part(DashboardBillsToPayList; "Dashboard Bills To Pay List")
             {
                 ApplicationArea = All;
@@ -40,10 +51,6 @@ pageextension 50113 BusinessManagerRoleCenter extends "Business Manager Role Cen
             {
                 ApplicationArea = All;
             }
-            // part(Tasks; "Dashboard Tasks Part")
-            // {
-            //     ApplicationArea = All;
-            // }
             part(TaskAssignByMe; "Dashboard Tasks Assigned By Me")
             {
                 ApplicationArea = All;
@@ -52,54 +59,38 @@ pageextension 50113 BusinessManagerRoleCenter extends "Business Manager Role Cen
             {
                 ApplicationArea = All;
             }
-
-        }
-        // addfirst(rolecenter)  // replace with actual part name
-        // {
-        //     part("Company Logo Part"; "Company Logo Part")
-        //     {
-        //         ApplicationArea = All;
-        //     }
-        // }
-
-        modify("User Tasks Activities")
-        {
-            Visible = false;
-        }
-        modify(Control16)
-        {
-            Visible = false;
-        }
-        modify("Job Queue Tasks Activities")
-        {
-            Visible = false;
-        }
-        modify("Emails")
-        {
-            Visible = false;
-        }
-        modify("Intercompany Activities")
-        {
-            Visible = false;
-        }
-        modify(Control46)
-        {
-            Visible = false;
-        }
-        modify(Control55)
-        {
-            Visible = false;
-        }
-        modify("Favorite Accounts")
-        {
-            Visible = false;
-        }
-        modify(Control139)
-        {
-            Visible = false;
+            part(Control91; "Trial Balance")
+            {
+                AccessByPermission = TableData "G/L Entry" = R;
+                ApplicationArea = Basic, Suite;
+            }
+            part(PowerBIEmbeddedReportParts; "Power BI Embedded Report Part")
+            {
+                AccessByPermission = TableData "Power BI Context Settings" = I;
+                ApplicationArea = Basic, Suite;
+            }
+            part(Control961; "Report Inbox Part")
+            {
+                AccessByPermission = TableData "Report Inbox" = IMD;
+                ApplicationArea = Suite;
+            }
         }
 
+        modify("User Tasks Activities") { Visible = false; }
+        modify(Control16) { Visible = false; }
+        modify("Job Queue Tasks Activities") { Visible = false; }
+        modify("Emails") { Visible = false; }
+        modify("Intercompany Activities") { Visible = false; }
+        modify(Control46) { Visible = false; }
+        modify(Control55) { Visible = false; }
+        modify("Favorite Accounts") { Visible = false; }
+        modify(Control139) { Visible = false; }
+        modify(ApprovalsActivities) { Visible = false; }
+        modify(Control9) { Visible = false; }
+        modify(PowerBIEmbeddedReportPart) { Visible = false; }
+        modify(Control96) { Visible = false; }
     }
+
     actions
     {
         addbefore(Customers)
@@ -121,10 +112,6 @@ pageextension 50113 BusinessManagerRoleCenter extends "Business Manager Role Cen
                 RunObject = Page "Transport MatrixS365";
                 ToolTip = 'Open a Resource Allocation Page';
             }
-
         }
-
-
-
     }
 }

@@ -2,11 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "DUNE-TEST",
+            "name": "DuneCopy2",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "DUNE-TEST",
+            "environmentName": "DuneCopy2",
             "startupObjectId": 89,
             "startupObjectType": "Page",
             "breakOnError": "All",
@@ -18,11 +18,11 @@
             "schemaUpdateMode": "ForceSync"
         },
          {
-            "name": "UAT",
+            "name": "DUNECOPY1",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "UAT",
+            "environmentName": "DUNECOPY1",
             "startupObjectId": 89,
             "startupObjectType": "Page",
             "breakOnError": "All",
@@ -31,7 +31,7 @@
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
-           // "schemaUpdateMode": "ForceSync"
+            "schemaUpdateMode": "ForceSync"
         }
     ]
 }

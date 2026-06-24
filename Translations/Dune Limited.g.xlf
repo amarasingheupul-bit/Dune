@@ -3,6 +3,56 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Dune Limited">
     <body>
       <group id="body">
+        <trans-unit id="Table 1117074220 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dune RC Banner Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dune RC Banner Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1117074220 - Field 2098397765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Banner Image</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dune RC Banner Setup - Field Banner Image - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1117074220 - Field 4124960904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mime Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dune RC Banner Setup - Field Mime Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1117074220 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dune RC Banner Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4035573660 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune RC Banner Part - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 4035573660 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune RC Banner Part - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4035573660 - Action 16514986 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purge the active banner configuration file to restore the standard default workspace.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune RC Banner Part - Action DeleteImage - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4035573660 - Action 16514986 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove Dune Banner</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune RC Banner Part - Action DeleteImage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4035573660 - Action 4066818320 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select and upload a base64 corporate background graphic from your storage disk.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune RC Banner Part - Action UploadImage - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4035573660 - Action 4066818320 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upload Dune Banner</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune RC Banner Part - Action UploadImage - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3874537540 - Field 2746725036 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Charge Item No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -38,6 +88,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2699036691 - Field 4248640148 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank account to be displayed in the single-view dashboard widget.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Bank Account No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2699036691 - Field 4248640148 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Bank Account No. - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2699036691 - Field 2875331390 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Optional: Set a default period like -6M for Last 6 Months or CM for Current Month.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -68,10 +128,140 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field KPI Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2699036691 - Field 2354882618 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the KPI value should be loaded directly from G/L Entries instead of G/L Account balances.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Load from G/L Entries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2699036691 - Field 2354882618 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Load from G/L Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Load from G/L Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2699036691 - Field 1866688178 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether to include credit amounts when loading data from G/L Entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Show Credit - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2699036691 - Field 1866688178 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Credit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Show Credit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2699036691 - Field 708288927 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether to include debit amounts when loading data from G/L Entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Show Debit - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2699036691 - Field 708288927 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Debit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Show Debit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2699036691 - Field 2046074539 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether to display the net total (Debit - Credit) when loading data from G/L Entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Show Total - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2699036691 - Field 2046074539 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Total</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Show Total - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2699036691 - Field 1278594360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Widget Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard KPI Setup - Field Widget Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 746098940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dashboard Watchlist Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard Watchlist Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 746098940 - Field 63418190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard Watchlist Setup - Field G/L Account Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 746098940 - Field 3852983238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard Watchlist Setup - Field G/L Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 746098940 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard Watchlist Setup - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 746098940 - Field 2708250016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Dashboard Watchlist Setup - Field User ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4141497313 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dashboard Visible KPI Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DashboardVisible KPI Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4141497313 - Field 2484225082 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show on Dashboard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DashboardVisible KPI Setup - Field Show on Dashboard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4141497313 - Field 2894762198 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Widget Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DashboardVisible KPI Setup - Field Widget Identity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 188856214 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excel Data Import</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 188856214 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 188856214 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 188856214 - Field 1001420560 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry##</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import - Field Entry## - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 188856214 - Field 3768902387 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Legend</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import - Field Legend - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 188856214 - Field 1681313133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import - Field UpdateField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 188856214 - Field 233027035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LCY Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import - Field Value 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 188856214 - Field 870723652 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import - Field Value 3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 188856214 - Field 3252601097 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import - Field Value 4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 188856214 - Field 3890297714 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value Additional</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import - Field Value 5 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1560189491 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Code</source>
@@ -153,6 +343,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ServiceItemMatrixS365 - Field Service Item 2 S365 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 883008092 - Method 2631482505 - NamedType 2294662597" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This Incoming Document has Status = Posted. Deleting it will remove the link to the posted record and cannot be undone. Continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Delete Incoming Document - Method DeleteIncomingDoc - NamedType ConfirmMsg</note>
+        </trans-unit>
         <trans-unit id="Codeunit 933017583 - Method 361191515 - NamedType 2613519981" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item %1 is incompatible with item %2.</source>
           <note from="Developer" annotates="general" priority="2">%1=Service Item 1,%2=Service Item 2</note>
@@ -187,6 +382,16 @@
           <source>Document %1 has been archived &amp; deleted. Document lines and header information copied from %1 sales document to this document.</source>
           <note from="Developer" annotates="general" priority="2">%1 = Document No.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit SQmodFunction S365 - Method ShowMessageAfterSQuoteAmendArchive - NamedType Text002Msg</note>
+        </trans-unit>
+        <trans-unit id="Page 1782996270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Related Data All files</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page  Update Entries From Excel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1782996270 - Action 3383181603 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tool Tip</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page  Update Entries From Excel - Action UpdateData - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 203621994 - Property 3446740159" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase Invoice</source>
@@ -538,6 +743,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AdaptView Role Center - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 766387782 - Control 2524435326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>My Projects</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AdaptView Role Center - Control MyProjects - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 766387782 - Action 4127203109 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Configure the G/L accounts and widgets for this dashboard.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -547,6 +757,146 @@
           <source>Dashboard KPI Setup</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AdaptView Role Center - Action SetupDashboard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CFO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Control 3226850163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Control DuneBannerGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 17419004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action Finance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 4020075288 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View bank accounts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action BankAccounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 4020075288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action BankAccounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 4018620253 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View and manage budgets.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action BudgetAction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 4018620253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Budgets</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action BudgetAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 1271842865 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the chart of accounts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action ChartOfAccounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 1271842865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Chart of Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action ChartOfAccounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 1105245267 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View general ledger entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action GLEntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 1105245267 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action GLEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 2428880779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payables</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action Payables - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 4034672467 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View purchase invoices.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action PurchaseInvoices - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 4034672467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Invoices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action PurchaseInvoices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 3327544323 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View vendor ledger entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action VendorLedger - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 3327544323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action VendorLedger - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 713531721 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View vendors.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action Vendors - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 713531721 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendors</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action Vendors - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 646561001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Receivables</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action Receivables - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 544742635 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View customer ledger entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action CustomerLedger - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 544742635 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action CustomerLedger - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 3606140129 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View customers.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action Customers - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 3606140129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customers</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action Customers - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 2728404382 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View sales invoices.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action SalesInvoices - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 2728404382 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Invoices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action SalesInvoices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 1514883969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 4127203109 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Configure the G/L accounts and widgets for this dashboard.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action SetupDashboard - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759854319 - Action 4127203109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dashboard KPI Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CFO Role Center - Action SetupDashboard - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4202026260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Charge Item Mapping</source>
@@ -698,6 +1048,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Custom Navigation ListPart - Control SalesInvoice - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3787797811 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Actual Cost to Budget Cost</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Custom Project Cost Chart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4028485505 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Actual Price to Budget Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Custom Project Price Chart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2596771136 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Profitability</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Custom Project Profit Chart - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1489383574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Bank Account</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -728,10 +1093,70 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bank Acc. Part - Control LastStatementDate - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3753158107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bank Acc. Tile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3753158107 - Control 2502094259 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the current balance of the selected bank account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bank Acc. Tile - Control BankBalance1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3753158107 - Control 120216814 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the current balance of the selected bank account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bank Acc. Tile - Control BankBalance2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3753158107 - Control 3777487493 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the current balance of the selected bank account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bank Acc. Tile - Control BankBalance3 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3753158107 - Control 589004408 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the current balance of the selected bank account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bank Acc. Tile - Control BankBalance4 - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 3636802241 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Bills to pay</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bills To Pay - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1692718071 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bills to Pay</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bills To Pay List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1692718071 - Control 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bills To Pay List - Control Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1692718071 - Control 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bills To Pay List - Control Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1692718071 - Control 4085727052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bills To Pay List - Control Due Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1692718071 - Control 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date of Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bills To Pay List - Control Posting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1692718071 - Control 2975378708 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bills To Pay List - Control Remaining Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1692718071 - Control 3119688693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Bills To Pay List - Control Vendor Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2049488165 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cash in and out • Last 6 months</source>
@@ -768,15 +1193,70 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Cash Flow Chart - Control TotalCashOut - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1576429538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Equity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Equity Part - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1576429538 - Control 25700210 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Equity Part - Control Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1576429538 - Control 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Equity Part - Control Name - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 987798481 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Invoices owed to you</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Invoices Owed - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 789694471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoices Owed to You</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Invoices Owed List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 789694471 - Control 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Invoices Owed List - Control Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 789694471 - Control 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Invoices Owed List - Control Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 789694471 - Control 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Invoices Owed List - Control Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 789694471 - Control 4085727052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Invoices Owed List - Control Due Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 789694471 - Control 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date of Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Invoices Owed List - Control Posting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 789694471 - Control 2975378708 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Invoices Owed List - Control Remaining Amount - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2456828221 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Dashboard KPI Setup</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard KPI Setup List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2456828221 - Control 4248640148 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the bank account to be displayed in the single-view dashboard widget.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard KPI Setup List - Control Bank Account No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2456828221 - Control 2875331390 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the default date range for the calculation (e.g., -6M).</source>
@@ -802,6 +1282,11 @@
           <source>Specifies how this data will be displayed on the Role Center.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard KPI Setup List - Control Widget Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2456828221 - Control 1842537499 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manage Chart Visibility</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard KPI Setup List - Control VisibilitySetup - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2920819579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Net profit or loss • Year to date</source>
@@ -833,58 +1318,73 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Recent Payments - Control FormattedDate - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1822156083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Task Assigned by Me</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Assigned By Me - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1822156083 - Control 1133707045 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assigned By</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Assigned By Me - Control AssignedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1822156083 - Control 3819752341 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assigned To</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Assigned By Me - Control AssignedTo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1822156083 - Control 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Assigned By Me - Control Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1822156083 - Control 949215307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Assigned By Me - Control No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1822156083 - Action 632022603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Task</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Assigned By Me - Action OpenTask - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1822156083 - Action 2026913255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Refresh</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Assigned By Me - Action Refresh - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1464901091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Task Assigned to Me</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Assigned To Me - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1464901091 - Control 1814464443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assigned To</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Assigned To Me - Control User - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1464901091 - Action 632022603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Task</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Assigned To Me - Action OpenTask - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2638489375 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Tasks</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2638489375 - Control 3819752341 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Assigned To</source>
+        <trans-unit id="Page 2638489375 - Control 823907061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>✏️ Assigned by Me</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control AssignedTo - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control AssignedByMe - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2638489375 - Control 3425251533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Assigned By</source>
+        <trans-unit id="Page 2638489375 - Control 3489697957 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>📋 Assigned to Me</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control CreatedBy - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2638489375 - Control 3192175264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2638489375 - Control 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Description</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control Description - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2638489375 - Control 949215307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control No - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2638489375 - Control 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Status</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2638489375 - Control 658995751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Category</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control TaskCategory - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2638489375 - Action 632022603 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Open the selected task.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Action OpenTask - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2638489375 - Action 632022603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Open Task</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Action OpenTask - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Tasks Part - Control AssignedToMe - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4145339148 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Chart of accounts watchlist</source>
+          <source>Chart of Accounts Watchlist</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Watchlist Part - Property Caption</note>
         </trans-unit>
@@ -899,7 +1399,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Watchlist Part - Control No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4145339148 - Control 3900310806 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>This month</source>
+          <source>This Month</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Watchlist Part - Control ThisMonthAmount - Property Caption</note>
         </trans-unit>
@@ -907,6 +1407,191 @@
           <source>YTD</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Watchlist Part - Control YTDAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4145339148 - Action 3333462934 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add or remove accounts from your personal watchlist.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Watchlist Part - Action ManageWatchlist - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145339148 - Action 3333462934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manage My Watchlist</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Watchlist Part - Action ManageWatchlist - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 746098940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>My Watchlist Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Watchlist Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 746098940 - Control 63418190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Watchlist Setup - Control G/L Account Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 746098940 - Control 3852983238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dashboard Watchlist Setup - Control G/L Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DUNE Executive Dashboard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 387971303 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manage commercial procurement cycles and track incoming items.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Purchase Order - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 387971303 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Purchase Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 4034894651 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate and view finalized sales invoices for transactions.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Sales Invoice - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 4034894651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Sales Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 1673401186 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Convert quotes or record fresh direct customer orders.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Sales Order - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 1673401186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Sales Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 280137910 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create new sales quotes for prospective leads or active clients.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Sales Quote - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 280137910 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Quote</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Sales Quote - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 2176459415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All Reports</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Reports - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 3105459369 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Review or modify corporate ledger account codes and tracking balances.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Chart of Accounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 3105459369 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Chart of Accounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Chart of Accounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 3606140129 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Browse the registered client directory and track client statements.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Customers - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 3606140129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customers</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Customers - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 1554554962 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manage raw material descriptions, inventories, and unit values.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Items - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 1554554962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Items - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 713531721 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Access supplier master sheets to execute supplier settlement flows.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Vendors - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3850472171 - Action 713531721 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendors</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Vendors - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excel Data Import</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the document number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the entry number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Control Entry No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Control 1001420560 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the entry number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Control Entry## - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Control 3768902387 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the legend</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Control Legend - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Control 1681313133 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the update field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Control UpdateField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Control 233027035 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the LCY value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Control Value 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Control 870723652 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the text value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Control Value 3 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Control 3252601097 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Control Value 4 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Control 3890297714 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value additional</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Control Value 5 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Action 389138476 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete all imported records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Action DeleteAll - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Action 389138476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete All</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Action DeleteAll - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Action 1147532894 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import General data from Excel file</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Action ImportExcel - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4145478934 - Action 1147532894 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import from Excel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Excel Data - Action ImportExcel - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1052596337 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Cambination Matrix</source>
@@ -1553,6 +2238,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Vendor Confirmation Dialog - Control Vendor - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2759577919 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Widget Visibility Subpage</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Widget Visibility Subpage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2759577919 - Control 2484225082 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Show on Dashboard field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Widget Visibility Subpage - Control Show on Dashboard - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2759577919 - Control 2894762198 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Widget Name field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Widget Visibility Subpage - Control Widget Identity - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Report 2264551318 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Tax Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1602,6 +2302,106 @@
           <source>Tax Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report 4HC Tax Invoice - NamedType ReportTitleLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1745267443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear G/L Entry Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear GL Entry Currency - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 190329598 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear Posted Sale Invoices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear Posted Sale Inv - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account Update</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 284195533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Remap Settings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Filters - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 666471649 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This account will be temporarily renamed first. e.g. 155140</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Step1FromField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 666471649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Step 1 - From Account (Temp Park)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Step1FromField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 17578934 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Temporary placeholder. e.g. 1234. Must not exist in G/L Entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Step1ToField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 17578934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Step 1 - Temp Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Step1ToField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 1882317152 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This account will be renamed. e.g. 254120</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Step2FromField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 1882317152 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Step 2 - From Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Step2FromField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 372911075 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Step 2 From account will be renamed to this. e.g. 155140</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Step2ToField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 372911075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Step 2 - To Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Step2ToField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 1977654324 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The temp account will be finally renamed to this. e.g. 254120</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Step3ToField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1343694040 - Control 1977654324 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Step 3 - Final Account (Resolve Temp)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report G/L Account Update - Control Step3ToField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 948564893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Voucher-After Post</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Payment Voucher-After Post - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 948564893 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Payment Voucher-After Post - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 948564893 - Control 3461750827 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Payment Voucher-After Post - Control ShowDetails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1052230695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Petty Cash Voucher</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Petty Cash Voucher - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1052230695 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Petty Cash Voucher - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1052230695 - Control 3461750827 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Petty Cash Voucher - Control ShowDetails - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 4074645880 - Control 3303687997 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
           <source>Specifies the footer text for reports generated by this company.</source>
@@ -1697,6 +2497,31 @@
           <source>Actual (Total Cost)(LCY)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC JobTaskLinesSubform - Change Usage (Total Cost) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 396594792 - Action 2998251699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3196174509">
+          <source>Incoming Document</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Payment Journal - Action IncomingDocGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 396594792 - Action 74818512 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3196174509">
+          <source>Attach an incoming document to this line.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Payment Journal - Action AttachDocument - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 396594792 - Action 74818512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3196174509">
+          <source>Attach Document</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Payment Journal - Action AttachDocument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 396594792 - Action 3533532881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3196174509">
+          <source>Remove the attached incoming document from this line.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Payment Journal - Action RemoveAttachment - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 396594792 - Action 3533532881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3196174509">
+          <source>Remove Attachment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Payment Journal - Action RemoveAttachment - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 3889087401 - Control 3644359682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
           <source>Additional Order Details</source>
@@ -2113,6 +2938,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order Subform - Control Qty. to Post % - Method OnValidate - NamedType Text001Err</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Action 3155749809 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>In</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Action in - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Action 3155749809 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>In</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Action in - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Action 2100781642 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Out</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Action out - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Action 2100781642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Out</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Action out - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3919202842 - Control 450851517 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
           <source>Specifies the Job No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2258,6 +3103,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Vendor Card - Control REF SAP ID - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2452472904 - Action 1563960530 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2591587468">
+          <source>Payment Voucher - After Post</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Bank Acc Led EntriesDuBase - Action PaymentVoucherAfterPost - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2452472904 - Action 2554500763 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2591587468">
+          <source>Petty Cash Voucher</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Bank Acc Led EntriesDuBase - Action PettyCashVoucherAfterPost - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 445992062 - Action 4127203109 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Configure the G/L accounts and widgets for this dashboard.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2278,10 +3133,60 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension BusinessManagerRoleCenter - Action ResourceAllocation - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 445992062 - Control 3226850163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension BusinessManagerRoleCenter - Control DuneBannerGroup - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 242096404 - Control 1814464443 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3218241539">
           <source>Specifies the user name associated with this to-do.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Create TaskExt - Control User - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1668524813 - Action 227370865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 714858205">
+          <source>Approval</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension FA GL Journal Approval Ext - Action Approval - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1668524813 - Action 858296388 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 714858205">
+          <source>Cancel the approval request for this journal batch.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension FA GL Journal Approval Ext - Action CancelApprovalRequest - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1668524813 - Action 858296388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 714858205">
+          <source>Cancel Approval Request</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension FA GL Journal Approval Ext - Action CancelApprovalRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1668524813 - Action 383335270 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 714858205">
+          <source>Send the journal batch for approval.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension FA GL Journal Approval Ext - Action SendApprovalRequest - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1668524813 - Action 383335270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 714858205">
+          <source>Send Approval Request</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension FA GL Journal Approval Ext - Action SendApprovalRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1273574399 - Action 3069758476 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1887905131">
+          <source>View the incoming document attached to this entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension GL Entries Attachment FactBox - Action IncomingDocAction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1273574399 - Action 3069758476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1887905131">
+          <source>Incoming Document</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension GL Entries Attachment FactBox - Action IncomingDocAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 211334738 - Action 2310871554 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 956135699">
+          <source>Removes the posted reference and deletes this Incoming Document entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Incoming Doc Delete Ext - Action DeletePostedIncomingDoc - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 211334738 - Action 2310871554 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 956135699">
+          <source>Delete (incl. Posted)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Incoming Doc Delete Ext - Action DeletePostedIncomingDoc - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2691779624 - Control 3527421867 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 200707616">
           <source>Specify the Quote Type</source>
@@ -4198,6 +5103,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension ServiceItem - Field GennextWarrantySDParts - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2244451808 - Field 2747480206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1837078383">
+          <source>DashSortOrder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension To-doExt - Field DashSortOrder - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2244451808 - Field 1814464443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1837078383">
           <source>User</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4207,6 +5117,151 @@
           <source>AdaptView Financials</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Profile AdaptView Financials - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Profile 3036285206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CFO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile CFO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Profile 3036285206 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Role center for Chief Financial Officers.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile CFO - Property ProfileDescription</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 4094978836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BANK_1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue BANK_1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 437708157 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BANK_2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue BANK_2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 1075404774 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BANK_3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue BANK_3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 906495751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BANK_4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue BANK_4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 1754533875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CASH_IN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue CASH_IN - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 430235324 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CASH_OUT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue CASH_OUT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 3067997975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EQUITY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue EQUITY - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 3839159810 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NET_PROFIT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue NET_PROFIT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 909091578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PROFIT_IN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue PROFIT_IN - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 342348761 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PROFIT_OUT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue PROFIT_OUT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3582491597 - EnumValue 3422708240 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WATCH_LIST</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Kpi Code - EnumValue WATCH_LIST - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 2562626731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Tiles</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Bank Tiles - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 2879981157 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bills to Pay</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Bills to Pay - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 864602369 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cash Flow Chart</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Cash Flow Chart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 2915803285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Cost vs Budget</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Cost Performance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 477609335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Equity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Equity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 2418297589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoices Owed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Invoices Owed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 4044059174 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>My Projects List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue My Projects - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 2409679479 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Net Profit Chart</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Net Profit Chart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 3791657711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Price vs Budget</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Price Performance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 3906826120 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Profitability</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Profitability - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 614610942 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Recent Payments</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Recent Payments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 2973329650 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tasks</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Tasks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2865325810 - EnumValue 3688990325 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Watchlist</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Identity - EnumValue Watchlist - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 79876892 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Dashboard Widget Type - EnumValue   - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 79876892 - EnumValue 2375214527 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Bar Chart</source>

@@ -82,13 +82,13 @@ page 50118 "Dashboard Net Profit Chart"
         DateRangeText := Format(StartOfYear, 0, '<Month Text,3> <Day>') + ' – ' + Format(EndOfMonth, 0, '<Month Text,3> <Day>, <Year4>');
 
         // Pull Current Data
-        IncomeTotal := -CalcMgt.GetKPITotal(KpiCode::CASH_IN, StartOfYear, EndOfMonth);
-        ExpenseTotal := CalcMgt.GetKPITotal(KpiCode::CASH_OUT, StartOfYear, EndOfMonth);
+        IncomeTotal := -CalcMgt.GetKPITotal(KpiCode::PROFIT_IN, StartOfYear, EndOfMonth);
+        ExpenseTotal := CalcMgt.GetKPITotal(KpiCode::PROFIT_OUT, StartOfYear, EndOfMonth);
         NetProfit := IncomeTotal - ExpenseTotal;
 
         // Pull Previous Year Data for Comparison
-        PrevIncomeTotal := -CalcMgt.GetKPITotal(KpiCode::CASH_IN, PrevStartOfYear, PrevEndOfMonth);
-        PrevExpenseTotal := CalcMgt.GetKPITotal(KpiCode::CASH_OUT, PrevStartOfYear, PrevEndOfMonth);
+        PrevIncomeTotal := -CalcMgt.GetKPITotal(KpiCode::PROFIT_IN, PrevStartOfYear, PrevEndOfMonth);
+        PrevExpenseTotal := CalcMgt.GetKPITotal(KpiCode::PROFIT_OUT, PrevStartOfYear, PrevEndOfMonth);
         PrevNetProfit := PrevIncomeTotal - PrevExpenseTotal;
 
         // Calculate Percentage Difference Logic

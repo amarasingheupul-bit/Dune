@@ -146,4 +146,47 @@ pageextension 50128 "4HC Sales Invoice" extends "Sales Invoice"
             }
         }
     }
+    actions
+    {
+        addlast("Request Approval")
+        {
+            group(CustomApproval)
+            {
+                action(in)
+                {
+                    ApplicationArea = All;
+                    Caption = 'In';
+                    Image = Info;
+                    ToolTip = 'In';
+                    trigger OnAction()
+                    begin
+                        Rec.Status := Rec.Status::Open;
+                        //Rec."Approval Status" := Rec."Approval Status"::Open;
+                        Rec.Modify();
+                    end;
+                }
+                action(out)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Out';
+                    Image = Info;
+                    ToolTip = 'Out';
+                    trigger OnAction()
+                    begin
+                        Rec.Status := Rec.Status::Released;
+                        //Rec."Approval Status" := Rec."Approval Status"::Released;
+                        Rec.Modify();
+                    end;
+                }
+            }
+        }
+        modify(SendApprovalRequest)
+        {
+            visible = true;
+        }
+        modify(CancelApprovalRequest)
+        {
+            visible = true;
+        }
+    }
 }

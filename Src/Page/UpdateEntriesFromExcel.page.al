@@ -524,14 +524,11 @@ page 50125 " Update Entries From Excel"
                                     until this.VALE.Next() = 0;
                             end;
 
-                            // Update Sales Invoice Header and Line (if Legend Position 2 and 3 = '1')
-
+                            // ── Position 3: Sales Invoice LINE (Update or Delete) ────────────────────────
                             Position := 3;
                             TargetChar := 0;
                             evaluate(TargetChar, CopyStr(this.ExcelData."Legend", Position, 1));
                             if TargetChar = 1 then begin
-                                Message('Updating Sales Invoice Line');
-
 
                                 this.SINVLINE.Reset();
                                 this.SINVLINE.SetFilter(this.SINVLINE."Document No.", '%1', this.ExcelData."Document No.");
@@ -539,12 +536,14 @@ page 50125 " Update Entries From Excel"
                                 if this.SINVLINE.FindSet() then
                                     repeat
 
-                                        if this.ExcelData.UpdateField = 'PostDate' then
+                                        // ── Update Posting Date ───────────────────────────────────────
+                                        if this.ExcelData.UpdateField = 'PostDate' then begin
                                             evaluate(this.SINVLINE."Posting Date", this.ExcelData."Value 3");
+                                            this.SINVLINE.Modify();
+                                        end;
 
-                                        this.TempSINVLINE.Reset();
+                                        // ── Rename Document No. ───────────────────────────────────────
                                         if this.ExcelData.UpdateField = 'DocumentNo' then begin
-                                            // Create temporary copy of the record
                                             this.TempSINVLINE := this.SINVLINE;
                                             this.SINVLINE.Delete();
                                             this.SINVLINE := this.TempSINVLINE;
@@ -552,43 +551,55 @@ page 50125 " Update Entries From Excel"
                                             this.SINVLINE.Insert();
                                         end;
 
+                                        // ✅ Delete Line
+                                        if this.ExcelData.UpdateField = 'Delete' then begin
+                                            this.SINVLINE.Delete();
+                                        end;
+
                                     until this.SINVLINE.Next() = 0;
                             end;
 
+                            // ── Position 2: Sales Invoice HEADER (Update or Delete) ──────────────────────
                             Position := 2;
                             TargetChar := 0;
                             evaluate(TargetChar, CopyStr(this.ExcelData."Legend", Position, 1));
                             if TargetChar = 1 then begin
-                                Message('Updating Sales Invoice Header');
-
 
                                 this.SINVHDR.Reset();
                                 this.SINVHDR.SetFilter(this.SINVHDR."No.", '%1', this.ExcelData."Document No.");
 
                                 if this.SINVHDR.FindSet() then begin
 
-
-                                    if this.ExcelData.UpdateField = 'PostDate' then
+                                    // ── Update Posting Date ───────────────────────────────────────────
+                                    if this.ExcelData.UpdateField = 'PostDate' then begin
                                         evaluate(this.SINVHDR."Posting Date", this.ExcelData."Value 3");
+                                        this.SINVHDR.Modify();
+                                    end;
 
-
+                                    // ── Rename Document No. ───────────────────────────────────────────
                                     if this.ExcelData.UpdateField = 'DocumentNo' then begin
-                                        // Create temporary copy of the record
                                         this.TempSINVHDR := this.SINVHDR;
-
-                                        // Delete old record
                                         this.SINVHDR.Delete();
-
-                                        // Create new record with new doc number
                                         this.SINVHDR := this.TempSINVHDR;
                                         this.SINVHDR."No." := this.ExcelData."Value 3";
                                         this.SINVHDR.Insert();
+                                    end;
 
+                                    //  Delete Header (also deletes lines first to avoid orphan records)
+                                    if this.ExcelData.UpdateField = 'Delete' then begin
+                                        // Delete all related lines first
+                                        this.SINVLINE.Reset();
+                                        this.SINVLINE.SetFilter(
+                                            this.SINVLINE."Document No.", '%1',
+                                            this.ExcelData."Document No.");
+                                        if this.SINVLINE.FindSet() then
+                                            this.SINVLINE.DeleteAll();
+
+                                        // Then delete the header
+                                        this.SINVHDR.Delete();
                                     end;
 
                                 end;
-
-
                             end;
 
 

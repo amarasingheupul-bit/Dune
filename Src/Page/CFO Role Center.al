@@ -6,8 +6,20 @@ page 50135 "CFO Role Center"
 
     layout
     {
+
         area(RoleCenter)
         {
+            group(DuneBannerGroup)
+            {
+                Caption = '';
+                ShowCaption = false;
+
+                part(DuneBannerControl; "Dune RC Banner Part")
+                {
+                    ApplicationArea = All;
+                    UpdatePropagation = Both;
+                }
+            }
             part(ApprovalsActivities; "Approvals Activities")
             {
                 ApplicationArea = Suite;

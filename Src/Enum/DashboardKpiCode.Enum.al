@@ -11,4 +11,6 @@ enum 50105 "Dashboard Kpi Code"
     value(7; NET_PROFIT) { Caption = 'NET_PROFIT'; }
     value(8; WATCH_LIST) { Caption = 'WATCH_LIST'; }
     value(9; EQUITY) { Caption = 'EQUITY'; }
+    value(10; PROFIT_IN) { Caption = 'PROFIT_IN'; }
+    value(11; PROFIT_OUT) { Caption = 'PROFIT_OUT'; }
 }
