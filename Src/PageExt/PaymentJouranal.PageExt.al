@@ -5,6 +5,25 @@ pageextension 50119 "4HC Payment Journal" extends "Payment Journal"
     }
     actions
     {
+        addlast("&Line")
+        {
+            action("Payment Voucher")
+            {
+                ApplicationArea = All;
+                Caption = 'Payment Voucher';
+                Image = Print;
+                trigger OnAction()
+                var
+                    GenJnlLine: Record "Gen. Journal Line";
+                begin
+                    GenJnlLine.SetRange("Journal Template Name", Rec."Journal Template Name");
+                    GenJnlLine.SetRange("Journal Batch Name", Rec."Journal Batch Name");
+                    GenJnlLine.SetRange("Document No.", Rec."Document No.");
+                    Report.Run(Report::"Payment voucher", true, true, GenJnlLine);
+                end;
+            }
+        }
+
         addlast(processing)
         {
             group(IncomingDocGroup)
@@ -31,6 +50,25 @@ pageextension 50119 "4HC Payment Journal" extends "Payment Journal"
                             )
                         );
                         CurrPage.SaveRecord();
+                    end;
+                }
+                action(PrintReceiptVoucher)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Receipt Voucher';
+                    Image = Print;
+                    ToolTip = 'Print the Receipt Voucher for the selected payment journal line.';
+
+                    trigger OnAction()
+                    var
+                        GenJournalLine: Record "Gen. Journal Line";
+                        ReceiptVoucher: Report "Receipt Voucher";
+                    begin
+                        GenJournalLine.SetRange("Journal Template Name", Rec."Journal Template Name");
+                        GenJournalLine.SetRange("Journal Batch Name", Rec."Journal Batch Name");
+                        GenJournalLine.SetRange("Line No.", Rec."Line No.");
+                        ReceiptVoucher.SetTableView(GenJournalLine);
+                        ReceiptVoucher.Run();
                     end;
                 }
 
@@ -76,12 +114,29 @@ pageextension 50119 "4HC Payment Journal" extends "Payment Journal"
                     end;
                 }
             }
+
+            // // ── Receipt Voucher Print ──────────────────────────────────────────
+            // group(PrintGroup)
+            // {
+            //     Caption = 'Print';
+            //     Image = Print;
+
+
+            // }
         }
 
-        addlast("Category_Category9")
+        // ── Promoted refs (NoPromotedActionProperties / actionref syntax) ──────
+        addlast("Category_Category10")
         {
             actionref(AttachDocument_Promoted; AttachDocument) { }
             actionref(RemoveAttachment_Promoted; RemoveAttachment) { }
+
+        }
+
+        addlast("Category_Report")
+        {
+            actionref(PaymentVoucher_Promoted; "Payment Voucher") { }
+            actionref(PrintReceiptVoucher_Promoted; PrintReceiptVoucher) { }
         }
     }
 }

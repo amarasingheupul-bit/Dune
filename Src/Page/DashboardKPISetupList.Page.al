@@ -58,6 +58,10 @@ page 50117 "Dashboard KPI Setup List"
                 {
                     ApplicationArea = All;
                 }
+                field("G/L Account Type Filter"; "G/L Account Type Filter")
+                {
+                    ApplicationArea = All;
+                }
             }
             part(VisibilitySetup; "Widget Visibility Subpage")
             {

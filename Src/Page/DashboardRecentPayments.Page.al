@@ -1,7 +1,7 @@
 page 50119 "Dashboard Recent Payments"
 {
     PageType = ListPart;
-    SourceTable = "Cust. Ledger Entry";
+    SourceTable = "Vendor Ledger Entry";
     SourceTableView = sorting("Posting Date") order(descending) where("Document Type" = filter(Payment));
     Editable = false;
 
@@ -12,6 +12,7 @@ page 50119 "Dashboard Recent Payments"
             repeater(Group)
             {
                 Visible = IsVisible;
+
                 field("Document No."; Rec."Document No.")
                 {
                     ApplicationArea = All;
@@ -31,7 +32,7 @@ page 50119 "Dashboard Recent Payments"
                     Caption = 'Date received';
                 }
 
-                field(AmountLCY; Abs(Rec."Amount (LCY)"))
+                field(AmountLCY; DisplayAmount)  // ← use the calculated variable
                 {
                     ApplicationArea = All;
                     Caption = 'Amount';
@@ -45,6 +46,7 @@ page 50119 "Dashboard Recent Payments"
         CalcMgt: Codeunit "Dashboard Calc. Mgt.";
         CustName: Text;
         DisplayDate: Text;
+        DisplayAmount: Decimal;  // ← new variable
         IsVisible: Boolean;
 
     trigger OnOpenPage()
@@ -54,13 +56,20 @@ page 50119 "Dashboard Recent Payments"
 
     trigger OnAfterGetRecord()
     var
-        Cust: Record Customer;
+        Vend: Record Vendor;
     begin
-        if Cust.Get(Rec."Customer No.") then
-            CustName := Cust.Name
+        if Vend.Get(Rec."Vendor No.") then
+            CustName := Vend.Name
         else
             CustName := '';
 
         DisplayDate := Format(Rec."Posting Date", 0, '<Month Text,3> <Day>');
+
+        Rec.CalcFields("Amount (LCY)");
+
+        if Rec."Amount (LCY)" <> 0 then
+            DisplayAmount := Abs(Rec."Amount (LCY)")
+        else
+            DisplayAmount := Abs(Rec.Amount);
     end;
 }

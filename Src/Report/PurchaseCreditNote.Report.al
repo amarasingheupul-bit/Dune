@@ -184,7 +184,7 @@ report 50105 "4HC Purchase Credit Note"
         layout(PurchaseCreditNoteLayout)
         {
             Type = RDLC;
-            LayoutFile = 'Src\Report\PurchaseCreditNote.rdl';
+            LayoutFile = 'Src\Report\Layouts\PurchaseCreditNote.rdl';
         }
     }
 

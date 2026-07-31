@@ -203,7 +203,7 @@ report 50103 "4HC Purchase Order"
         layout(PurchaseOrderLayout)
         {
             Type = RDLC;
-            LayoutFile = 'Src\Report\PurchaseOrderLayout.rdl';
+            LayoutFile = 'Src\Report\Layouts\PurchaseOrderLayout.rdl';
         }
     }
 

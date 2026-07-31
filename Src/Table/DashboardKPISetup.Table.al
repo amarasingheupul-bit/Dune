@@ -69,6 +69,11 @@ table 50106 "Dashboard KPI Setup"
             Caption = 'Show Total';
             ToolTip = 'Specifies whether to display the net total (Debit - Credit) when loading data from G/L Entries.';
         }
+        field(11; "G/L Account Type Filter"; Enum "G/L Account Type")
+        {
+            Caption = 'G/L Account Type Filter';
+            DataClassification = CustomerContent;
+        }
     }
 
     keys

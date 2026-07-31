@@ -199,7 +199,7 @@ report 50100 "4HC Posted Sales Tax Invoice"
         layout(PostedTaxInvoice)
         {
             Type = RDLC;
-            LayoutFile = 'Src\Report\PostedSalesTaxInvoice.rdl';
+            LayoutFile = 'Src\Report\Layouts\PostedSalesTaxInvoice.rdl';
         }
     }
 

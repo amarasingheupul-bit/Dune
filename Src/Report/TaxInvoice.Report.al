@@ -125,7 +125,7 @@ report 50104 "4HC Tax Invoice"
         layout(SalesOrderLayout)
         {
             Type = RDLC;
-            LayoutFile = 'Src\Report\TaxInvoice.rdl';
+            LayoutFile = 'Src\Report\Layouts\TaxInvoice.rdl';
         }
     }
 

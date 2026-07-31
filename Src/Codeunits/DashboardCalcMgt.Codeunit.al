@@ -61,7 +61,10 @@ codeunit 50104 "Dashboard Calc. Mgt."
         TotalAmount := 0;
 
         GLAccount.SetFilter("No.", DashboardSetup."G/L Account Filter");
-        GLAccount.SetRange("Account Type", GLAccount."Account Type"::Posting);
+
+        // Apply Account Type filter only if a value is configured in setup
+        if DashboardSetup."G/L Account Type Filter" <> DashboardSetup."G/L Account Type Filter" then
+            GLAccount.SetRange("Account Type", DashboardSetup."G/L Account Type Filter");
 
         // Apply Date Filter
         if (StartDate <> 0D) and (EndDate <> 0D) then
@@ -83,7 +86,6 @@ codeunit 50104 "Dashboard Calc. Mgt."
                         GLAccount.CalcFields("Credit Amount");
                         TotalAmount += GLAccount."Credit Amount";
                     end else begin
-                        // Neither flag: fall back to Net Change
                         GLAccount.CalcFields("Net Change");
                         TotalAmount += GLAccount."Net Change";
                     end;
