@@ -2558,6 +2558,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Clear Posted Sale Inv - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3659837518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear Vendor Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear Vendor Ledger Entries - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 1726265788 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Correct Vendor Amount LCY (Posts Adjustment)</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2997,6 +3002,56 @@
           <source>Options</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Tax Credit Note - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3729784565 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Posted Purch. Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Posted Purch. Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3729784565 - Control 4122097326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Values</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Posted Purch. Invoice - Control Updates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3729784565 - Control 2035401138 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use for multi-line invoices, e.g. 10000=4376.17,20000=4732.61,30000=5020.73. Takes priority over New Amount below.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Posted Purch. Invoice - Control LineAmountsTextField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3729784565 - Control 2035401138 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Amounts (LineNo=Amount, comma-separated)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Posted Purch. Invoice - Control LineAmountsTextField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3729784565 - Control 3501033719 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Leave blank/0 to apply New Amount to the only line on the invoice. Ignored if Line Amounts above is filled in.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Posted Purch. Invoice - Control LineNoField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3729784565 - Control 3501033719 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No. (optional, single-line mode only)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Posted Purch. Invoice - Control LineNoField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3729784565 - Control 1404856566 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Leave blank/0 to skip. Ignored if Line Amounts above is filled in.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Posted Purch. Invoice - Control NewAmountField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3729784565 - Control 1404856566 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Amount (single-line mode only)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Posted Purch. Invoice - Control NewAmountField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3729784565 - Control 3727099824 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Leave blank to skip updating Currency Code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Posted Purch. Invoice - Control NewCurrencyCodeField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3729784565 - Control 3727099824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Posted Purch. Invoice - Control NewCurrencyCodeField - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 4074645880 - Control 3303687997 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
           <source>Specifies the footer text for reports generated by this company.</source>

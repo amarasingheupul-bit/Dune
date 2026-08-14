@@ -18,11 +18,11 @@
             "schemaUpdateMode": "ForceSync"
         },
          {
-            "name": "DUNECOPY1",
+            "name": "DuneCopy",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "DUNECOPY1",
+            "environmentName": "DuneCopy",
             "startupObjectId": 89,
             "startupObjectType": "Page",
             "breakOnError": "All",
