@@ -32,5 +32,11 @@ tableextension 50118 "4HC Jobs Setup" extends "Jobs Setup"
             TableRelation = "G/L Account"."No.";
             Caption = 'Interim Account No.';
         }
+        field(50150; "Provision Acc. No."; Code[20])
+        {
+            TableRelation = "G/L Account";
+            Caption = 'Provision for Costs Acc. No.';
+            DataClassification = CustomerContent;
+        }
     }
 }

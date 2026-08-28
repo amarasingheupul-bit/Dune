@@ -7,7 +7,7 @@ pageextension 50130 "4HC Jobs Setup" extends "Jobs Setup"
             group("4HC Jobs Setup")
             {
                 Caption = 'Projec Summary Accounts';
-              
+
                 field("Advance Acc. No."; Rec."Advance Acc. No.")
                 {
                     ApplicationArea = All;
@@ -33,6 +33,14 @@ pageextension 50130 "4HC Jobs Setup" extends "Jobs Setup"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Interim Account No. field.';
                 }
+            }
+        }
+        addlast("4HC Jobs Setup")
+        {
+            field("Provision Acc. No."; Rec."Provision Acc. No.")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the G/L account used to calculate Provision for Costs.';
             }
         }
     }

@@ -8,11 +8,13 @@ pageextension 50116 "4HC Customer Card" extends "Customer Card"
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the SAP ID reference used for this vendor.';
+                Visible = false;
             }
             field("REF IFS ID"; Rec."REF IFS ID")
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the IFS ID reference used for this vendor.';
+                Visible = false;
             }
             field("Creation Date"; Rec."Creation Date")
             {
@@ -23,7 +25,9 @@ pageextension 50116 "4HC Customer Card" extends "Customer Card"
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the DUNS No. field.';
+                Visible = false;
             }
         }
+
     }
 }

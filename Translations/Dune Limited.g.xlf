@@ -328,6 +328,46 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ResourceJobMatrixS365 - Field Resource No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1575453360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Invoice Excel Export Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sales Excel Export Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1575453360 - Field 1755834219 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attach Excel To Posted Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sales Excel Export Setup - Field Attach To Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1575453360 - Field 1755482753 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Send Attempt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sales Excel Export Setup - Field Last Send DateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1575453360 - Field 2579373044 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Send Info</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sales Excel Export Setup - Field Last Send Info - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1575453360 - Field 1949168153 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Send Succeeded</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sales Excel Export Setup - Field Last Send Result - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1575453360 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sales Excel Export Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1575453360 - Field 2978992649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Recipient Email Address</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sales Excel Export Setup - Field Recipient Email - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1575453360 - Field 2653736979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send Email On Post</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sales Excel Export Setup - Field Send Email On Post - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3226808724 - NamedType 1900438359" size-unit="char" translate="yes" xml:space="preserve">
           <source>This combination already exists as a reverse combination.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -557,6 +597,11 @@
           <source>%1-%2</source>
           <note from="Developer" annotates="general" priority="2">%1=Sales Quote No. %2=increment</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit S365Functions - Method SalesQuoteAmendArchive - NamedType DocNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3898813040 - Method 3674313151 - NamedType 4104898276" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Sales Inv. Excel Export - Method BuildExcelStream - NamedType SheetName</note>
         </trans-unit>
         <trans-unit id="Codeunit 139350647 - Method 54027132 - NamedType 1449168283" size-unit="char" translate="yes" xml:space="preserve">
           <source>Do you need to confirm this qoute?</source>
@@ -2093,6 +2138,46 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Resource Job MatrixS365 - Action LoadMatrix - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1575453360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Invoice Excel Export Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Excel Export Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1575453360 - Control 3052677768 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Attempt (for troubleshooting)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Excel Export Setup - Control Diagnostics - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1575453360 - Control 1755482753 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>When the last automatic send was attempted.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Excel Export Setup - Control Last Send DateTime - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1575453360 - Control 2579373044 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details or error message from the last send attempt.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Excel Export Setup - Control Last Send Info - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1575453360 - Control 1949168153 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Whether Business Central reported the last send as successful.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Excel Export Setup - Control Last Send Result - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1575453360 - Control 1755834219 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If enabled, the Excel file is also saved as a Document Attachment on the posted sales invoice.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Excel Export Setup - Control Attach To Invoice - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1575453360 - Control 2978992649 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The email address that the Excel export of every posted sales invoice will be sent to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Excel Export Setup - Control Recipient Email - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1575453360 - Control 2653736979 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If enabled, the Excel file is emailed automatically every time a sales invoice is posted.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Excel Export Setup - Control Send Email On Post - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 3239013442 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Lines Overview</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3108,6 +3193,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Jobs Setup - Control WIP Acc. No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3302123008 - Control 1281869795 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
+          <source>Specifies the G/L account used to calculate Provision for Costs.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Jobs Setup - Control Provision Acc. No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1845159254 - Change 4176871437 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2077750279">
           <source>Invoiced (Total Price)(LCY)</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3768,6 +3858,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Vendor Card - Control REF SAP ID - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4148792197 - Control 3826939645 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 515652382">
+          <source>Specifies the exchange rate used to convert the amount to LCY.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Apply Customer EntriesExt - Control Original Currency Factor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4148792197 - Control 3826939645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 515652382">
+          <source>Exchange Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Apply Customer EntriesExt - Control Original Currency Factor - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3174315453 - Control 3826939645 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3292376582">
+          <source>Specifies the exchange rate used to convert the amount to LCY.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Apply Vendor EntriesExt - Control Original Currency Factor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3174315453 - Control 3826939645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3292376582">
+          <source>Exchange Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Apply Vendor EntriesExt - Control Original Currency Factor - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2452472904 - Action 1563960530 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2591587468">
           <source>Payment Voucher - After Post</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4218,6 +4328,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Posted Sales Credit MemoDBase - Action TAX Credit Note - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2208946731 - Control 3003426407 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 896930563">
+          <source>Specifies the line amount converted to AED using the exchange rate as of the posting date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Purch. Invoice Subform AED - Control Amount (AED) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2208946731 - Control 3003426407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 896930563">
+          <source>Amount (AED)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Purch. Invoice Subform AED - Control Amount (AED) - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 913985011 - Control 1484925585 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1580859378">
           <source>Specify the Transport Manager</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4607,6 +4727,11 @@
           <source>Interim Account No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Jobs Setup - Field Interim Acc. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3302123008 - Field 1281869795 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2556642749">
+          <source>Provision for Costs Acc. No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Jobs Setup - Field Provision Acc. No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3302123008 - Field 1499075310 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2556642749">
           <source>Revenue Account No.</source>
@@ -5028,6 +5153,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field Yard No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3491917174 - Field 3003426407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+          <source>Line Amount (AED)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Line - Field Amount (AED) - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3491917174 - Field 4202475636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
           <source>Qty Posted %</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5052,6 +5182,11 @@
           <source>Qty. to Post %</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Line - Field Qty. to Post % - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3491917174 - Field 1981230152 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+          <source>Direct Unit Cost (AED)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Line - Field Unit Cost (AED) - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 485761676 - Field 310842904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1208986161">
           <source>Approval Rejection Reason</source>

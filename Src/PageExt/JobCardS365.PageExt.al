@@ -358,5 +358,70 @@ pageextension 50106 JobCardS365 extends "Job Card"
         Rec."Cost of Sales Cumulative" := GLEntry."Amount";
         Rec.Modify(true);
     end;
+
+    //////////////////////////////////////////////////////////////////////////////////
+    trigger OnAfterGetRecord()
+    var
+        ProjectSetup: Record "Jobs Setup";
+    begin
+        if ProjectSetup.Get() then begin
+            // For As of Date fields (Current Year only)
+            Rec.Advance := GetGLTotal(Rec."No.", ProjectSetup."Advance Acc. No.", false);
+            Rec."Revenue As of Date" := GetGLTotal(Rec."No.", ProjectSetup."Revenue Acc. No.", false);
+            Rec."Cost of Sales As of Date" := GetGLTotal(Rec."No.", ProjectSetup."Cost of Sales Acc. No.", false);
+
+            Rec."GP As of Date" := Rec."Revenue As of Date" - Rec."Cost of Sales As of Date";
+
+            if Rec."Revenue As of Date" <> 0 then
+                Rec."GP % As of Date" := (Rec."GP As of Date" / Rec."Revenue As of Date") * 100
+            else
+                Rec."GP % As of Date" := 0;
+
+            Rec."WIP As of Date" := GetGLTotal(Rec."No.", ProjectSetup."WIP Acc. No.", false);
+            Rec."Provision for Costs" := GetGLTotal(Rec."No.", ProjectSetup."Provision Acc. No.", false);
+            Rec."Interim As of Date" := GetGLTotal(Rec."No.", ProjectSetup."Interim Acc. No.", false);
+
+            // For Cumulative fields (If any)
+            Rec."Revenue Cumulative" := GetGLTotal(Rec."No.", ProjectSetup."Revenue Acc. No.", true);
+            Rec."Cost of Sales Cumulative" := GetGLTotal(Rec."No.", ProjectSetup."Cost of Sales Acc. No.", true);
+
+            Rec."GP Cumulative" := Rec."Revenue Cumulative" - Rec."Cost of Sales Cumulative";
+
+            if Rec."Revenue Cumulative" <> 0 then
+                Rec."GP % Cumulative" := (Rec."GP Cumulative" / Rec."Revenue Cumulative") * 100
+            else
+                Rec."GP % Cumulative" := 0;
+
+            Rec."WIP Cumulative" := GetGLTotal(Rec."No.", ProjectSetup."WIP Acc. No.", true);
+            Rec."Interim Cumulative" := GetGLTotal(Rec."No.", ProjectSetup."Interim Acc. No.", true);
+        end;
+    end;
+
+    local procedure GetGLTotal(JobNo: Code[20]; GLAccountNo: Code[20]; IsCumulative: Boolean): Decimal
+    var
+        GLEntry: Record "G/L Entry";
+        StartDate: Date;
+    begin
+        if GLAccountNo = '' then
+            exit(0);
+
+        GLEntry.Reset();
+        GLEntry.SetRange("Job No.", JobNo);
+        GLEntry.SetRange("G/L Account No.", GLAccountNo);
+
+        if IsCumulative then
+            GLEntry.SetRange("Posting Date", 0D, Today) // Cumulative: 0D to Today
+        else begin
+            StartDate := CalcDate('<-CY>', Today); // As of Date: Jan 1st to Today
+            GLEntry.SetRange("Posting Date", StartDate, Today);
+        end;
+
+        if GLEntry.FindSet() then begin
+            GLEntry.CalcSums(Amount);
+            exit(GLEntry.Amount);
+        end;
+
+        exit(0);
+    end;
 }
 
