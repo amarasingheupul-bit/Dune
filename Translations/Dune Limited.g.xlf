@@ -218,6 +218,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DashboardVisible KPI Setup - Field Widget Identity - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2571722722 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Balance Buffer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Doc Balance Buffer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2571722722 - Field 365542049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Difference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Doc Balance Buffer - Field Difference - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2571722722 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Doc Balance Buffer - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2571722722 - Field 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Doc Balance Buffer - Field Posting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2571722722 - Field 2696513193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Credit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Doc Balance Buffer - Field Total Credit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2571722722 - Field 997671936 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Debit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Doc Balance Buffer - Field Total Debit - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 188856214 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Excel Data Import</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1768,6 +1798,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Dune Dashboard Role Center - Action Vendors - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3252461314 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unmatched G/L Documents</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Unmatched Documents - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3252461314 - Action 2026913255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Refresh</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Unmatched Documents - Action Refresh - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 4145478934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Excel Data Import</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2633,6 +2673,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report BankRecStatementSqBase - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 273460796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear Statement Status/No. by Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear Bank Ledger Stmt Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 273460796 - Control 2262961179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specify one or more Document Nos., separated by commas, e.g. REC-P-26/27-00194,REC-P-26/27-00195</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear Bank Ledger Stmt Status - Control DocNoFilter - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 273460796 - Control 2262961179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No. (comma-separated for multiple)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear Bank Ledger Stmt Status - Control DocNoFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2368542393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear Cust. Ledger Entry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear Cust. Ledger Entry - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 1745267443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Clear G/L Entry Currency Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2647,6 +2707,66 @@
           <source>Clear Vendor Ledger Entries</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Clear Vendor Ledger Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1033016334 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct  Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1033016334 - NamedType 750120336" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This directly modifies posted Vendor, Customer and G/L records. Continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount - NamedType ConfirmQst</note>
+        </trans-unit>
+        <trans-unit id="Report 1033016334 - NamedType 1933497853" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Ledger Entry %1 was not found.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount - NamedType CustEntryNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Report 1033016334 - NamedType 4288424883" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 ledger record(s) updated.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount - NamedType DoneMsg</note>
+        </trans-unit>
+        <trans-unit id="Report 1033016334 - NamedType 2183397759" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No Initial Entry found in Detailed Cust. Ledg. Entry for Customer Ledger Entry %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount - NamedType InitialCustEntryNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Report 1033016334 - NamedType 1681172551" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No Initial Entry found in Detailed Vendor Ledg. Entry for Vendor Ledger Entry %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount - NamedType InitialVendEntryNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Report 1033016334 - NamedType 1916930357" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Ledger Entry %1 was not found.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount - NamedType VendEntryNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Report 3115699648 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct  Amount LCY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount LCY - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3115699648 - NamedType 750120336" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This directly modifies posted Vendor, Bank and G/L records for entries 5474 and 5476. Continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount LCY - NamedType ConfirmQst</note>
+        </trans-unit>
+        <trans-unit id="Report 3115699648 - NamedType 4288424883" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 ledger record(s) updated.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount LCY - NamedType DoneMsg</note>
+        </trans-unit>
+        <trans-unit id="Report 3115699648 - NamedType 2791289126" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Ledger Entry %1 was not found.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount LCY - NamedType EntryNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Report 3115699648 - NamedType 3205156392" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No Initial Entry found in Detailed Vendor Ledg. Entry for Vendor Ledger Entry %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Correct  Amount LCY - NamedType InitialEntryNotFoundErr</note>
         </trans-unit>
         <trans-unit id="Report 1726265788 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Correct Vendor Amount LCY (Posts Adjustment)</source>
@@ -2687,26 +2807,6 @@
           <source>Posting Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Correct Vendor Amount LCY - Control EntryNO - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 1726265788 - Control 3622531306 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting Date of the Vendor Ledger Entry to correct.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Correct Vendor Amount LCY - Control PostingDateField - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 1726265788 - Control 3622531306 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Correct Vendor Amount LCY - Control PostingDateField - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 1726265788 - Control 3705610834 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Mandatory explanation, stored on the journal line description.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Correct Vendor Amount LCY - Control ReasonField - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 1726265788 - Control 3705610834 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Reason for Correction</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Correct Vendor Amount LCY - Control ReasonField - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 1726265788 - Control 2808404044 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Journal Target</source>
@@ -3088,6 +3188,66 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Tax Credit Note - Control Options - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3388459902 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Bank Ledger Open Flag</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Bank Ledger Open Flag - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3388459902 - Control 284195533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry Filters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Bank Ledger Open Flag - Control Filters - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3388459902 - Control 1731618904 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the Document No. to filter entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Bank Ledger Open Flag - Control DocumentNoField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3388459902 - Control 1731618904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Bank Ledger Open Flag - Control DocumentNoField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3388459902 - Control 1074039337 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the Entry No. to filter entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Bank Ledger Open Flag - Control EntryNoField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3388459902 - Control 1074039337 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Bank Ledger Open Flag - Control EntryNoField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 769291361 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update G/L Entry Source Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GLE Source Curr. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 769291361 - Control 2439975965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GLE Source Curr. Code - Control FilterHint - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 769291361 - Control 201881077 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use the Filter (G/L Entry) tab to enter the Entry No. and/or Document No. of the entries you want to update.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GLE Source Curr. Code - Control Instructions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 769291361 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GLE Source Curr. Code - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 769291361 - Control 2639240339 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Source Currency Code value to set on the filtered G/L Entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GLE Source Curr. Code - Control NewSourceCurrencyCodeField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 769291361 - Control 2639240339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Source Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GLE Source Curr. Code - Control NewSourceCurrencyCodeField - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 3729784565 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Update Posted Purch. Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3407,6 +3567,196 @@
           <source>Specifies the value of the Yard No. field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Yard No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 3988527031 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>E-Invoice (Peppol) Additional Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Peppol E-Invoice Fields S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1151813347 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the AE VAT category codes field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control AE VAT category codes - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 2783424418 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Allowance/Charge Identity code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Allowance/Charge Identity code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 683868821 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Buyer Internal Accounting Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Buyer Int. Acct. Ref. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 4049572822 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Contract Value field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Contract Value S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 564033692 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Country Sub-division field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Country Sub-division - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 2344509689 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Credit Note Reason Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Credit Note Reason Code S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1889637161 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Customs Reference Number field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Customs Reference No. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1433551947 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Delivery Incoterms field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Delivery Incoterms S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1694651720 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Despatch Advice Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Despatch Advice Ref. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 340678975 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Frequency of Billing field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Frequency of Billing S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 4133378282 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Invoice Issue Time field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Invoice Issue Time S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 2221022166 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Invoice Note field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Invoice Note S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 2319607984 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Invoice Type Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Invoice Type Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 665544698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Invoiced Object Identifier field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Invoiced Object ID S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 4165039853 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Invoiced Object Identifier Scheme Identifier field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Invoiced Object ID Scheme S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1273783111 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Invoicing Period End Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Invoicing Period End S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1665031366 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Invoicing Period Start Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Invoicing Period Start S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 635227817 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Payment Instructions ID field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Payment Instructions ID S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 2403181100 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Payment Terms Amount field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Payment Terms Amount S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 2611002677 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Preceding Invoice Issue Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Preceding Invoice Date S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 3321569868 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Preceding Invoice Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Preceding Invoice Ref. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1909019396 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Principle ID field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Principle ID S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1451748058 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Reasons for exemption from tax field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Reasons for exemption from tax - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1944908410 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Receiving Advice Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Receiving Advice Ref. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 2461844086 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Registration identifier type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Registration identifier type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1006930654 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Remittance Information Scheme Identifier field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Remittance Info Scheme S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1514809143 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Remittance Information field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Remittance Information S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 940066831 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Rounding Amount field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Rounding Amount S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 2521835570 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Sales Order Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Sales Order Reference S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1552746031 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Supporting Document Description field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Supporting Doc. Desc. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 992225695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Supporting Document Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Supporting Doc. Ref. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1042497356 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Tax Accounting Currency field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Tax Accounting Currency S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 2993114706 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Tender Or Lot Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Tender Or Lot Reference S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1346748651 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Terms Installment Due Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Terms Installment Due S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 911700103 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Terms Payment Instructions ID field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control Terms Payment Instr. ID S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 4019965079 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the VAT Exemption Reason Text field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control VAT Exemption Reason S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3889087401 - Control 1960894495 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the VAT Tax Point Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Posted Sales Invoice - Control VAT Tax Point Date S365 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 560605821 - Action 2568382455 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4042331808">
           <source>Prepares and prints the purchase credit note. This action opens the report request page, allowing you to specify printing options before generating the document.</source>
@@ -3837,6 +4187,196 @@
           <source>Specifies the value of the Yard No. field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Yard No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 3988527031 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>E-Invoice (Peppol) Additional Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Peppol E-Invoice Fields S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1151813347 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the AE VAT category codes field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control AE VAT category codes - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 2783424418 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Allowance/Charge Identity code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Allowance/Charge Identity code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 683868821 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Buyer Internal Accounting Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Buyer Int. Acct. Ref. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 4049572822 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Contract Value field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Contract Value S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 564033692 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Country Sub-division field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Country Sub-division - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 2344509689 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Credit Note Reason Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Credit Note Reason Code S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1889637161 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Customs Reference Number field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Customs Reference No. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1433551947 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Delivery Incoterms field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Delivery Incoterms S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1694651720 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Despatch Advice Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Despatch Advice Ref. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 340678975 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Frequency of Billing field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Frequency of Billing S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 4133378282 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Invoice Issue Time field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Invoice Issue Time S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 2221022166 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Invoice Note field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Invoice Note S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 2319607984 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Invoice Type Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Invoice Type Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 665544698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Invoiced Object Identifier field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Invoiced Object ID S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 4165039853 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Invoiced Object Identifier Scheme Identifier field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Invoiced Object ID Scheme S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1273783111 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Invoicing Period End Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Invoicing Period End S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1665031366 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Invoicing Period Start Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Invoicing Period Start S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 635227817 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Payment Instructions ID field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Payment Instructions ID S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 2403181100 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Payment Terms Amount field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Payment Terms Amount S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 2611002677 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Preceding Invoice Issue Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Preceding Invoice Date S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 3321569868 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Preceding Invoice Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Preceding Invoice Ref. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1909019396 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Principle ID field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Principle ID S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1451748058 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Reasons for exemption from tax field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Reasons for exemption from tax - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1944908410 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Receiving Advice Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Receiving Advice Ref. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 2461844086 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Registration identifier type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Registration identifier type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1006930654 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Remittance Information Scheme Identifier field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Remittance Info Scheme S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1514809143 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Remittance Information field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Remittance Information S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 940066831 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Rounding Amount field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Rounding Amount S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 2521835570 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Sales Order Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Sales Order Reference S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1552746031 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Supporting Document Description field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Supporting Doc. Desc. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 992225695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Supporting Document Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Supporting Doc. Ref. S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1042497356 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Tax Accounting Currency field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Tax Accounting Currency S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 2993114706 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Tender Or Lot Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Tender Or Lot Reference S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1346748651 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Terms Installment Due Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Terms Installment Due S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 911700103 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Terms Payment Instructions ID field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Terms Payment Instr. ID S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 4019965079 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the VAT Exemption Reason Text field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control VAT Exemption Reason S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 1960894495 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the VAT Tax Point Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control VAT Tax Point Date S365 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3883510409 - Control 1407200743 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4055858012">
           <source>Shows the date when this vendor record was created or imported.</source>
@@ -4337,6 +4877,16 @@
           <source>Amount (AED)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Purch. Invoice Subform AED - Control Amount (AED) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2208946731 - Change 1577567912 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 896930563">
+          <source>Project Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Purch. Invoice Subform AED - Change Shortcut Dimension 1 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2208946731 - Change 1003760969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 896930563">
+          <source>Div Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Purch. Invoice Subform AED - Change Shortcut Dimension 2 Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 913985011 - Control 1484925585 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1580859378">
           <source>Specify the Transport Manager</source>
@@ -5238,6 +5788,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field 4HC Type - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1151813347 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>AE VAT category codes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field AE VAT category codes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2783424418 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Allowance or charge identification code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Allowance/Charge Identity code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 468188380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>Amend &amp; Archived</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5253,6 +5813,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Budget - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 683868821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Buyer Internal Accounting Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Buyer Int. Acct. Ref. S365 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 2579989435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>Change Reason</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5262,6 +5827,11 @@
           <source>Confirmed</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field ConfirmedS365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 4049572822 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Contract Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Contract Value S365 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 864848052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>Cost Center</source>
@@ -5273,10 +5843,40 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field COST Reference - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 564033692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Country Sub-division</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Country Sub-division - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2344509689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Credit Note Reason Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Credit Note Reason Code S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1889637161 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Customs Reference Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Customs Reference No. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1433551947 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Delivery Incoterms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Delivery Incoterms S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1694651720 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Despatch Advice Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Despatch Advice Ref. S365 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 3885663858 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>End User</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field End User/ Main Customer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 340678975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Frequency of Billing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Frequency of Billing S365 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>G/L Account</source>
@@ -5297,6 +5897,76 @@
           <source>Incoming PO</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Incoming PO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2221022166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Invoice Note</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Invoice Note S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2319607984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Invoice Type Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Invoice Type Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 665544698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Invoiced Object Identifier</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Invoiced Object ID S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 4165039853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Invoiced Object Identifier Scheme Identifier</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Invoiced Object ID Scheme S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1273783111 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Invoicing Period End Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Invoicing Period End S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1665031366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Invoicing Period Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Invoicing Period Start S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1455096911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Is Agent Billing applicable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Is Agent Billing applicable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2379840200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Is Continuous Supply</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Is Continuous Supply - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2324062491 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Is Deemed Supply</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Is Deemed Supply - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 470390626 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Is Exports Supply</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Is Exports Supply - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 4202572391 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Is Free Trade Zone Supply</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Is Free Trade Zone Supply - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1472182246 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Is Profit Margin Scheme applicable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Is Profit Margin Scheme applicable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2188725985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Is Summary Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Is Summary Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 671847089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Is Supply through E-commerce</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Is Supply through E-commerce - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 450851517 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>Job No</source>
@@ -5323,6 +5993,31 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Original Quote No. S365 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 635227817 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Payment Instructions ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Payment Instructions ID S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2403181100 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Payment Terms Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Payment Terms Amount S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2611002677 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Preceding Invoice Issue Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Preceding Invoice Date S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 3321569868 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Preceding Invoice Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Preceding Invoice Ref. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1909019396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Principle ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Principle ID S365 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 2521638095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>Quote Status</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5332,6 +6027,36 @@
           <source>Quote Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Quote Type S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1451748058 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Reasons for exemption from tax</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Reasons for exemption from tax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1944908410 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Receiving Advice Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Receiving Advice Ref. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2461844086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Seller legal registration identifier type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Registration identifier type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1006930654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Remittance Information Scheme Identifier</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Remittance Info Scheme S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1514809143 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Remittance Information</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Remittance Information S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 940066831 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Rounding Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Rounding Amount S365 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 517255489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>Sales Area</source>
@@ -5358,6 +6083,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Sales Manager - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2521835570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Sales Order Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Sales Order Reference S365 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 4138736989 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>Sales Secretary Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5382,6 +6112,46 @@
           <source>Supplier to Services</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Supplier to Services - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1552746031 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Supporting Document Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Supporting Doc. Desc. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 992225695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Supporting Document Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Supporting Doc. Ref. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1042497356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Tax Accounting Currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Tax Accounting Currency S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 2993114706 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Tender Or Lot Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Tender Or Lot Reference S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1346748651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Terms Installment Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Terms Installment Due S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 911700103 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Terms Payment Instructions ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Terms Payment Instr. ID S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 4019965079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>VAT Exemption Reason Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field VAT Exemption Reason S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 1960894495 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>VAT Tax Point Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field VAT Tax Point Date S365 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 2984497355 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>Yard No.</source>
@@ -5728,6 +6498,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field 4HC Type - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1151813347 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>AE VAT category codes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field AE VAT category codes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2783424418 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Allowance or charge identification code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Allowance/Charge Identity code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 468188380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Amend &amp; Archived</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5743,6 +6523,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Budget - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 683868821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Buyer Internal Accounting Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Buyer Int. Acct. Ref. S365 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 2579989435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Change Reason</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5752,6 +6537,11 @@
           <source>Confirmed</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field ConfirmedS365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 4049572822 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Contract Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Contract Value S365 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 864848052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Cost Center</source>
@@ -5763,10 +6553,40 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field COST Reference - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 564033692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Country Sub-division</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Country Sub-division - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2344509689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Credit Note Reason Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Credit Note Reason Code S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1889637161 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Customs Reference Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Customs Reference No. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1433551947 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Delivery Incoterms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Delivery Incoterms S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1694651720 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Despatch Advice Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Despatch Advice Ref. S365 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 3885663858 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>End User</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field End User/ Main Customer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 340678975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Frequency of Billing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Frequency of Billing S365 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>G/L Account</source>
@@ -5787,6 +6607,76 @@
           <source>Incoming PO</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Incoming PO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2221022166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Invoice Note</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Invoice Note S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2319607984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Invoice Type Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Invoice Type Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 665544698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Invoiced Object Identifier</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Invoiced Object ID S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 4165039853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Invoiced Object Identifier Scheme Identifier</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Invoiced Object ID Scheme S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1273783111 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Invoicing Period End Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Invoicing Period End S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1665031366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Invoicing Period Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Invoicing Period Start S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1455096911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Is Agent Billing applicable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Is Agent Billing applicable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2379840200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Is Continuous Supply</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Is Continuous Supply - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2324062491 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Is Deemed Supply</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Is Deemed Supply - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 470390626 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Is Exports Supply</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Is Exports Supply - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 4202572391 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Is Free Trade Zone Supply</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Is Free Trade Zone Supply - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1472182246 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Is Profit Margin Scheme applicable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Is Profit Margin Scheme applicable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2188725985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Is Summary Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Is Summary Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 671847089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Is Supply through E-commerce</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Is Supply through E-commerce - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 450851517 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Job No</source>
@@ -5813,6 +6703,31 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Original Quote No. S365 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 635227817 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Payment Instructions ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Payment Instructions ID S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2403181100 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Payment Terms Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Payment Terms Amount S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2611002677 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Preceding Invoice Issue Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Preceding Invoice Date S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 3321569868 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Preceding Invoice Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Preceding Invoice Ref. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1909019396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Principle ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Principle ID S365 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 2521638095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Quote Status</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5822,6 +6737,36 @@
           <source>Quote Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Quote Type S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1451748058 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Reasons for exemption from tax</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Reasons for exemption from tax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1944908410 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Receiving Advice Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Receiving Advice Ref. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2461844086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Seller legal registration identifier type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Registration identifier type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1006930654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Remittance Information Scheme Identifier</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Remittance Info Scheme S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1514809143 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Remittance Information</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Remittance Information S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 940066831 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Rounding Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Rounding Amount S365 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 517255489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Sales Area</source>
@@ -5848,6 +6793,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Sales Manager - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2521835570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Sales Order Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Sales Order Reference S365 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 4138736989 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Sales Secretary Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5872,6 +6822,46 @@
           <source>Supplier to Services</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Supplier to Services - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1552746031 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Supporting Document Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Supporting Doc. Desc. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 992225695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Supporting Document Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Supporting Doc. Ref. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1042497356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Tax Accounting Currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Tax Accounting Currency S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 2993114706 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Tender Or Lot Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Tender Or Lot Reference S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1346748651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Terms Installment Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Terms Installment Due S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 911700103 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Terms Payment Instructions ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Terms Payment Instr. ID S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 4019965079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>VAT Exemption Reason Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field VAT Exemption Reason S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 1960894495 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>VAT Tax Point Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field VAT Tax Point Date S365 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 2984497355 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Yard No.</source>

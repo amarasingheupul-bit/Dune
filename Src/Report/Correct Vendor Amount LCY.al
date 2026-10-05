@@ -5,11 +5,11 @@ report 50116 "Correct Vendor Amount LCY"
     UsageCategory = Tasks;
     ApplicationArea = All;
     Permissions = tabledata "Vendor Ledger Entry" = RIMD,
-                  tabledata "Gen. Journal Line" = RIMD,
+                  // tabledata "Gen. Journal Line" = RIMD,
                   tabledata "Detailed Vendor Ledg. Entry" = RIMD,
-                  tabledata "G/L Entry" = RIMD,
-                  tabledata "Bank Account Ledger Entry" = RIMD,
-                  tabledata "Posted Gen. Journal Line" = RIMD;
+                  // tabledata "G/L Entry" = RIMD,
+                  tabledata "Bank Account Ledger Entry" = RIMD;
+    //tabledata "Posted Gen. Journal Line" = RIMD;
 
     dataset
     {
@@ -19,63 +19,72 @@ report 50116 "Correct Vendor Amount LCY"
 
             trigger OnPreDataItem()
             begin
-                if PostingDate = 0D then
-                    Error('Please enter a Posting Date.');
+                // if PostingDate = 0D then
+                //     Error('Please enter a Posting Date.');
                 if DocumentNo = '' then
                     Error('Please enter a Document No.');
                 // if CorrectedAmountLCY = 0 then
                 //     Error('Please enter the corrected Amount (LCY).');
-                if GenJnlTemplateName = '' then
-                    Error('Please enter a Gen. Journal Template.');
+                // if GenJnlTemplateName = '' then
+                //     Error('Please enter a Gen. Journal Template.');
                 // if GenJnlBatchName = '' then
                 //     Error('Please enter a Gen. Journal Batch.');
 
-                SetRange("Posting Date", PostingDate);
+                //SetRange("Posting Date", PostingDate);
                 SetRange("Document No.", DocumentNo);
             end;
 
             trigger OnAfterGetRecord()
-            var
-                GenJnlLine: Record "Gen. Journal Line";
-                DiffLCY: Decimal;
-                LastLineNo: Integer;
             begin
-                "Amount (LCY)" := 10945.65;
-                Modify();
-                // DiffLCY := CorrectedAmountLCY - VendLedgerEntry."Amount (LCY)";
-                // if DiffLCY = 0 then begin
-                //     Message('Entry %1 already matches the target amount. No adjustment posted.', VendLedgerEntry."Entry No.");
-                //     exit;
-                // end;
-
-                // GenJnlLine.SetRange("Journal Template Name", GenJnlTemplateName);
-                // GenJnlLine.SetRange("Journal Batch Name", GenJnlBatchName);
-                // if GenJnlLine.FindLast() then
-                //     LastLineNo := GenJnlLine."Line No." + 10000
-                // else
-                //     LastLineNo := 10000;
-
-                // GenJnlLine.Init();
-                // GenJnlLine."Journal Template Name" := GenJnlTemplateName;
-                // GenJnlLine."Journal Batch Name" := GenJnlBatchName;
-                // GenJnlLine."Line No." := LastLineNo;
-                // GenJnlLine.Validate("Posting Date", WorkDate());
-                // GenJnlLine.Validate("Document Type", GenJnlLine."Document Type"::Payment);
-                // GenJnlLine.Validate("Document No.", VendLedgerEntry."Document No.");
-                // GenJnlLine.Validate("Account Type", GenJnlLine."Account Type"::Vendor);
-                // GenJnlLine.Validate("Account No.", VendLedgerEntry."Vendor No.");
-                // GenJnlLine.Validate(Amount, DiffLCY);
-                // GenJnlLine."Applies-to Doc. Type" := VendLedgerEntry."Document Type";
-                // GenJnlLine."Applies-to Doc. No." := VendLedgerEntry."Document No.";
-                // GenJnlLine.Description :=
-                //     CopyStr(StrSubstNo('Correction Amt(LCY) entry %1: %2', VendLedgerEntry."Entry No.", ReasonText),
-                //         1, MaxStrLen(GenJnlLine.Description));
-                // GenJnlLine."Bal. Account Type" := GenJnlLine."Bal. Account Type"::"G/L Account";
-                // GenJnlLine."Bal. Account No." := BalGLAccountNo;
-                // GenJnlLine.Insert(true);
-
-                // UpdatedCount += 1;
+                case "Entry No." of
+                    5476:
+                        begin
+                            Amount := 3826.18;
+                            "Amount (LCY)" := 14129.82;
+                            Modify();
+                        end;
+                    5474:
+                        begin
+                            Amount := 352.87;
+                            "Amount (LCY)" := 1303.12;
+                            Modify();
+                        end;
+                end;
             end;
+            // DiffLCY := CorrectedAmountLCY - VendLedgerEntry."Amount (LCY)";
+            // if DiffLCY = 0 then begin
+            //     Message('Entry %1 already matches the target amount. No adjustment posted.', VendLedgerEntry."Entry No.");
+            //     exit;
+            // end;
+
+            // GenJnlLine.SetRange("Journal Template Name", GenJnlTemplateName);
+            // GenJnlLine.SetRange("Journal Batch Name", GenJnlBatchName);
+            // if GenJnlLine.FindLast() then
+            //     LastLineNo := GenJnlLine."Line No." + 10000
+            // else
+            //     LastLineNo := 10000;
+
+            // GenJnlLine.Init();
+            // GenJnlLine."Journal Template Name" := GenJnlTemplateName;
+            // GenJnlLine."Journal Batch Name" := GenJnlBatchName;
+            // GenJnlLine."Line No." := LastLineNo;
+            // GenJnlLine.Validate("Posting Date", WorkDate());
+            // GenJnlLine.Validate("Document Type", GenJnlLine."Document Type"::Payment);
+            // GenJnlLine.Validate("Document No.", VendLedgerEntry."Document No.");
+            // GenJnlLine.Validate("Account Type", GenJnlLine."Account Type"::Vendor);
+            // GenJnlLine.Validate("Account No.", VendLedgerEntry."Vendor No.");
+            // GenJnlLine.Validate(Amount, DiffLCY);
+            // GenJnlLine."Applies-to Doc. Type" := VendLedgerEntry."Document Type";
+            // GenJnlLine."Applies-to Doc. No." := VendLedgerEntry."Document No.";
+            // GenJnlLine.Description :=
+            //     CopyStr(StrSubstNo('Correction Amt(LCY) entry %1: %2', VendLedgerEntry."Entry No.", ReasonText),
+            //         1, MaxStrLen(GenJnlLine.Description));
+            // GenJnlLine."Bal. Account Type" := GenJnlLine."Bal. Account Type"::"G/L Account";
+            // GenJnlLine."Bal. Account No." := BalGLAccountNo;
+            // GenJnlLine.Insert(true);
+
+            // UpdatedCount += 1;
+            //end;
 
             trigger OnPostDataItem()
             begin
@@ -86,63 +95,71 @@ report 50116 "Correct Vendor Amount LCY"
                 //         UpdatedCount, GenJnlTemplateName, GenJnlBatchName);
             end;
         }
-        dataitem("G/L Entry"; "G/L Entry")
-        {
-            DataItemTableView = sorting("Entry No.");
+        // dataitem("G/L Entry"; "G/L Entry")
+        // {
+        //     DataItemTableView = sorting("Entry No.");
 
-            trigger OnPreDataItem()
-            begin
-                if PostingDate = 0D then
-                    Error('Please enter a Posting Date.');
-                if DocumentNo = '' then
-                    Error('Please enter a Document No.');
-                if GenJnlTemplateName = '' then
-                    Error('Please enter a Gen. Journal Template.');
+        //     trigger OnPreDataItem()
+        //     begin
+        //         if PostingDate = 0D then
+        //             Error('Please enter a Posting Date.');
+        //         if DocumentNo = '' then
+        //             Error('Please enter a Document No.');
+        //         if GenJnlTemplateName = '' then
+        //             Error('Please enter a Gen. Journal Template.');
 
-                SetRange("Posting Date", PostingDate);
-                SetRange("Document No.", DocumentNo);
-            end;
+        //         SetRange("Posting Date", PostingDate);
+        //         SetRange("Document No.", DocumentNo);
+        //     end;
 
-            trigger OnAfterGetRecord()
-            begin
-                case "Entry No." of
-                    4875:
-                        Amount := 10945.65;
-                    4874:
-                        Amount := -10945.65;
-                end;
-                Modify();
-            end;
-        }
+        //     trigger OnAfterGetRecord()
+        //     begin
+        //         case "Entry No." of
+        //             4875:
+        //                 Amount := 10945.65;
+        //             4874:
+        //                 Amount := -10945.65;
+        //         end;
+        //         Modify();
+        //     end;
+        // }
         dataitem("Detailed Vendor Ledg. Entry"; "Detailed Vendor Ledg. Entry")
         {
             DataItemTableView = sorting("Entry No.");
 
             trigger OnPreDataItem()
             begin
-                if PostingDate = 0D then
-                    Error('Please enter a Posting Date.');
+                // if PostingDate = 0D then
+                //     Error('Please enter a Posting Date.');
                 if DocumentNo = '' then
                     Error('Please enter a Document No.');
                 // if CorrectedAmountLCY = 0 then
                 //     Error('Please enter the corrected Amount (LCY).');
-                if GenJnlTemplateName = '' then
-                    Error('Please enter a Gen. Journal Template.');
+                // if GenJnlTemplateName = '' then
+                //     Error('Please enter a Gen. Journal Template.');
                 // if GenJnlBatchName = '' then
                 //     Error('Please enter a Gen. Journal Batch.');
 
-                SetRange("Posting Date", PostingDate);
+                //SetRange("Posting Date", PostingDate);
                 SetRange("Document No.", DocumentNo);
             end;
 
             trigger OnAfterGetRecord()
-            var
-                GenJnlLine: Record "Gen. Journal Line";
-                DiffLCY: Decimal;
-                LastLineNo: Integer;
             begin
-                "Amount (LCY)" := 10945.65;
-                Modify();
+                case "Entry No." of
+                    5476:
+                        begin
+                            Amount := 3826.18;
+                            "Amount (LCY)" := 14129.82;
+                            Modify();
+                        end;
+                    5474:
+                        begin
+                            Amount := 352.87;
+                            "Amount (LCY)" := 1303.12;
+                            Modify();
+                        end;
+                end;
             end;
         }
         dataitem("Bank Account Ledger Entry"; "Bank Account Ledger Entry")
@@ -151,93 +168,101 @@ report 50116 "Correct Vendor Amount LCY"
 
             trigger OnPreDataItem()
             begin
-                if PostingDate = 0D then
-                    Error('Please enter a Posting Date.');
+                // if PostingDate = 0D then
+                //     Error('Please enter a Posting Date.');
                 if DocumentNo = '' then
                     Error('Please enter a Document No.');
                 // if CorrectedAmountLCY = 0 then
                 //     Error('Please enter the corrected Amount (LCY).');
-                if GenJnlTemplateName = '' then
-                    Error('Please enter a Gen. Journal Template.');
+                // if GenJnlTemplateName = '' then
+                //     Error('Please enter a Gen. Journal Template.');
                 // if GenJnlBatchName = '' then
                 //     Error('Please enter a Gen. Journal Batch.');
 
-                SetRange("Posting Date", PostingDate);
+                //SetRange("Posting Date", PostingDate);
                 SetRange("Document No.", DocumentNo);
             end;
 
             trigger OnAfterGetRecord()
-            var
-                GenJnlLine: Record "Gen. Journal Line";
-                DiffLCY: Decimal;
-                LastLineNo: Integer;
             begin
-                "Amount (LCY)" := 10945.65;
-                Modify();
+                case "Entry No." of
+                    5476:
+                        begin
+                            Amount := 3826.18;
+                            "Amount (LCY)" := 14129.82;
+                            Modify();
+                        end;
+                    5474:
+                        begin
+                            Amount := 352.87;
+                            "Amount (LCY)" := 1303.12;
+                            Modify();
+                        end;
+                end;
             end;
         }
-        dataitem("Gen. Journal Line"; "Gen. Journal Line")
-        {
-            //DataItemTableView = sorting("Entry No.");
+        // dataitem("Gen. Journal Line"; "Gen. Journal Line")
+        // {
+        //     //DataItemTableView = sorting("Entry No.");
 
-            trigger OnPreDataItem()
-            begin
-                if PostingDate = 0D then
-                    Error('Please enter a Posting Date.');
-                if DocumentNo = '' then
-                    Error('Please enter a Document No.');
-                // if CorrectedAmountLCY = 0 then
-                //     Error('Please enter the corrected Amount (LCY).');
-                if GenJnlTemplateName = '' then
-                    Error('Please enter a Gen. Journal Template.');
-                // if GenJnlBatchName = '' then
-                //     Error('Please enter a Gen. Journal Batch.');
+        //     trigger OnPreDataItem()
+        //     begin
+        //         if PostingDate = 0D then
+        //             Error('Please enter a Posting Date.');
+        //         if DocumentNo = '' then
+        //             Error('Please enter a Document No.');
+        //         // if CorrectedAmountLCY = 0 then
+        //         //     Error('Please enter the corrected Amount (LCY).');
+        //         if GenJnlTemplateName = '' then
+        //             Error('Please enter a Gen. Journal Template.');
+        //         // if GenJnlBatchName = '' then
+        //         //     Error('Please enter a Gen. Journal Batch.');
 
-                SetRange("Posting Date", PostingDate);
-                SetRange("Document No.", DocumentNo);
-            end;
+        //         SetRange("Posting Date", PostingDate);
+        //         SetRange("Document No.", DocumentNo);
+        //     end;
 
-            trigger OnAfterGetRecord()
-            var
-                GenJnlLine: Record "Gen. Journal Line";
-                DiffLCY: Decimal;
-                LastLineNo: Integer;
-            begin
-                "Amount (LCY)" := 10945.65;
-                Modify();
-            end;
-        }
-        dataitem("Posted Gen. Journal Line"; "Posted Gen. Journal Line")
-        {
-            // DataItemTableView = sorting("Entry No.");
+        //     trigger OnAfterGetRecord()
+        //     var
+        //         GenJnlLine: Record "Gen. Journal Line";
+        //         DiffLCY: Decimal;
+        //         LastLineNo: Integer;
+        //     begin
+        //         "Amount (LCY)" := 10945.65;
+        //         Modify();
+        //     end;
+        // }
+        // dataitem("Posted Gen. Journal Line"; "Posted Gen. Journal Line")
+        // {
+        //     // DataItemTableView = sorting("Entry No.");
 
-            trigger OnPreDataItem()
-            begin
-                if PostingDate = 0D then
-                    Error('Please enter a Posting Date.');
-                if DocumentNo = '' then
-                    Error('Please enter a Document No.');
-                // if CorrectedAmountLCY = 0 then
-                //     Error('Please enter the corrected Amount (LCY).');
-                if GenJnlTemplateName = '' then
-                    Error('Please enter a Gen. Journal Template.');
-                // if GenJnlBatchName = '' then
-                //     Error('Please enter a Gen. Journal Batch.');
+        //     trigger OnPreDataItem()
+        //     begin
+        //         if PostingDate = 0D then
+        //             Error('Please enter a Posting Date.');
+        //         if DocumentNo = '' then
+        //             Error('Please enter a Document No.');
+        //         // if CorrectedAmountLCY = 0 then
+        //         //     Error('Please enter the corrected Amount (LCY).');
+        //         if GenJnlTemplateName = '' then
+        //             Error('Please enter a Gen. Journal Template.');
+        //         // if GenJnlBatchName = '' then
+        //         //     Error('Please enter a Gen. Journal Batch.');
 
-                SetRange("Posting Date", PostingDate);
-                SetRange("Document No.", DocumentNo);
-            end;
+        //         SetRange("Posting Date", PostingDate);
+        //         SetRange("Document No.", DocumentNo);
+        //     end;
 
-            trigger OnAfterGetRecord()
-            var
-                GenJnlLine: Record "Gen. Journal Line";
-                DiffLCY: Decimal;
-                LastLineNo: Integer;
-            begin
-                "Amount (LCY)" := 10945.65;
-                Modify();
-            end;
-        }
+        //     trigger OnAfterGetRecord()
+        //     var
+        //         GenJnlLine: Record "Gen. Journal Line";
+        //         DiffLCY: Decimal;
+        //         LastLineNo: Integer;
+        //     begin
+        //         "Amount (LCY)" := 10945.65;
+        //         Modify();
+        //     end;
+        // }
     }
 
     requestpage
@@ -250,12 +275,12 @@ report 50116 "Correct Vendor Amount LCY"
                 {
                     Caption = 'Entry to Correct';
 
-                    field(PostingDateField; PostingDate)
-                    {
-                        ApplicationArea = All;
-                        Caption = 'Posting Date';
-                        ToolTip = 'Posting Date of the Vendor Ledger Entry to correct.';
-                    }
+                    // field(PostingDateField; PostingDate)
+                    // {
+                    //     ApplicationArea = All;
+                    //     Caption = 'Posting Date';
+                    //     ToolTip = 'Posting Date of the Vendor Ledger Entry to correct.';
+                    // }
                     field(EntryNO; EntryNo)
                     {
                         ApplicationArea = All;
@@ -274,12 +299,12 @@ report 50116 "Correct Vendor Amount LCY"
                         Caption = 'Corrected Amount (LCY)';
                         ToolTip = 'The Amount (LCY) the entry should be after correction.';
                     }
-                    field(ReasonField; ReasonText)
-                    {
-                        ApplicationArea = All;
-                        Caption = 'Reason for Correction';
-                        ToolTip = 'Mandatory explanation, stored on the journal line description.';
-                    }
+                    // field(ReasonField; ReasonText)
+                    // {
+                    //     ApplicationArea = All;
+                    //     Caption = 'Reason for Correction';
+                    //     ToolTip = 'Mandatory explanation, stored on the journal line description.';
+                    // }
                 }
                 group(Posting)
                 {

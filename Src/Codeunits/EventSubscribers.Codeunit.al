@@ -182,6 +182,7 @@ codeunit 50103 "4HC Event Subscribers"
         SalesLine.Validate("Shortcut Dimension 1 Code", JobPlanningLine."Job No.");
     end;
 
+
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnAfterCreateSalesLine, '', false, false)]
     local procedure "Job Create-Invoice_OnAfterCreateSalesLine"(var SalesLine: Record "Sales Line"; SalesHeader: Record "Sales Header"; Job: Record Job; var JobPlanningLine: Record "Job Planning Line")
     begin

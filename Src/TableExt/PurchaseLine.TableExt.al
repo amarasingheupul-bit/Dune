@@ -57,6 +57,7 @@ tableextension 50117 "4HC Purchase Line" extends "Purchase Line"
                 Rec.UpdateAEDAmounts();
             end;
         }
+
     }
     procedure UpdateAEDAmounts()
     var

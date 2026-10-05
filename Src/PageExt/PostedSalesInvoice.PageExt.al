@@ -135,6 +135,244 @@ pageextension 50126 "4HC Posted Sales Invoice" extends "Posted Sales Invoice"
                 }
             }
         }
+        // addlast(General)
+        // {
+        //     field("Invoice Type Code"; Rec."Invoice Type Code")
+        //     {
+        //         ApplicationArea = All;
+        //         ToolTip = 'Specifies the value of the Invoice Type Code field.';
+        //     }
+        //     field("Registration identifier type"; Rec."Registration identifier type")
+        //     {
+        //         ApplicationArea = All;
+        //         ToolTip = 'Specifies the value of the Registration identifier type field.';
+
+        //     }
+        //     field("Country Sub-division"; Rec."Country Sub-division")
+        //     {
+        //         ApplicationArea = All;
+        //         ToolTip = 'Specifies the value of the Country Sub-division field.';
+
+        //     }
+        //     field("Allowance/Charge Identity code"; Rec."Allowance/Charge Identity code")
+        //     {
+        //         ApplicationArea = All;
+        //         ToolTip = 'Specifies the value of the Allowance/Charge Identity code field.';
+
+        //     }
+        //     field("AE VAT category codes"; Rec."AE VAT category codes")
+        //     {
+        //         ApplicationArea = All;
+        //         ToolTip = 'Specifies the value of the AE VAT category codes field.';
+
+        //     }
+        //     field("Reasons for exemption from tax"; Rec."Reasons for exemption from tax")
+        //     {
+        //         ApplicationArea = All;
+        //         ToolTip = 'Specifies the value of the Reasons for exemption from tax field.';
+
+        //     }
+        // }
+
+        addafter(General)
+        {
+            group("Peppol E-Invoice Fields S365")
+            {
+                ShowCaption = true;
+                Caption = 'E-Invoice (Peppol) Additional Details';
+                Visible = true;
+                field("Invoice Type Code"; Rec."Invoice Type Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Invoice Type Code field.';
+                }
+                field("Registration identifier type"; Rec."Registration identifier type")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Registration identifier type field.';
+
+                }
+                field("Country Sub-division"; Rec."Country Sub-division")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Country Sub-division field.';
+
+                }
+                field("Allowance/Charge Identity code"; Rec."Allowance/Charge Identity code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Allowance/Charge Identity code field.';
+
+                }
+                field("AE VAT category codes"; Rec."AE VAT category codes")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the AE VAT category codes field.';
+
+                }
+                field("Reasons for exemption from tax"; Rec."Reasons for exemption from tax")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Reasons for exemption from tax field.';
+
+                }
+                field("Invoice Issue Time S365"; Rec.SystemCreatedAt)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Invoice Issue Time field.';
+                }
+                field("Credit Note Reason Code S365"; Rec."Credit Note Reason Code S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Credit Note Reason Code field.';
+                }
+                field("Frequency of Billing S365"; Rec."Frequency of Billing S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Frequency of Billing field.';
+                }
+                field("Invoice Note S365"; Rec."Invoice Note S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Invoice Note field.';
+                }
+                field("Preceding Invoice Ref. S365"; Rec."Preceding Invoice Ref. S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Preceding Invoice Reference field.';
+                }
+                field("Preceding Invoice Date S365"; Rec."Preceding Invoice Date S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Preceding Invoice Issue Date field.';
+                }
+                field("Tax Accounting Currency S365"; Rec."Tax Accounting Currency S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Tax Accounting Currency field.';
+                }
+                field("Invoicing Period Start S365"; Rec."Invoicing Period Start S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Invoicing Period Start Date field.';
+                }
+                field("Invoicing Period End S365"; Rec."Invoicing Period End S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Invoicing Period End Date field.';
+                }
+                field("Sales Order Reference S365"; Rec."Sales Order Reference S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Order Reference field.';
+                }
+                field("Buyer Int. Acct. Ref. S365"; Rec."Buyer Int. Acct. Ref. S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Buyer Internal Accounting Reference field.';
+                }
+                field("Contract Value S365"; Rec."Contract Value S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Contract Value field.';
+                }
+                field("Receiving Advice Ref. S365"; Rec."Receiving Advice Ref. S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Receiving Advice Reference field.';
+                }
+                field("Despatch Advice Ref. S365"; Rec."Despatch Advice Ref. S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Despatch Advice Reference field.';
+                }
+                field("Tender Or Lot Reference S365"; Rec."Tender Or Lot Reference S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Tender Or Lot Reference field.';
+                }
+                field("Customs Reference No. S365"; Rec."Customs Reference No. S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Customs Reference Number field.';
+                }
+                field("VAT Exemption Reason S365"; Rec."VAT Exemption Reason S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the VAT Exemption Reason Text field.';
+                }
+                field("Rounding Amount S365"; Rec."Rounding Amount S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Rounding Amount field.';
+                }
+                field("Payment Terms Amount S365"; Rec."Payment Terms Amount S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Payment Terms Amount field.';
+                }
+                field("Terms Payment Instr. ID S365"; Rec."Terms Payment Instr. ID S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Terms Payment Instructions ID field.';
+                }
+                field("Terms Installment Due S365"; Rec."Terms Installment Due S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Terms Installment Due Date field.';
+                }
+                field("Payment Instructions ID S365"; Rec."Payment Instructions ID S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Payment Instructions ID field.';
+                }
+                field("Delivery Incoterms S365"; Rec."Delivery Incoterms S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Delivery Incoterms field.';
+                }
+                field("VAT Tax Point Date S365"; Rec."VAT Tax Point Date S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the VAT Tax Point Date field.';
+                }
+                field("Principle ID S365"; Rec."Principle ID S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Principle ID field.';
+                }
+                field("Invoiced Object ID S365"; Rec."Invoiced Object ID S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Invoiced Object Identifier field.';
+                }
+                field("Invoiced Object ID Scheme S365"; Rec."Invoiced Object ID Scheme S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Invoiced Object Identifier Scheme Identifier field.';
+                }
+                field("Remittance Information S365"; Rec."Remittance Information S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Remittance Information field.';
+                }
+                field("Remittance Info Scheme S365"; Rec."Remittance Info Scheme S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Remittance Information Scheme Identifier field.';
+                }
+                field("Supporting Doc. Ref. S365"; Rec."Supporting Doc. Ref. S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Supporting Document Reference field.';
+                }
+                field("Supporting Doc. Desc. S365"; Rec."Supporting Doc. Desc. S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Supporting Document Description field.';
+                }
+            }
+        }
     }
 
     /* actions

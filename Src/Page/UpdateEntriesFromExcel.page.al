@@ -91,6 +91,7 @@ page 50125 " Update Entries From Excel"
                                                 this.GL."Debit Amount" := 0;
                                                 this.GL."Credit Amount" := 0;
 
+
                                                 if this.ExcelData."Value 2" > 0 then
                                                     this.GL."Debit Amount" := this.ExcelData."Value 2";
 
