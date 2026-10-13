@@ -431,7 +431,11 @@ tableextension 50115 "4HC Sales Invoice Header" extends "Sales Invoice Header"
             Caption = 'Supporting Document Description';
             DataClassification = CustomerContent;
         }
-
+        field(50176; "PEPPOL ID"; code[20])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'PEPPOL ID';
+        }
 
     }
 }

@@ -434,7 +434,11 @@ tableextension 50100 "Sales Header S365" extends "Sales Header"
             Caption = 'Supporting Document Description';
             DataClassification = CustomerContent;
         }
-
+        field(50176; "PEPPOL ID"; code[20])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Buyer PEPPOL ID';
+        }
 
     }
 }

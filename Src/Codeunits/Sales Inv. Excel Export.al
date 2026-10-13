@@ -126,6 +126,7 @@ codeunit 50111 "Sales Inv. Excel Export"
             PaymentMethodDescription := PaymentMethod.Description;
 
         // ----- Header row (217 columns, same order as PEOPPOL_Sample.xlsx) -----
+        TempExcelBuffer.AddColumn('TIN number', false, '', true, false, false, '', TempExcelBuffer."Cell Type"::Text);
         TempExcelBuffer.AddColumn('Invoice number', false, '', true, false, false, '', TempExcelBuffer."Cell Type"::Text);
         TempExcelBuffer.AddColumn('Invoice type code', false, '', true, false, false, '', TempExcelBuffer."Cell Type"::Text);
         TempExcelBuffer.AddColumn('Invoice issue date', false, '', true, false, false, '', TempExcelBuffer."Cell Type"::Text);
@@ -372,6 +373,7 @@ codeunit 50111 "Sales Inv. Excel Export"
 
                 TempExcelBuffer.NewRow();
 
+                TempExcelBuffer.AddColumn(CompanyInfo."TIN Number", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(SalesInvHeader."No.", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(InvoiceTypeText, false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(SalesInvHeader."Posting Date", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Date);
@@ -396,14 +398,14 @@ codeunit 50111 "Sales Inv. Excel Export"
                 TempExcelBuffer.AddColumn(SalesInvHeader."Invoicing Period End S365", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Date);
                 TempExcelBuffer.AddColumn(CompanyInfo.Name, false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 24: Seller trading name
-                TempExcelBuffer.AddColumn(CompanyInfo."E-Mail", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
+                TempExcelBuffer.AddColumn(CompanyInfo."PEPPOL ID", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(CompanyInfo."VAT Registration No.", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 27: Seller Tax registration identifier
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 28: Seller identifier
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 29: Seller Identifier Scheme Identifier
                 TempExcelBuffer.AddColumn(CompanyInfo."VAT Registration No.", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
-                TempExcelBuffer.AddColumn('TRN', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
-                TempExcelBuffer.AddColumn('TRN', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
+                TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
+                TempExcelBuffer.AddColumn(CompanyInfo."Registration No.", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 33: Seller Authority name
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 34: Seller Passport issuing country code
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 35: Seller additional legal information
@@ -412,7 +414,7 @@ codeunit 50111 "Sales Inv. Excel Export"
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 38: Seller address line 3
                 TempExcelBuffer.AddColumn(CompanyInfo.City, false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(CompanyInfo."Post Code", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
-                TempExcelBuffer.AddColumn(CompanyInfo.County, false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
+                TempExcelBuffer.AddColumn(CompanyInfo."Country Sub-division", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(CompanyInfo."Country/Region Code", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 43: Seller contact name
                 TempExcelBuffer.AddColumn(CompanyInfo."Phone No.", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
@@ -447,7 +449,7 @@ codeunit 50111 "Sales Inv. Excel Export"
                 TempExcelBuffer.AddColumn(SalesInvHeader."Sell-to Country/Region Code", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(SalesInvHeader."Sell-to Contact", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 75: Buyer contact telephone
-                TempExcelBuffer.AddColumn(SalesInvHeader."Sell-to E-Mail", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
+                TempExcelBuffer.AddColumn(SalesInvHeader."PEPPOL ID", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(SalesInvHeader."Order No.", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(SalesInvHeader."External Document No.", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(SalesInvHeader."Your Reference", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
@@ -568,7 +570,7 @@ codeunit 50111 "Sales Inv. Excel Export"
                 TempExcelBuffer.AddColumn('', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text); // GAP - col 194: Deliver to address line 3
                 TempExcelBuffer.AddColumn(SalesInvHeader."Ship-to City", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(SalesInvHeader."Ship-to Post Code", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
-                TempExcelBuffer.AddColumn(SalesInvHeader."Ship-to County", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
+                TempExcelBuffer.AddColumn(SalesInvHeader."Country Sub-division", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(SalesInvHeader."Ship-to Country/Region Code", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
                 TempExcelBuffer.AddColumn(SalesInvHeader."VAT Tax Point Date S365", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Date);
                 TempExcelBuffer.AddColumn(SalesInvHeader."Principle ID S365", false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
@@ -645,4 +647,21 @@ codeunit 50111 "Sales Inv. Excel Export"
         // it straight out. Check Email Outbox / Sent Emails in BC after a test run.
         Email.Send(EmailMessage, Enum::"Email Scenario"::Default);
     end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Sales Header",
+        'OnAfterValidateEvent', 'Sell-to Customer No.', false, false)]
+    local procedure CopyPeppolFromCustomer(var Rec: Record "Sales Header";
+        var xRec: Record "Sales Header"; CurrFieldNo: Integer)
+    var
+        Customer: Record Customer;
+    begin
+        if Rec."Sell-to Customer No." = '' then
+            exit;
+        if Customer.Get(Rec."Sell-to Customer No.") then begin
+            Rec."Country Sub-division" := Customer."Country Sub-division";
+            Rec."PEPPOL ID" := Customer."PEPPOL ID";
+        end;
+    end;
 }
+
+

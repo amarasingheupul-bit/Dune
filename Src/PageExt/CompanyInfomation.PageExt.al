@@ -14,5 +14,27 @@ pageextension 50118 "4HC Company Information" extends "Company Information"
                 end;
             }
         }
+        addlast(General)
+        {
+            field("TIN Number"; Rec."TIN Number")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Taxpayer Identification Number (TIN) of the company.';
+            }
+            field("PEPPOL ID"; Rec."PEPPOL ID")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the PEPPOL identifier used for electronic document exchange.';
+            }
+
+        }
+        addafter("Country/Region Code")
+        {
+            field("Country Sub-division"; Rec."Country Sub-division")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Country Sub-division field.';
+            }
+        }
     }
 }

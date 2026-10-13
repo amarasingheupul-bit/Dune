@@ -28,6 +28,19 @@ pageextension 50116 "4HC Customer Card" extends "Customer Card"
                 Visible = false;
             }
         }
+        addlast("Address & Contact")
+        {
+            field("Country Sub-division"; Rec."Country Sub-division")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Country Sub-division field.';
+            }
+            field("PEPPOL ID"; Rec."PEPPOL ID")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the PEPPOL identifier used for electronic document exchange.';
+            }
+        }
 
     }
 }

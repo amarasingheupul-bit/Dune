@@ -22,6 +22,17 @@ tableextension 50111 "4HC Customer" extends Customer
             DataClassification = ToBeClassified;
             Caption = 'DUNS No.';
         }
+        field(50104; "Country Sub-division"; Code[20])
+        {
+            Caption = 'Country Sub-division';
+            TableRelation = "Dimension Value".Code
+                WHERE("Dimension Code" = CONST('COUNTRYSUBDIV'));
+        }
+        field(50105; "PEPPOL ID"; code[20])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'PEPPOL ID';
+        }
     }
     trigger OnInsert()
     begin

@@ -415,6 +415,27 @@ pageextension 50128 "4HC Sales Invoice" extends "Sales Invoice"
                 }
             }
         }
+        addlast(General)
+        {
+            field("PEPPOL ID"; Rec."PEPPOL ID")
+            {
+                ApplicationArea = All;
+            }
+        }
+        modify("Sell-to Customer No.")
+        {
+            trigger OnAfterValidate()
+            var
+                Customer: Record Customer;
+            begin
+                if Customer.Get(Rec."Sell-to Customer No.") then begin
+                    Rec."Country Sub-division" := Customer."Country Sub-division";
+                    Rec."PEPPOL ID" := Customer."PEPPOL ID";
+                    CurrPage.Update(true);
+                end;
+            end;
+        }
+
     }
     actions
     {
